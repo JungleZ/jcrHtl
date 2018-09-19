@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2017-04-17T16:19:37.882+08:00"
+    jcr:createdBy="admin"
+    jcr:lastModified="{Date}2017-04-18T14:56:25.813+08:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="huawei-cbg-site/components/content/p10/color-image-banner-component"
+    description="PANTONE Colour Institute sets global trends for colour. Now, HUAWEI P10 Plus sets trends for smartphones. PANTONE + HUAWEI.                     An exclusive partnership that adds colour to your life."
+    hideArrow="No"
+    hideColor="No"
+    title="SET THE TONE">
+    <images jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            colorCode="#c0eb6d"
+            imagePath="/content/dam/huawei-cbg-site/common/component/mkt/p10/img/colorSlide1.jpg"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            colorCode="#4f98e9"
+            imagePath="/content/dam/huawei-cbg-site/common/component/mkt/p10/img/colorSlide2.jpg"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            colorCode="#b5b5b5"
+            imagePath="/content/dam/huawei-cbg-site/common/component/mkt/p10/img/colorSlide3.jpg"/>
+        <_x0034_
+            jcr:primaryType="nt:unstructured"
+            colorCode="#ffcdcd"
+            imagePath="/content/dam/huawei-cbg-site/common/component/mkt/p10/img/colorSlide4.jpg"/>
+        <_x0035_
+            jcr:primaryType="nt:unstructured"
+            colorCode="#f5f5f5"
+            imagePath="/content/dam/huawei-cbg-site/common/component/mkt/p10/img/colorSlide5.jpg"/>
+    </images>
+</jcr:root>

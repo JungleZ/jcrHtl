@@ -1,0 +1,540 @@
+@media screen and (min-width: 320px) and (max-width: 480px){
+    /*!*iPhone < 5 Portrait*!*/
+
+    /*************** past3*************** */
+
+    .past3 .thumbnail .caption{
+        width: 90px;
+    }
+
+    
+
+    /*************** past4*************** */
+    .past4 .thumbnail img{
+        height: 220px;
+    }
+
+    .past4 .caption{
+        padding: 20px 0 10px 0;
+    }
+
+    .past4  .caption h1{
+        font-size: 30px;
+    }
+
+    .past4  .caption p{
+        font-size: 16px;
+    }
+
+    .past4 .caption .more-btn a{
+        font-size: 12px;
+    }
+    /*************** past5*************** */
+    .past5 .thumbnail img{
+        height: 220px;
+    }
+
+    .past5 .caption{
+        padding: 20px 0 10px 0;
+    } 
+
+    .past5  .caption h1{
+        font-size: 30px;
+    }
+
+    .past5  .caption p{
+        font-size: 16px;
+    }
+
+    .past5 .caption .more-btn a{
+        font-size: 12px;
+    }
+
+
+
+    /*************** past6*************** */
+
+
+
+    .past6 .thumbnail .caption{
+        width: 50%;
+        top: 5%;
+    }
+
+    .past6 .thumbnail .caption h1 {
+        font-size:  16px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .past6 .thumbnail .caption p{
+        font-size:  12px;
+        height: 0;
+    }
+
+    .past6 .thumbnail .caption  .btn{
+        font-size:  12px;
+        margin-top: 25px;
+        padding: 2px 10px 0;
+    }
+
+    /*************** fotter*************** */
+
+    
+
+    .footer .footer-left .event{
+        margin-right: 25%;
+    }
+
+    .footer .footer-left ul{
+        width: 105%;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .footer .footer-left ul .first ul{
+        display: none;
+    }
+
+    .footer .footer-left ul .first img{
+        float: right;
+        display: block;
+    }
+
+    .footer .footer-right{
+        border: none;
+    }
+
+    .footer .footer-right ul li img{
+        width: 33px;
+    }
+
+
+
+    /*************** copy*************** */
+    .copy{
+        padding: 10px;
+        height: 80px;
+    }
+    .copy-left{
+        float: right;
+        width: 100%;
+        height: 45px;
+    }
+
+    .copy-left p{
+        font-size: 12px;
+        margin-right: 0;
+        line-height: 20px;
+    }
+
+    .copy-left ul li{
+        font-size: 12px;   
+        line-height: 8px;
+        height: 10px;
+        padding: 0 4px;
+    }
+
+    .copy-right{
+        float: left;
+        width: 100%;
+    }
+
+    .copy-right img{
+        width: 20px;
+    }
+
+    .copy-right p{
+        line-height: 18px;
+        font-size: 12px;
+    }
+
+    
+
+}
+
+
+
+
+@media screen and (min-width: 375px) and (max-width: 627px){
+    /*!*iPhone 6*!*/
+    /*************** past3*************** */
+
+    .past3 .thumbnail .caption{
+        width: 90px;
+    }
+
+    
+
+    /*************** past4*************** */
+    .past4 .thumbnail img{
+        height: 250px;
+    }
+
+    .past4 .caption{
+        padding: 20px 0 10px 0;
+    }
+
+    .past4  .caption h1{
+        font-size: 30px;
+    }
+
+    .past4  .caption p{
+        font-size: 16px;
+    }
+
+    .past4 .caption .more-btn a{
+        font-size: 12px;
+    }
+    /*************** past5*************** */
+    .past5 .thumbnail img{
+        height: 250px;
+    }
+
+    .past5 .caption{
+        padding: 20px 0 10px 0;
+    } 
+
+    .past5  .caption h1{
+        font-size: 30px;
+    }
+
+    .past5  .caption p{
+        font-size: 16px;
+    }
+
+    .past5 .caption .more-btn a{
+        font-size: 12px;
+    }
+
+
+
+    /*************** past6*************** */
+
+
+
+    .past6 .thumbnail .caption{
+        width: 50%;
+        top: 15%;
+    }
+
+    .past6 .thumbnail .caption h1 {
+        font-size:  16px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .past6 .thumbnail .caption p{
+        font-size:  12px;
+        height: 0;
+    }
+
+    .past6 .thumbnail .caption  .btn{
+        font-size:  12px;
+        margin-top: 25px;
+        padding: 2px 10px 0;
+    }
+
+    /*************** fotter*************** */
+    .footer .footer-left ul{
+        width: 105%;
+    }
+
+    /* .footer .footer-left .event{
+        margin-right: 25%;
+    } */
+
+    .footer .footer-right{
+        border: none;
+    }
+
+    /*************** copy*************** */
+    .copy{
+        padding: 10px;
+    }
+    .copy-left{
+        float: right;
+        width: 100%;
+    }
+
+    .copy-left p{
+        font-size: 12px;
+        margin-right: 0;
+        line-height: 20px;
+        width: 100%;
+    }
+
+    .copy-left ul li{
+        font-size: 12px;
+        line-height: 7px;
+        height: 10px;
+        padding: 0 4px;
+    }
+
+    .copy-right{
+        float: left;
+        width: 100%;
+    }
+
+    .copy-right img{
+        width: 20px;
+    }
+
+    .copy-right p{
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+}
+
+
+@media screen and (min-width: 414px) and (max-width: 736px){
+    /*!*iPhone 6+ Portrait*!*/
+    /*************** past3*************** */
+
+
+	.past3 .thumbnail .caption{
+        width: 90px;
+    }
+
+    
+
+    /*************** past4*************** */
+    .past4 .thumbnail img{
+        height: 300px;
+    }
+    .past4 .caption{
+        padding: 20px 0 10px 0;
+    }
+
+    .past4  .caption h1{
+        font-size: 30px;
+    }
+
+    .past4  .caption p{
+        font-size: 16px;
+    }
+
+    .past4 .caption .more-btn a{
+        font-size: 12px;
+    }
+    /*************** past5*************** */
+    .past5 .thumbnail img{
+        height: 300px;
+    }
+    .past5 .caption{
+        padding: 20px 0 10px 0;
+    } 
+
+    .past5  .caption h1{
+        font-size: 30px;
+    }
+
+    .past5  .caption p{
+        font-size: 16px;
+    }
+
+    .past5 .caption .more-btn a{
+        font-size: 12px;
+    }
+
+
+
+    /*************** past6*************** */
+
+
+
+    .past6 .thumbnail .caption{
+        width: 100%;
+        top: 20%;
+		right:0;
+		left:0;
+		text-align: center;
+    }
+
+    .past6 .thumbnail .caption h1 {
+        font-size:  22px;
+        margin: 0;
+        padding: 0;
+		font-weight:bold;
+		margin-bottom:10px;
+    }
+
+    .past6 .thumbnail .caption p{
+        font-size:  14px;
+        height: 0;
+    }
+
+    .past6 .thumbnail .caption  .btn{
+        font-size:  12px;
+        margin-top: 45px;
+        padding: 10px 25px 7px
+    }
+
+    /*************** fotter*************** */
+
+    .footer .footer-left .event{
+        margin-right: 25%;
+    }
+
+    .footer .footer-right{
+        border: none;
+    }
+
+    /* .footer .footer-left ul .first a{
+        font-size: 20px;
+    } */
+
+    .footer .footer-left ul li a{
+        font-size: 20px;
+    }
+
+    .footer .footer-right p{
+        font-size: 20px;
+    }
+
+    .footer .footer-right  .checkbox label  {
+        font-size: 16px;
+    }
+
+    .footer .footer-right  .checkbox label  a{
+        font-size: 16px;
+    }
+
+    /*************** copy*************** */
+    .copy{
+        padding: 10px;
+    }
+    .copy-left{
+        float: right;
+    }
+
+    .copy-left p{
+        font-size: 12px;
+        margin-right: 0;
+        line-height: 20px;
+    }
+
+    .copy-left ul li{
+        font-size: 12px;
+        margin-right: 4px;
+        line-height: 1px;
+    }
+
+    .copy-right{
+        float: left;
+    }
+
+    .copy-right img{
+        width: 20px;
+    }
+
+    .copy-right p{
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+}
+
+
+@media screen and (min-width: 737px) and (max-width: 1024px){
+    /*!*大屏*!*/
+   /*************** past3*************** */
+
+
+
+.past3 .thumbnail .caption{
+    width: 90px;
+}
+
+
+
+/*************** past4*************** */
+.past4 .thumbnail img{
+    height: 600px;
+    width: 100%;
+}
+
+.past4 .caption{
+    padding: 20px 0 10px 0;
+}
+
+.past4  .caption h1{
+    font-size: 50px;
+}
+
+.past4  .caption p{
+    font-size: 22px;
+}
+
+.past4 .caption .more-btn a{
+    font-size: 18px;
+}
+/*************** past5*************** */
+.past5 .thumbnail img{
+    height: 600px;
+    width: 100%;
+}
+
+.past5 .caption{
+    padding: 20px 0 10px 0;
+} 
+
+.past5  .caption h1{
+    font-size: 50px;
+}
+
+.past5  .caption p{
+    font-size: 22px;
+}
+
+.past5 .caption .more-btn a{
+    font-size: 18px;
+}
+
+
+
+/*************** past6*************** */
+
+
+
+.past6 .thumbnail .caption{
+    width: 50%;
+    top: 10%;
+    right: 0;
+}
+
+.past6 .thumbnail .caption h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.past6 .thumbnail .caption p{
+    font-size: 26px;
+    height: 0;
+}
+
+.past6 .thumbnail .caption  .btn{
+    font-size: 32px;
+    margin-top: 75px;
+    padding: 10px 25px 3px;
+}
+
+/*************** fotter*************** */
+.footer .footer-left ul{
+    margin-right: 6%;
+}
+
+.footer .footer-left .event{
+    margin-right: 10%;
+}
+
+
+
+/*************** copy*************** */
+.copy-left p{
+    margin-right: 5%;
+}
+
+
+}

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Support Landing Page Search Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <contentTab
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Content"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Title"
+                                fieldLabel="Title"
+                                name="./title"/>
+                            <inputPlaceHolder
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Input Place Holder"
+                                fieldLabel="Input Place Holder"
+                                name="./inputPlaceHolder"/>
+                            <hotSearchesText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Hot Searches Text"
+                                fieldLabel="Hot Searches Text"
+                                name="./hotSearchesText"/>
+                            <hotSearchKeyWords
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                class="full-width"
+                                fieldDescription="Click 'Add field' to add a suggested hot search key"
+                                fieldLabel="Hot Search Key Words">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    acs-commons-nested="NODE_STORE"
+                                    name="./hotSearchKeyWords">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                        method="absolute"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <hotSearchKeyWord
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldDescription="Hot Search Key Word"
+                                                    fieldLabel="Hot Search Key Word"
+                                                    name="./hotSearchKeyWord"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </hotSearchKeyWords>
+                            <bottomLinkText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Bottom Link Text"
+                                fieldLabel="Bottom Link Text"
+                                name="./bottomLinkText"/>
+                            <bottomLinkURL
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="Bottom Link URL"
+                                fieldLabel="Bottom Link URL"
+                                name="./bottomLinkURL"
+                                rootPath="/content/huawei-cbg-site"/>
+                            <searchresultPageLink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="Search result Page Link"
+                                fieldLabel="Search result Page Link"
+                                name="./searchResultPageLink"
+                                rootPath="/content/huawei-cbg-site"/>
+                            <apiURL
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="API URL"
+                                fieldLabel="API URL"
+                                name="./apiURL"/>
+                            <getRelProApiURL
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="API URL to get rel pro"
+                                fieldLabel="Rel Pro Api URL"
+                                name="./getRelProApiURL"/>
+                            <searchTermEmpty
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Search Term Empty"
+                                fieldLabel="Search Term Empty"
+                                name="./searchTermEmpty"/>
+                            <moreTermMessage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="More Term Message"
+                                fieldLabel="More Term Message"
+                                name="./moreTermMessage"/>
+                            <noResultsMessage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="No Results Message"
+                                fieldLabel="No Results Message"
+                                name="./noResultsMessage"/>
+                        </items>
+                    </column>
+                </items>
+            </contentTab>
+            <imagesTab
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Images"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <backgroundImgDesktop
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="Use the Background Image if the viewport is at desktop"
+                                fieldLabel="Background Image Desktop"
+                                name="./backgroundImgDesktop"
+                                rootPath="/content/dam"/>
+                            <backgroundImg1024_768
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="Use Background Image the viewport is max width=1024px and min width=768px"
+                                fieldLabel="Background Image 1024_768"
+                                name="./backgroundImg1024_768"
+                                rootPath="/content/dam"/>
+                            <backgroundImg767
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="Use the Background Image if the viewport is max width=767px"
+                                fieldLabel="Background Image 767"
+                                name="./backgroundImg767"
+                                rootPath="/content/dam"/>
+                            <backgroundImg420
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="Use the Background Image if the viewport is max width=420px"
+                                fieldLabel="Background Image 420"
+                                name="./backgroundImg420"
+                                rootPath="/content/dam"/>
+                            <backgroundImg350
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="Use the Background Image if the viewport is max width=350px"
+                                fieldLabel="Background Image 350"
+                                name="./backgroundImg350"
+                                rootPath="/content/dam"/>
+                            <iconQuestion
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="Icon question for mobile"
+                                fieldLabel="Icon Question"
+                                name="./iconQuestion"
+                                rootPath="/content/dam"/>
+                        </items>
+                    </column>
+                </items>
+            </imagesTab>
+        </items>
+    </content>
+</jcr:root>

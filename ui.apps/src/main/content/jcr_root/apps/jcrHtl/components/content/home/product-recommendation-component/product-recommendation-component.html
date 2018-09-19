@@ -1,0 +1,23 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Product Recommendation Component</p>
+<sly data-sly-use.productRec="com.huawei.consumer.site.core.components.home.ProductRecommendationComponent" data-sly-test="${productRec}">
+	<div class="section3 product"><div class="listbox">
+	    <ul data-sly-list.product="${productRec.productList}">
+	        <h2 class="for_seo">${product.title}</h2>
+	        <li class="delay100 appearance ${productList.first ? 'active' : ''}">
+	            <strong>${product.title}</strong>
+	            <p>${product.subTitle}</p>
+				<sly data-sly-use.productlinkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=product.productLink}"
+					 data-sly-use.buttonlinkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=product.buttonLink}">
+					<img cat="Homepage Image Clicks" act="${product.imageClickAct}" lab="${product.imageClickLab}" v="${productlinkHelper.link}" class="s3_pro_url lazy_load" alt="${product.productImageAlt}" time="" data-src="${product.productImageUrl}" src="/etc/designs/huawei-cbg-site/images/common/bg500_407.png">
+					<span class="a-homecat ${product.hideButtonInPC == 'yes' ? 's3_hidden' : ''}" 
+						cat="${product.cat}" act="${product.act}" lab="${product.lab}" data-sly-test="${product.buttonText}">
+						<a target="${product.newTab ? '_blank' : ''}" href="${buttonlinkHelper.link}">${product.buttonText}</a>
+					</span>
+				</sly>
+	    	</li>
+	    </ul>
+	    <div class="prev"><i class="icon_public"></i></div>
+	    <div class="next"><i class="icon_public"></i></div>
+	    <div class="clear"></div>
+	</div></div>
+</sly>

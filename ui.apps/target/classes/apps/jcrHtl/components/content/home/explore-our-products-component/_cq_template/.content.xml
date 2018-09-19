@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    productText="PRODUCTS"
+    title="EXPLORE OUR PRODUCTS">
+    <products jcr:primaryType="nt:unstructured">
+        <item1
+            jcr:primaryType="nt:unstructured"
+            bgImageAlt="phones number"
+            bgImageUrl="/content/dam/huawei-cbg-site/en-master/home/img_con_v27_s7_banner1.jpg"
+            productRootPath="/content/huawei-cbg-site/uk/phones"
+            titleText="MOBILE PHONES"
+            wrapValue="menu_module_allphone"/>
+        <item2
+            jcr:primaryType="nt:unstructured"
+            bgImageAlt="tablets number"
+            bgImageUrl="/content/dam/huawei-cbg-site/en-master/home/img_con_v27_s7_banner2.jpg"
+            productRootPath="/content/huawei-cbg-site/uk/tablets"
+            titleText="PC &amp; TABLETS"
+            wrapValue="menu_module_tablets"/>
+        <item3
+            jcr:primaryType="nt:unstructured"
+            bgImageAlt="wearables number"
+            bgImageUrl="/content/dam/huawei-cbg-site/en-master/home/img_con_v27_s7_banner3.jpg"
+            productRootPath="/content/huawei-cbg-site/uk/wearables"
+            titleText="WEARABLES"
+            wrapValue="menu_module_wearables"/>
+    </products>
+</jcr:root>

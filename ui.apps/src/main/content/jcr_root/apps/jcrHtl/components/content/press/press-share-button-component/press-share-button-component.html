@@ -1,0 +1,29 @@
+<div class="share_area">
+	<a class="tit" cat="Social Share Clicks" act="Share Button"
+		lab="<product name> - <video name> - <page title>">${'SHARE' @ i18n}</a>
+	<div class="share_box">
+		<a class="twitter share_huawei" t="${currentPage.title}"
+			href="javascript:void(0);" sns="twitter" cat="Social Share Clicks"
+			act="Twitter Share"
+			lab="<product name> - <video name> - <page title>"></a> 
+		<a
+			class="facebook share_huawei" t="${currentPage.title}"
+			href="javascript:void(0);" sns="facebook" cat="Social Share Clicks"
+			act="Facebook Share"
+			lab="<product name> - <video name> - <page title>"></a> 
+		<input	type="text" class="share_url" value="">
+	</div>	
+</div>
+<div class="pdf_area">
+	<a data-sly-test="${pageProperties.resourceUrl}"
+		href="${pageProperties.resourceUrl}"
+		cat="news" act="View PDF"
+		lab=""
+		class="view a-viewpdf" target="_blank" >${'VIEW PDF' @ i18n}</a>
+		
+ 	<a data-sly-test="${pageProperties.resourceDownloadUrl}"
+ 		href="${pageProperties.resourceDownloadUrl}"
+ 		cat="news" act="File Downloads"		
+		lab=""
+		class="download a-download">${'DOWNLOAD PDF' @ i18n}<i></i></a>
+</div>

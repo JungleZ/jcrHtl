@@ -1,0 +1,12 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Contact Us Simple Component</p>
+<sly data-sly-use.completePath="${'com.huawei.consumer.site.core.components.home.PresenterComponent' @ path=properties.buttonPath}"/>
+<div class="conv3_contact_supplier conv3_contact_module">
+   <h2 class="for_seo">${properties.contactTitle}</h2>
+   <div class="desc">
+      <strong>${properties.contactTitle}</strong>
+      <p data-sly-test.description="${properties.text}">${description @ context = 'html'}</p>
+      <div class="conv3_contact_btn">
+         <a cat="${properties.cat}" act="${properties.act}" lab="${properties.lab}" href="${completePath.linkCompletePath}" class="cs_external">${properties.buttonCaption}</a>
+      </div>
+   </div>
+</div>

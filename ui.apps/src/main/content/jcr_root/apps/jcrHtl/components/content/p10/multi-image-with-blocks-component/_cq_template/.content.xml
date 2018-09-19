@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    description="Description"
+    desktopImage="http://consumer-res.huaweistatic.com/en/mobile-phones/p10-plus/assets/img/alwayConBg.jpg?1490252840236"
+    mobileImage="http://consumer-res.huaweistatic.com/en/mobile-phones/p10-plus/assets/img/alwayConBg.jpg?1490252840236"
+    tip="Tip"
+    title="Title"/>

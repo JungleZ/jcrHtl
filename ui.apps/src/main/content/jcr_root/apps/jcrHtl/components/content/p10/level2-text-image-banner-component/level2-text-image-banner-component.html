@@ -1,0 +1,26 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Level 2 - Text Image Banner Component</p>
+
+<div class="two-level type3" data-sly-use.component="com.huawei.consumer.site.core.components.p10.Level2TextImageBannerComponent">
+	<div class="title">
+		<h3>${properties.title}</h3>
+		<p>${properties.description}</p>
+	</div>
+	<div class="color-slide">
+		<ul class="W-MaterialSlide" data-sly-list.image="${component.images}">
+			<li>
+				<img src="${image.mainImage}" class="W-hiddenMobi" alt="${image.mainImageAltText}" />
+			</li>
+		</ul>
+		<div class="W-ChooseMaterial">
+			<ul data-sly-list.image="${component.images}">
+				<li>
+					<a href="javascript:;" onclick="MaterialSlideto(this,'${imageList.index @ context='scriptString'}')" data-Material="${imageList.index}">
+						<img src="${image.colorImage}" alt="${image.colorImageAltText}" /> 
+						<span>${image.color}</span>
+					</a>
+				</li>				
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>

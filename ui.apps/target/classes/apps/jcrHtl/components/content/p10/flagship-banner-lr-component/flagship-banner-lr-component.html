@@ -1,0 +1,11 @@
+<div class="main-screen ${properties.animationPosition == 'Right' ? 'type3' : ''} ${properties.animationPosition == 'Left' ? 'type4' : ''}" >
+    <div class="desktop-background" style="${'background: url({0}) no-repeat center center; background-color:{1};' @ format=[properties.desktopImage,properties.desktopBackgroundColor],context='styleString'}"></div>
+    <img class="mobile-background" data-sly-attribute.src="${properties.mobileImage}" data-sly-attribute.alt="${properties.mobileImageAlt}"/>
+    <div class="title">
+        <p> <img data-sly-attribute.src="${properties.titleImage}" class="W-kvTitleImg" data-sly-attribute.alt="${properties.titleImageAlt}" /> </p>
+        <h1 data-sly-text="${properties.description}">title</h1>
+    </div>
+    <div class="product ">
+        <img data-sly-attribute.src="${properties.animationImage}" data-sly-attribute.class="animate-${properties.animationEffect}-pre" data-sly-attribute.alt="${properties.animationImageAlt}" />
+    </div>
+</div>

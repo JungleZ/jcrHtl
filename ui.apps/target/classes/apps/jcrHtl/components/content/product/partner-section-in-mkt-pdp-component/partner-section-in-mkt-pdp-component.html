@@ -1,0 +1,24 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Partner Section In Mkt Pdp Component</p>
+<sly data-sly-use.product="com.huawei.consumer.site.core.models.ProductDetailModel" data-sly-test="${product.model.canBuy}">
+<div class="new_feature" id="partners_section">
+	
+	<span id="huawei_partner"></span>
+	<div class="column13 column13_1 huawei_partner" ><div class="column_width" >
+		<h2>${"{0} PARTNER PLANS" @i18n,format=product.model.marketingName}</h2>
+ 		
+		<ul data-sly-use.product="com.huawei.consumer.site.core.models.ProductDetailModel" data-sly-list.partner="${product.model.partnerInfoResources}" data-sly-test="${product.model.canBuy}">
+
+			<li  class="delay200 num_${product.model.partnerInfoResources.size}"> 
+				<img style="display: block;" class="lazy" alt="${partner.partnerName}" src="${partner.icon}">
+				<a href="javascript:;" cat="Buy Clicks" act="${partner.act}" lab="${product.model.marketingName}" class="aBtn a-buyretailer a-buy" shop="${partner.partnerName}" href="${partner.buyLink}">${"BUY" @i18n}</a>
+			</li>
+
+        </ul>
+        <div class="clear"></div>
+	</div></div>
+
+</div>
+</sly>
+
+
+

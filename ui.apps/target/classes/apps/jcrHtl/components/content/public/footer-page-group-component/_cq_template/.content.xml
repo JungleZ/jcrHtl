@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    heading="PRODUCTS">
+    <footerLinks jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            label="Mobile Phones"
+            wrapValue="wrap_phones"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            label="PC &amp; Tablets"
+            wrapValue="menu_module_tablets"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            label="Wearables"
+            wrapValue="menu_module_wearables"/>
+        <_x0034_
+            jcr:primaryType="nt:unstructured"
+            label="Mobile Broadband"
+            wrapValue="menu_module_broadband"/>
+        <_x0035_
+            jcr:primaryType="nt:unstructured"
+            label="Smart Home"
+            wrapValue="menu_module_smarthome"/>
+    </footerLinks>
+</jcr:root>

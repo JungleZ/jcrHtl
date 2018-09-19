@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    numbersOfService="10"
+    title="SERVICE SUPPORT">
+    <item1
+        jcr:primaryType="nt:unstructured"
+        descText="Out of warranty spare part pricing"
+        icon="price"
+        title="Sparepart Price"
+        url="http://consumer.huawei.com/testv27-demo/support/sparepart-price/index.htm"/>
+    <item2
+        jcr:primaryType="nt:unstructured"
+        descText="Validate if device is in or out of warranty"
+        icon="warranty"
+        title="Warranty Period Query"/>
+    <item3
+        jcr:primaryType="nt:unstructured"
+        descText="Next day replacement for eligible Huawei device"
+        icon="vip"
+        title="VIP Service"
+        url="https://www.huaweivipservice.co.uk/"/>
+    <item4
+        jcr:primaryType="nt:unstructured"
+        descText="Trade in your old phone and receive cash / voucher towards Huawei products"
+        icon="trade"
+        title="Trade-In"
+        url="https://vmalltradein.teqcycle.com/"/>
+    <item5
+        jcr:primaryType="nt:unstructured"
+        icon="Reservation"
+        title="Appointment Service "
+        url="http://consumer.huawei.com/testv27-demo/support/reservation/index.htm"/>
+    <item6
+        jcr:primaryType="nt:unstructured"
+        icon="Recycling"
+        openInNewTab="true"
+        title="Recycling"
+        url="http://consumer.huawei.com/testv27-demo/support/recycling/index.htm"/>
+    <item7
+        jcr:primaryType="nt:unstructured"
+        icon="umfrage"
+        openInNewTab="true"
+        title="Umfrage"
+        url="http://www.huawei.com/audience/answer.do?u=183892"/>
+    <item8
+        jcr:primaryType="nt:unstructured"
+        icon="hi_care"
+        url="http://consumer.huawei.com/en"/>
+    <item9
+        jcr:primaryType="nt:unstructured"
+        icon="reparaturauftrag"
+        openInNewTab="true"
+        title="Postal Repair Service"
+        url="http://consumer.huawei.com/testv27-demo/support/express-repair/index.htm"/>
+    <item10
+        jcr:primaryType="nt:unstructured"
+        icon="Reparaturstatus"
+        title="Repair Status Query "
+        url="http://consumer.huawei.com/testv27-demo/support/inquiry/index.htm"/>
+</jcr:root>

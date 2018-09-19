@@ -1,0 +1,68 @@
+<p style="text-align: center; color: black;" data-sly-test="${wcmmode.edit}">Repair status query</p>
+<div class="conv3_wrap inquery">
+	<!--top conv3_content start-->
+	<div class="conv3_content">
+		<h1>${properties.title}</h1>
+		<div class="rsq_sec rsq_query">
+			<div class="conv3_global_selector">
+				<div class="select rsq_cate">
+					<span id="inquiry-type" num="0">${properties.queryMethod}</span>
+						<sly data-sly-use.comp="com.huawei.consumer.site.core.components.support.RepairStatusQueryComponent" data-sly-test="${comp.dropDownItems}">
+							<ol _mark="cate"  data-sly-list.dropDownList="${comp.dropDownItems}">
+								<li num="${dropDownList.key}" data-errorMsg="${dropDownList.errorMessage}">${dropDownList.title}</li>
+							</ol>
+						</sly>
+				</div>
+				<input class="device_sn" id="model-number" type="text"
+					placeholder="${properties.queryMethodInput}">
+				<div class="v_code">
+					<input type="text" name="captcha" class="cbg-captcha" id="user_code">
+					<img class="auto-img" src="">
+					<span type="hide" id="sessionuuid3" style="display: none;"></span>
+				</div>
+			</div>
+			<!-- conv3_global_selector END -->
+			<div class="submit_btn">
+				<a href="javascript:;" id="submit-inquiry">${properties.submitBtnText}</a>
+			</div>
+		</div>
+		<!-- rsq_top END -->
+		<div class="rsq_sec rsq_note">${properties.reminder @ context='html'}</div>
+		<div class="rsq_sec rsq_result_suc">
+			<ul class="clearfix req_result_list">
+			</ul>
+			<div class="rsq_back">
+				<a href="">${properties.backBtnText}</a>
+			</div>
+		</div>
+		<div class="rsq_sec rsq_result_fail">
+			<sly data-sly-use.comp="com.huawei.consumer.site.core.components.support.RepairStatusQueryComponent">
+				<img alt="error" src="${comp.errorBgImg}">
+			</sly>
+			<p>${properties.rsNotMatchtxt}</p>
+			<div class="rsq_back">
+				<a href="">${properties.backBtnText}</a>
+			</div>
+		</div>
+		<input type="hidden" id="imeiText" value="${properties.imeiText}">
+		<input type="hidden" id="acceptedTime" value="${properties.acceptedTime}">
+		<input type="hidden" id="repairStt" value="${properties.repairStt}">
+		<input type="hidden" id="pickupTime" value="${properties.pickupTime}">
+		<input type="hidden" id="queryErr" value="${properties.queryErr}">
+		<input type="hidden" id="imeiSnErr" value="${properties.imeiSnErr}">
+		<input type="hidden" id="numberErr" value="${properties.numberErr}">
+		<input type="hidden" id="codeErr" value="${properties.codeErr}">
+		<sly data-sly-use.comp="com.huawei.consumer.site.core.components.support.RepairStatusQueryComponent">
+			<input type="hidden" id="repairQueryApi" value="${comp.apiUrl}">
+			<input type="hidden" id="sessionidApi" value="${comp.sessionApi}">
+			<input type="hidden" id="imageCodeApi" value="${comp.imageCodeApi}">
+			<div class="repair-status" style="display:none;">
+				<ol>
+				<sly data-sly-list.repairSttList="${comp.repairStateItems}">
+					<li data-statekey="${repairSttList.name}" data-statevalue="${repairSttList.value}"></li>
+				</sly>
+				</ol>
+			</div>
+		</sly>
+	</div>
+</div>

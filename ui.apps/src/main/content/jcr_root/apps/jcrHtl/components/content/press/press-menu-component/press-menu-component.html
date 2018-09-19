@@ -1,0 +1,21 @@
+<div id="press_menu_component" class="menu_module">
+	<div class="conv3_nwev_menu menu">
+		<div class="val_inner">
+			<i></i>
+			<pre></pre>
+		</div>
+		<div class="list_content">
+			<div class="centent_wrap">
+				<div class="left_nav"
+					data-sly-use.comp="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='menus'}"
+					data-sly-list.menus="${comp.multifieldResources}">
+					<a href="${menus.link @extension='html'}">${menus.title}</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+

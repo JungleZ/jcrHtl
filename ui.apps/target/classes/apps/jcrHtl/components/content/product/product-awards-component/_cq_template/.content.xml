@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    title="HUAWEI P10 AWARDS">
+    <awards jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            description="Connect：sehr gut 2017"
+            imagePath="/content/dam/huawei-cbg-site/en-master/product/Connect_P10_2017.jpg"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            description="CHIP：sehr gut 2017"
+            imagePath="/content/dam/huawei-cbg-site/en-master/product/chip_P10_2017.jpg"/>
+    </awards>
+</jcr:root>

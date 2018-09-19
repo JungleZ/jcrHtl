@@ -1,0 +1,41 @@
+<div class="conv3_sponsorships_home conv3_news_home">
+
+    <div class="content" data-sly-use.news="com.huawei.consumer.site.core.components.press.NewsListComponent">
+        <div class="loading_bg"><img alt="loading" src="/etc/designs/huawei-cbg-site/images/common/img_con_v27_loading.gif" /></div>
+        <div class="search_box">
+            <div class="conv3_global_selector">
+                <div class="select">
+                    <span data-sly-text="${news.nearestYear}"></span>
+                    <ol _mark="year" data-sly-list="${news.years}">
+                        <li data-sly-attribute.value="${item}" data-sly-text="${item}"></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="search_input">
+                <input type="text" id="keywords" data-sly-attribute.placeholder="${properties.phText}" onkeypress="javascript:if(event.keyCode=='13'){$('.search_by_text').click();;return false;}" data-write-keywords-message="${properties.writeKeywordsMessage}">
+                <i class="glass"></i>
+                <i class="arrow search_by_text"><em></em></i>
+            </div>
+        </div>
+
+        <ul class="list text_list" data-page-size="${properties.pageSize}" data-sly-use.apisConst="${'com.huawei.consumer.site.core.utils.APIsConstants'}" data-sly-use.apiHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.apiUrl, key=apisConst.SERVICE_ISEARCH_OPEN_LIST_API_KEY }" data-api-url="${apiHelper.apiUrl}" data-result-number="${properties.rnText}" data-result-search="${properties.rsText}" data-query-match="${properties.queryMatch}" data-no-results-message="${properties.noResultsMessage}">
+            <sly data-sly-list="${news.items}">
+                <li style="display:none;">
+                    <h2 class="for_seo" data-sly-text="${item.title}">SEO text</h2>
+                    <sly data-sly-test.path="${item.url @ extension='html'}"></sly>
+                    <strong><a cat="Press Banner" act="${properties.act}" lab="${properties.lab}" x-cq-linkchecker="valid" data-sly-text="${item.title}" data-sly-attribute.href="${item.externalResourceUrl || path}">title</a></strong>
+                    <span data-sly-text="${item.articlePublishTime}">articlePublishTime</span>
+                    <p data-sly-text="${item.description}" data-sly-attribute.title="${item.description}">description</p>
+
+                    <a data-sly-test="${item.resourceDownloadUrl}" cat="news" act="File Downloads" lab="${item.title}" href="${item.resourceDownloadUrl}" x-cq-linkchecker="valid" class="btn_download a-download"><i></i>DOWNLOAD PDF</a>
+
+                    <a data-sly-test="${item.resourceUrl}" cat="news" act="View PDF"  lab="${item.title}" href="${item.resourceUrl}" x-cq-linkchecker="valid" class="btn_view btn_download a-viewpdf" target="_blank">VIEW PDF</a>
+                </li>
+            </sly>
+        </ul>
+        <div class="load_more" style="display:none">
+            <div class="text" id='view-more-btn'><span>+</span>${properties.lmText}</div>
+        </div>
+
+    </div>
+</div>

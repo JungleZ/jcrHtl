@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    headingText="SITE MAP">
+    <page jcr:primaryType="nt:unstructured">
+        <item1
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="true"
+            link=""
+            openInNewpage="false"
+            title="PRODUCTS"
+            wrapHeaderId=""/>
+        <item2
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Mobile Phones"
+            wrapHeaderId=""/>
+        <item3
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="PC &amp; Tablets"
+            wrapHeaderId=""/>
+        <item4
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Wearables"
+            wrapHeaderId=""/>
+        <item5
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Accessories"
+            wrapHeaderId=""/>
+        <item6
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Mobile Broadband"
+            wrapHeaderId=""/>
+        <item7
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Smart Home"
+            wrapHeaderId=""/>
+        <item8
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="true"
+            link=""
+            openInNewpage="false"
+            title="SUPPORT"
+            wrapHeaderId=""/>
+        <item9
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Search Support"
+            wrapHeaderId=""/>
+        <item10
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Find Service Center"
+            wrapHeaderId=""/>
+        <item11
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Sparepart Price"
+            wrapHeaderId=""/>
+        <item12
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Warranty Policy"
+            wrapHeaderId=""/>
+        <item13
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Warranty Period Query"
+            wrapHeaderId=""/>
+        <item14
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Manuals &amp; Downloads"
+            wrapHeaderId=""/>
+        <item15
+            jcr:primaryType="nt:unstructured"
+            isDisplay="false"
+            isParent="true"
+            link=""
+            openInNewpage="false"
+            title="COMMUNITY"
+            wrapHeaderId=""/>
+        <item16
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Community Hub"
+            wrapHeaderId=""/>
+        <item17
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="true"
+            link=""
+            openInNewpage="false"
+            title="NEWSROOM"
+            wrapHeaderId=""/>
+        <item18
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="News &amp; Events"
+            wrapHeaderId=""/>
+        <item19
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Awards &amp; Coverage"
+            wrapHeaderId=""/>
+        <item20
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="true"
+            link=""
+            openInNewpage="false"
+            title="ABOUT HUAWEI"
+            wrapHeaderId=""/>
+        <item21
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="About Us"
+            wrapHeaderId=""/>
+        <item22
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link="http://e.huawei.com/uk/"
+            openInNewpage="false"
+            title="Huawei Enterprise"
+            wrapHeaderId=""/>
+        <item23
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link="http://www.huawei.com/uk/carrier/index.htm"
+            openInNewpage="false"
+            title="Huawei Carrier"
+            wrapHeaderId=""/>
+        <item24
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link="http://www.huawei.com/uk/index.htm"
+            openInNewpage="false"
+            title="Huawei Group"
+            wrapHeaderId=""/>
+        <item25
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link="http://www.huaweimarine.com/marine/"
+            openInNewpage="false"
+            title="Huawei Marine"
+            wrapHeaderId=""/>
+        <item26
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link="http://career.huawei.com/recruitment/?language=en"
+            openInNewpage="false"
+            title="Join Us"
+            wrapHeaderId=""/>
+        <item27
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Contact Us"
+            wrapHeaderId=""/>
+        <item28
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="true"
+            link=""
+            openInNewpage="false"
+            title="LEGAL"
+            wrapHeaderId=""/>
+        <item29
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Certification"
+            wrapHeaderId=""/>
+        <item30
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Terms Of Use"
+            wrapHeaderId=""/>
+        <item31
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Privacy Policy"
+            wrapHeaderId=""/>
+        <item32
+            jcr:primaryType="nt:unstructured"
+            isDisplay="true"
+            isParent="false"
+            link=""
+            openInNewpage="false"
+            title="Cookies"
+            wrapHeaderId=""/>
+    </page>
+</jcr:root>

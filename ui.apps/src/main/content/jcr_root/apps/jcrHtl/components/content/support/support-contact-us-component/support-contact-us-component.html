@@ -1,0 +1,16 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Support Contact Us Component</p>
+<sly data-sly-use.contactComp="com.huawei.consumer.site.core.components.support.SupportContactUsComponent">
+	<div class="support_contact_us">
+		<h2>${contactComp.titleContent}</h2>
+		<div data-sly-list.contact="${contactComp.listContacts}" data-sly-test="${wcmmode.edit}">
+			<p><strong>Begin Contact Item: ${contact.contactName}</strong></p>
+            <ul class="clearfix">
+				<div data-sly-resource="${contact.contactName @ resourceType='huawei-cbg-site/components/content/support/support-contact-us-component/contact-item-component'}" ></div>
+           	</ul>
+			<p><strong>End Contact Item: ${contact.contactName}</strong></p>
+		</div>
+		<ul class="clearfix" data-sly-list.contact="${contactComp.listContacts}" data-sly-test="${!wcmmode.edit}">
+			<sly data-sly-resource="${contact.contactName @ resourceType='huawei-cbg-site/components/content/support/support-contact-us-component/contact-item-component'}" />
+		</ul>
+	</div>
+</sly>

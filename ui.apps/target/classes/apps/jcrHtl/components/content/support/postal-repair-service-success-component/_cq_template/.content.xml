@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    contactUsUrl="http://consumer.huawei.com/testv27-demo/contact-us/index.htm?tag=email"
+    content="We will contact you ASAP, please kindly keep your phone available. Thank you!"
+    emailIcon="/content/dam/huawei-cbg-site/en-master/support/img_con_base_support.png"
+    emailText="Email Us"
+    hotlineIcon="/content/dam/huawei-cbg-site/en-master/support/img_con_base_support.png"
+    hotlinePhone="1800 22 0086"
+    successIcon="/content/dam/huawei-cbg-site/en-master/support/img_con_base_support.png"
+    successMessage="You have submitted Postal Repair Service successfully!"
+    title="Postal Repair Service"/>

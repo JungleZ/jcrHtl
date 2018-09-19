@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    city="CITY"
+    cityWsUrl="http://consumer.huawei.com/support/services/base/place/list"
+    defaultLocation="beijing"
+    description="Huawei does not guarantee you to the exact location of shops, thank you for your understanding."
+    map="google"
+    province="PROVINCE"
+    provinceWsUrl="http://consumer.huawei.com/support/services/base/place/country/site"
+    salePointWsUrl="http://consumer.huawei.com/cmkt/services/service/salespoint/list"
+    searchResultFor="SEARCH RESULT FOR "
+    title="FIND A STORE"/>

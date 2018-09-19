@@ -1,0 +1,218 @@
+.W-section7VIPService.W-section {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+    min-height: 220px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.W-section7VIPService .W-Container {
+    width: 100%;
+    max-width: 1024px;
+    height: inherit;
+    margin: 0 auto;
+    position: relative;
+}
+
+.W-section7VIPService .W-Container {
+    text-align: center;
+}
+
+.W-section7VIPService .W-vipHeader {
+    text-align: center;
+    padding-top: 110px;
+}
+
+.W-section7VIPService .W-vipHeader {
+    padding-top: 0px;
+}
+
+.W-section7VIPService .W-sectionTitle {
+    font-family: inherit;
+    color: #FFF;
+    letter-spacing: 8px;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    text-transform: uppercase;
+    padding: 80px 0 16px 0;
+    line-height: 30px;
+}
+
+.W-section7VIPService h2.W-sectionTitle {
+    line-height: 30px;
+    padding-top: 20px;
+}
+
+.W-section7VIPService .W-VIPIcoGroup {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 65px;
+    vertical-align: top;
+}
+
+.W-section7VIPService .W-VIPIconList {
+    float: none;
+    text-align: center;
+    min-width: 100px;
+    /* max-width: 200px; */
+    width: 33%;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.W-section7VIPService .W-allicon {
+    width: 71px !important;
+    height: 71px !important;
+    margin: 0 auto;
+    background: no-repeat;
+}
+
+.W-section7VIPService .W_ico_3year {
+    background: url(http://consumer-res.huaweistatic.com/de/mobile-phones/p10/assets/css/../img/ico_3year.png?1492794286451) no-repeat;
+    width: 63px;
+}
+
+.W-section7VIPService .W-VIPIconList h3 {
+    height: 40px;
+}
+
+.W-section7VIPService .W-VIPIconList h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "FrutigerNextLT-Regular";
+    font-size: .875rem;
+    letter-spacing: 3px;
+    color: #FFF;
+    max-width: 210px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.W-section7VIPService .W_ico_screenGuara {
+    background: url(http://consumer-res.huaweistatic.com/de/mobile-phones/p10/assets/css/../img/ico_screenGuara.png?1492794286451) no-repeat;
+    width: 63px;
+}
+
+.W-section7VIPService .W_ico_3monthreplace {
+    background: url(http://consumer-res.huaweistatic.com/de/mobile-phones/p10/assets/css/../img/ico_3monthreplace.png?1492794286451) no-repeat;
+    width: 63px;
+}
+
+.W-section7VIPService .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.W-section7VIPService .clearfix {
+    zoom: 1;
+}
+
+.W-section7VIPService .W-TitleVIP2 {
+    padding: 85px 0 25px 0;
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.W-section7VIPService a.W-VIPbtn {
+    display: inline-block;
+    color: #FFF;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 5px 30px;
+    border: 1px solid #FFF;
+    background-color: #000;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s;
+}
+
+.W-section7VIPService .W-VIPIconList p {
+    color: #FFFFFF;
+    max-width: 210px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .W-section7VIPService.W-section {
+        position: relative;
+        height: auto;
+        min-height: auto;
+        padding-top: 30px;
+    }
+    .W-section7VIPService .W-Container {
+        width: 100%;
+        max-width: 1024px;
+        height: inherit;
+        margin: 0 auto;
+    }
+    .W-section7VIPService .W-sectionTitle {
+        color: #FFF;
+        letter-spacing: 3px;
+        font-size: 1rem;
+        padding: 60px 0 10px 0;
+    }
+    .W-section7VIPService .W-VIPIconList {
+        float: none;
+        text-align: center;
+        min-width: 100px;
+        width: 60%;
+        padding-left: 25%;
+        font-size: 12px;
+        margin: 0 auto;
+        position: relative;
+        padding-bottom: 30px;
+    }
+    .W-section7VIPService .W_ico_3year {
+        position: absolute;
+        left: 0;
+        top: 0px;
+    }
+    .W-section7VIPService .W-VIPIconList h3 {
+        text-transform: uppercase;
+        text-align: left;
+        font-family: "FrutigerNextLT-Regular";
+        font-size: .875rem;
+        letter-spacing: 3px;
+        color: #FFF;
+        max-width: 210px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        padding-top: 0px;
+    }
+    .W-section7VIPService .W-VIPIconList h3 {
+        height: auto;
+    }
+    .W-section7VIPService .W-hiddenMobi {
+        display: none !important;
+    }
+    .W-section7VIPService .W-VIPIconList p {
+        text-align: left;
+    }
+    .W-section7VIPService .W_ico_screenGuara {
+        position: absolute;
+        left: 0;
+        top: 0px;
+    }
+    .W-section7VIPService .W_ico_3monthreplace {
+        position: absolute;
+        left: 0;
+        top: 0px;
+    }
+}

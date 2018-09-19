@@ -1,0 +1,19 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Recycling Content Component</p>
+<div class="conv3_recyle_content">
+        <div class="grp_cont">
+            <div class="bg_g">
+                <p>${properties.disclaimer @ content='html'}</p>
+            </div>
+            <ul class="clearfix">
+                <li class="grp_li0"><img alt="" src="${properties.imageUrl}"></li>
+                <li class="grp_li1">${properties.description1 @ content='html'}</li>
+                <li class="grp_li2">${properties.description2 @ content='html'}</li>
+                <li class="grp_li3">${properties.description3 @ content='html'}</li>
+                <li class="grp_li4">${properties.description4 @ content='html'}</li>
+                <li class="grp_li5">${properties.description5 @ content='html'}</li>
+            </ul>
+            <sly data-sly-use.completePath="${'com.huawei.consumer.site.core.components.home.PresenterComponent' @ path=properties.buttonUrl}">
+            	<a href="${completePath.linkCompletePath}" target="${properties.newTab ? '_blank' : '_self'}">${properties.buttonText}</a>
+            </sly>
+        </div>
+</div>

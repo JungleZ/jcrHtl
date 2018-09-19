@@ -1,0 +1,35 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Spare Parts Search Component</p>
+<sly data-sly-use.apisConst="${'com.huawei.consumer.site.core.utils.APIsConstants'}" data-sly-use.apiHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.apiUrl, key=apisConst.SERVICE_PARTS_LIST_API_KEY }" >
+    <div class="conv3_content"  data-apiUrl="${apiHelper.apiUrl}"  data-sparepartssearch-productmodelplaceholder="${properties.productModelPlaceHolder}" data-sly-use.apiHelperProductType="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.productTypeApiUrl, key=apisConst.SERVICE_PARTS_PRODUCT_CATEGORY_API_KEY }" data-sparepartssearch-producttypeapiurl="${apiHelperProductType.apiUrl}">
+        <div class="sp_top">
+        	<h1>${properties.title}</h1>
+            <p>
+ 				<a data-sly-test="${properties.descriptionUrl}"  href="${properties.descriptionUrl}.html" target="_blank">${properties.description} </a>
+				<a data-sly-test="${!properties.descriptionUrl}"  href="#" target="_blank">${properties.description} </a>
+           </p>
+
+            <div class="conv3_global_selector">
+                <div class="select sp_cate">
+                    <span data-typeid="0" data-typename='Product *'>${properties.productPlaceHolder}</span>
+                    <ol _mark="cate" id="price_product_type">
+                    </ol>
+                </div>
+                <div class="select sp_model">
+                    <span id="sparePartsSearchProductModel" data-modelid="0" data-modelname='Product Model *'>${properties.productModelPlaceHolder}</span>
+                    <ol _mark="model" id="price_product_model">
+                    </ol>
+                </div>
+			</div>
+            <div class="submit_btn" id="getPriceBtn"><a href="javascript:;">${properties.submitButtonText}</a></div>
+		</div> 
+        <div class="sp_bottom">
+        	<p id="sparePartsSearchPreResultDescription" style="display:block">${properties.preResultDescription}</p>
+        	<p id="sparePartsSearchPostResultDescription" style="display:none">${properties.postResultDescriptionFront}<span class="sp_model_name"></span>${properties.postResultDescriptionBehind}</p>
+            <ul class="price_list clearfix" ></ul>
+            <div class="price_table_info cbg-std-table" id="remark"></div>
+        </div>     
+    </div>
+</sly>
+
+
+

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <contentTab
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Content"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <backgroundImage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="Please select the Background Image Desktop"
+                                fieldLabel="Background Image"
+                                name="./backgroundImage"
+                                rootPath="/content/dam"/>
+                            <titletImageURL
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="Title Image URL"
+                                fieldLabel="Title Image URL"
+                                name="./titletImageURL"
+                                rootPath="/content/dam"/>
+                            <titleImageAlt
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Title Image Alt"
+                                fieldLabel="Title Image Alt"
+                                name="./titleImageAlt"/>
+                            <descText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Desc Text"
+                                fieldLabel="Desc Text"
+                                name="./descText"/>
+                            <productName
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="This value is used for Analytics purpose"
+                                fieldLabel="Product Name"
+                                name="./productName"/>
+                            <colorModels
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                class="full-width"
+                                fieldDescription="Click 'Add field' to add a color model"
+                                fieldLabel="Color Models">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    acs-commons-nested="NODE_STORE"
+                                    name="./colorModelItems">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                        method="absolute"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <colorCode
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/common/tagspicker"
+                                                    fieldDescription="Color Code"
+                                                    fieldLabel="Color Code"
+                                                    name="./colorCode"
+                                                    pickerMultiSelect="{Boolean}false"
+                                                    rootPath="/etc/tags/marketing/product/colors"/>
+                                                <productImageURL
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldDescription="Product Image URL"
+                                                    fieldLabel="Product Image URL"
+                                                    name="./productImageURL"
+                                                    rootPath="/content/dam"/>
+                                                <productImageAlt
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldDescription="Product Image Alt"
+                                                    fieldLabel="Product Image Alt"
+                                                    name="./productImageAlt"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </colorModels>
+                            <fieldsetBtn1
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Button 1"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <btnText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="Button Text"
+                                                fieldLabel="Button Text"
+                                                name="./btnText1"/>
+                                            <link
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                fieldDescription="Link"
+                                                fieldLabel="Link"
+                                                name="./link1"
+                                                rootPath="/content/huawei-cbg-site"/>
+                                            <openInNewPage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                name="./openInNewPage1"
+                                                text="Open in New Page"
+                                                value="true"/>
+                                            <cat
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="This value is used for Analytics purpose"
+                                                fieldLabel="Analytics Category (cat)"
+                                                name="./cat1"/>
+                                            <act
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="This value is used for Analytics purpose"
+                                                fieldLabel="Analytics Action (act)"
+                                                name="./act1"/>
+                                            <lab
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="This value is used for Analytics purpose"
+                                                fieldLabel="Analytics Label (lab)"
+                                                name="./lab1"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </fieldsetBtn1>
+                            <fieldsetBtn2
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Button 2"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <btnText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="Button Text"
+                                                fieldLabel="Button Text"
+                                                name="./btnText2"/>
+                                            <link
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                fieldDescription="Link"
+                                                fieldLabel="Link"
+                                                name="./link2"
+                                                rootPath="/content/huawei-cbg-site"/>
+                                            <openInNewPage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                name="./openInNewPage2"
+                                                text="Open in New Page"
+                                                value="true"/>
+                                            <cat
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="This value is used for Analytics purpose"
+                                                fieldLabel="Analytics Category (cat)"
+                                                name="./cat2"/>
+                                            <act
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="This value is used for Analytics purpose"
+                                                fieldLabel="Analytics Action (act)"
+                                                name="./act2"/>
+                                            <lab
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="This value is used for Analytics purpose"
+                                                fieldLabel="Analytics Label (lab)"
+                                                name="./lab2"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </fieldsetBtn2>
+                        </items>
+                    </column>
+                </items>
+            </contentTab>
+        </items>
+    </content>
+</jcr:root>

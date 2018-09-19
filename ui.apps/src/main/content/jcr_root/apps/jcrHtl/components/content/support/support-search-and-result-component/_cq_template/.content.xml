@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    apiUrl="http://consumer.huawei.com/support/services/service/isearch/open/list"
+    emptyMessage="Please enter a search term"
+    inputPlaceHolder="Enter the product model or keywords"
+    length2Message="Enter two words at least"
+    length90Message="Key length of input cannot be bigger than 90"
+    loadMoreText="LOAD MORE"
+    moreTermMessage="Please enter more term"
+    noResultsMessage="Sorry, No results were found."
+    pageSize="5"
+    title="Search Results for">
+    <resultTab jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            key="faqs"
+            value="FAQs"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            key="manual"
+            value="Manuals"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            key="software"
+            value="Downloads"/>
+    </resultTab>
+    <defaultItems jcr:primaryType="nt:unstructured">
+        <_x0034_
+            jcr:primaryType="nt:unstructured"
+            imageAlt="P9 Lite"
+            imageUrl="/content/dam/huawei-cbg-site/en-master/support/c8655-v27-sup.png"
+            openInNewPage="true"
+            redirectLink="http://consumer.huawei.com/testv27-demo/support/mobile-phones/c8655-v27-sup.htm"
+            title="P9 Lite"/>
+        <_x0035_
+            jcr:primaryType="nt:unstructured"
+            imageAlt="Mate 9"
+            imageUrl="/content/dam/huawei-cbg-site/en-master/support/mate9p-sup-v27.png"
+            openInNewPage="true"
+            redirectLink="http://consumer.huawei.com/testv27-demo/support/mobile-phones/c8655-v27-sup.htm"
+            title="Mate 9"/>
+        <_x0036_
+            jcr:primaryType="nt:unstructured"
+            imageAlt="HUAWEI P10"
+            imageUrl="/content/dam/huawei-cbg-site/en-master/support/c8500s-v27-sup.png"
+            openInNewPage="true"
+            redirectLink="http://consumer.huawei.com/testv27-demo/support/mobile-phones/c8500s-v27-sup.htm"
+            title="HUAWEI P10"/>
+        <_x0037_
+            jcr:primaryType="nt:unstructured"
+            imageAlt="HUAWEI P9"
+            imageUrl="/content/dam/huawei-cbg-site/en-master/support/d3-sup.png"
+            openInNewPage="true"
+            redirectLink="http://consumer.huawei.com/testv27-demo/support/mobile-phones/d3-sup.htm"
+            title="HUAWEI P9"/>
+        <_x0038_
+            jcr:primaryType="nt:unstructured"
+            imageAlt="test1"
+            imageUrl="/content/dam/huawei-cbg-site/en-master/support/c8511-v27-sup1.png"
+            openInNewPage="true"
+            redirectLink="http://consumer.huawei.com/testv27-demo/support/mobile-phones/c8511-v27-sup1.htm"
+            title="test1"/>
+    </defaultItems>
+</jcr:root>

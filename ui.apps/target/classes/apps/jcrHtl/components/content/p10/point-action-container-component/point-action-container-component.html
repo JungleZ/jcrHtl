@@ -1,0 +1,21 @@
+     <p style="text-align: center; color:black;margin:0px;padding:0px;" data-sly-test="${wcmmode.edit}">Level 2 - Point Action Container Component</p>
+     <div class="special type1 section leo-design-more leo-design-more-watchband backgroundF4 ${wcmmode.edit?'editMode':''}" data-sly-use.containers="com.huawei.consumer.site.core.components.p10.PointActionContainerComponent">
+
+        <div class="leo-cont" data-act="${properties.act}">
+            <div class="leo-hot-list pc" boxid="watchbandBox">
+            <sly data-sly-list.subcomp="${containers.subComps}">
+                <div class="leo-hot watchband0${subcomp.name} ${subcomp.name=='1'?'active':''}" eventaction="${subcomp.title}" data-latitude="${subcomp.latitude}" data-longitude="${subcomp.longitude}" data-latitude-mobile="${subcomp.latitudeMobile}" data-longitude-mobile="${subcomp.longitudeMobile}" style="${'top:{0}px;left:{1}px;' @ format=[subcomp.latitude,subcomp.longitude],context='styleString'}"></div>
+
+            </sly>
+
+        </div>
+
+
+          <sly data-sly-list="${containers.subCompNames}">
+              <sly data-sly-resource="${@path=item, resourceType='/apps/huawei-cbg-site/components/content/p10/point-action-sub-component' , decorationTagName=wcmmode.edit?'div':''}"></sly> 
+          </sly>
+
+
+      </div>
+
+       </div>

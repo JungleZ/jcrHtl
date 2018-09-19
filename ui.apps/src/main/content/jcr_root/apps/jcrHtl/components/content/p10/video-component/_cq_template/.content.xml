@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2017-04-19T14:55:41.394+08:00"
+    jcr:createdBy="admin"
+    jcr:lastModified="{Date}2017-04-19T17:31:12.702+08:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="huawei-cbg-site/components/content/p10/video-component"
+    animationImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/thinBoldBg.jpg"
+    description="HUAWEI P10 sets an industry benchmark for style and craftsmanship with the first hyper diamond-cut finishing on a smartphone,                     which adds strength and colour. Finishes also available in high gloss and sandblast."
+    desktop="/content/dam/huawei-cbg-site/common/component/mkt/p10/yjbk/video_bg_1000X650.jpg"
+    desktopPayerBackgroundImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/img/198367799.jpg"
+    desktopTitle="titleaaaaaaaaaaaaaaaaaaaa"
+    mobileBackground="/content/dam/huawei-cbg-site/common/component/mkt/p10/s-banner.jpg"
+    title="HUAWEI + LEICACOLOUR · STYLE · INNOVATION"
+    videoLink="/etc/designs/huawei-cbg-site/clientlib-p10/video/198367787.mp4">
+    <blocks jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            desktopPayerBackgroundImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/img/198367799.jpg"
+            title="TEST TEST"
+            videoPath="http://consumer-res.huaweistatic.com/resources/ucmupload/video/198367787.mp4"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            desktopPayerBackgroundImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/img/198367799.jpg"
+            title="TEST TEST"
+            videoPath="http://consumer-res.huaweistatic.com/resources/ucmupload/video/198367787.mp4"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            desktopPayerBackgroundImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/img/198367799.jpg"
+            title="TEST TEST"
+            videoPath="http://consumer-res.huaweistatic.com/resources/ucmupload/video/198367787.mp4"/>
+        <_x0034_
+            jcr:primaryType="nt:unstructured"
+            desktopPayerBackgroundImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/img/198367799.jpg"
+            title="TEST TEST"
+            videoPath="/content/dam/huawei-cbg-site/video/198367787.mp4"/>
+    </blocks>
+</jcr:root>

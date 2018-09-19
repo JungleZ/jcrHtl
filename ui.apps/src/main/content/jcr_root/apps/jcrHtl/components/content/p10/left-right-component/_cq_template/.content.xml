@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2017-04-18T18:31:17.262+08:00"
+    jcr:createdBy="admin"
+    jcr:lastModified="{Date}2017-04-19T21:37:30.927+08:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="huawei-cbg-site/components/content/p10/left-right-component"
+    animationEffect="right_left"
+    animationImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/yjbk/yjbk_cpt_zyjg_500X700px.png"
+    animationImageMobile="/content/dam/huawei-cbg-site/common/component/mkt/p10/designKVModel1.png"
+    animationImagePc="/content/dam/huawei-cbg-site/common/component/mkt/p10/yjbk/yjbk_cpt_zyjg_500X500px.png"
+    description="HUAWEI P10 sets an industry benchmark for style and craftsmanship with the first hyper diamond-cut finishing on a smartphone, which adds strength and colour. Finishes also available in high gloss and sandblast."
+    desktopBackgroundColor="#000000"
+    desktopBackgroundImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/yjbk/yjmdbg_1920X900.jpg"
+    mobileBackgroundColor="#000000"
+    mobileBackgroundImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/s-banner.jpg"
+    titleImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/black-logo.png"
+    titleText="COLOUR · STYLE · INNOVATION"
+    type="right_animation">
+    <blocks jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            bottomImageBlocksText="TEST TEST"
+            dscription="benchmark for style and craftsmanship with the first "
+            imagePath="/content/dam/huawei-cbg-site/common/component/mkt/p10/ico_isp-black.png"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            bottomImageBlocksText="TEST TEST"
+            dscription="benchmark for style and craftsmanship with the first "
+            imagePath="/content/dam/huawei-cbg-site/common/component/mkt/p10/ico_isp-black.png"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            bottomImageBlocksText="TEST TEST"
+            dscription="benchmark for style and craftsmanship with the first "
+            imagePath="/content/dam/huawei-cbg-site/common/component/mkt/p10/ico_isp-black.png"/>
+    </blocks>
+</jcr:root>

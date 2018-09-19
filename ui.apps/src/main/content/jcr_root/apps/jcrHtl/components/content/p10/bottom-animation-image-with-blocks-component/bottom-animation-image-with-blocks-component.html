@@ -1,0 +1,33 @@
+<p style="text-align: center; color:black;margin:0px;padding:0px;" data-sly-test="${wcmmode.edit}">Bottom Animation Image with Blocks Component</p>
+<sly data-sly-test.noneEffect="${(properties.animationEffect == 'none') ? '' : ''}"/>
+<sly data-sly-test.bottomTopEffect="${(properties.animationEffect == 'bottom_top') ? 'animate-up-pre animate-up' : ''}"/>
+<sly data-sly-test.topBottomEffect="${(properties.animationEffect == 'top_bottom') ? 'animate-down-pre animate-down' : ''}"/>
+<sly data-sly-test.leftRightEffect="${(properties.animationEffect == 'left_right') ? 'animate-right-pre animate-right' : ''}"/>
+<sly data-sly-test.rightLeftEffect="${(properties.animationEffect == 'right_left') ? 'animate-left-pre animate-left' : ''}"/>
+<!--Type 9 上下结构：纯色背景+标题+描述+图片+动态图--start-8.2.4.19	Level 2 -  Bottom Animation Image with Blocks-->
+        <div class="two-level type9">
+
+            <div class="title">
+                <h2>${properties.title}</h2>
+                <p>
+                    ${properties.description}
+                </p>
+            </div>
+            <div class="content-icon">
+                <ul class="content-icon-ul" data-sly-use.comp="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='blocks'}" data-sly-list.blocks="${comp.multifieldResources}"
+>
+                    <li>
+                        <span class="icon-title">${blocks.valueMap.title}</span>
+                        <img class="icon-img" alt="${blocks.valueMap.alt}" src="${blocks.valueMap.imagePath}">
+                        <span class="icon-descript">${blocks.valueMap.dscription}</span>
+                    </li>
+                    
+
+                </ul>
+            </div>
+            <div class="content">
+                <div class="content-center">
+                    <img class="${noneEffect || bottomTopEffect || topBottomEffect || leftRightEffect || rightLeftEffect}" src="${properties.animationImage }" />
+                </div>
+            </div>
+        </div>

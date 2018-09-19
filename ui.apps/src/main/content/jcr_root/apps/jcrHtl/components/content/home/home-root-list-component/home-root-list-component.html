@@ -1,0 +1,33 @@
+
+<sly  data-sly-use.tt="test.js"/>
+<div class="slideshow  ${tt.type}"   style="height: 430px; overflow: hidden;">
+	${tt.type}  
+    <div class="skidder-viewport" style="height: 430px;">
+        <div  class="skidder-wrapper"
+             style="height: 430px; left: -1080px; margin-left: 370px; transition: left 0.4s ease-out;">
+
+            <div class="slide skidder-slide skidder-clone skidder-clone-pre" style="height: 430px;">
+                <img src=""
+                     style="width: auto; height: 300px; margin-left: auto; margin-right: auto; display: block;">
+                <div class="prduct-infor">
+                    <p class="name">1111111</p>
+                    <p class="tag">11111111</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="skidder-prevwrapper skidder-clickwrapper visible-lg visible-md" data-direction="prev">
+            <div class="skidder-prev skidder-clickelement" style="height: 430px;"></div>
+        </div>
+        <div class="skidder-nextwrapper skidder-clickwrapper  visible-lg visible-md" data-direction="next">
+            <div class="skidder-next skidder-clickelement" style="height: 430px;"></div>
+        </div>
+        <div class="skidder-pager">
+            <div class="skidder-pager-dot active" style="opacity: 1;"></div>
+            <div class="skidder-pager-dot" style="opacity: 1;"></div>
+            <div class="skidder-pager-dot" style="opacity: 1;"></div>
+        </div>
+    </div>
+</div>

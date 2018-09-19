@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Product List"
+    sling:resourceType="granite/ui/components/foundation/section">
+    <layout
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+    <items jcr:primaryType="nt:unstructured">
+        <column
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <root-path-all-phones
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        rootPath="/content/huawei-cbg-site"
+                        fieldLabel="Phones Root Path"
+                        name="./rootPathAllPhones"/>
+                <enableCompare
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldDescription="This will show compare button in each product"
+                        fieldLabel="Enable Product Compare"
+                        name="./enableCompare">
+                    <items jcr:primaryType="nt:unstructured">
+                        <yes
+                            jcr:primaryType="nt:unstructured"
+                            text="Yes"
+                            value="true"/>
+                        <no
+                            jcr:primaryType="nt:unstructured"
+                            text="No"
+                            value="false"/>
+                    </items>
+                </enableCompare>
+                <back-to-menu
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Back to menu label"
+                        name="./backText"/>
+                <back-to-menu-desc
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Back to menu description"
+                        name="./backTextDesc"/>
+                <compare-label
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Compare product label"
+                        name="./compareLabel"/>
+                <selected-label
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Selected product label"
+                        name="./selectedLabel"/>
+                <cancel-label
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                    fieldLabel="Load more product label"
+                    name="./loadmoreLabel"/>
+                <noResultMsg
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                    fieldLabel="No Result Message"
+                    name="./noResultMsg"/>
+
+                <filters
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Filters"
+                    sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                        <filter-series
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/common/tagspicker"
+                                fieldLabel="Series Filter"
+                                name="./filterSeries"
+                                value=""/>
+                        <filter-screen-size
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/common/tagspicker"
+                                fieldLabel="Screen Size Filter"
+                                name="./filterScreenSize"
+                                value=""/>
+                        <filter-features
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/common/tagspicker"
+                                fieldLabel="Feature Filter"
+                                name="./filterFeatures"
+                                value=""/>
+                        <filter-camera
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/common/tagspicker"
+                                fieldLabel="Camera Filter"
+                                name="./filterCamera"
+                                value=""/>
+                    </items>
+                </filters>
+            </items>
+        </column>
+    </items>
+</jcr:root>

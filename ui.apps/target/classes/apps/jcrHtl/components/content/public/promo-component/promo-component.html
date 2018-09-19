@@ -1,0 +1,35 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Promo Component</p>
+<sly data-sly-use.promoComp="com.huawei.consumer.site.core.components.publics.PromoComponent" data-sly-test="${promoComp}">
+<div class="container conv3_promo_page_wrap" id="y-cbg-main">
+	<div class="container-1 y-press-list-all" id="events_list">
+		<div class="promo_content">
+    		<h1>${properties.componentTitle}</h1>
+    		 <!--content list start-->
+		    <ul id="x-press-list" class="clearfix promo_list" data-sly-list.promoItem="${promoComp.promoList}">
+		    	<sly data-sly-test.limitPromo="${promoItemList.count > 5 ? 'display: none' : ''}" />
+		    	<sly data-sly-use.linkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @ link=promoItem.promoUrl }" />
+		        <li class="press-list2-item" style="${limitPromo @ context='styleString'}">
+		            <div class="cbg-text y-list-item">
+		                <div class="information">
+		                    <a href="${linkHelper.link}" class="a-1">
+					          <img time="" alt="${promoItem.promoAlt}" src="${promoItem.promoImage}" />
+					      	</a>
+		                    <div class="y-promo-list">
+		                        <div class="title">
+		                            <h2><a cat="Promo" act="${promoItem.promoTitle}" lab="${linkHelper.link}" href="${linkHelper.link}" class="a-2" title="${promoItem.promoTitle}"><strong>${promoItem.promoTitle}</strong></a></h2>
+		                            <p class="p-2 y-numdate-show">${promoItem.publicationDate}</p>
+		                            <p class="p-3" title="${promoItem.summary}">${promoItem.summary}</p>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </li>
+		    </ul>
+		    <!--content list end-->
+		    <div data-sly-test="${limitPromo}" class="load_more">
+		        <div class="text" id="view-more-btn"><a href="javascript:;"><span>+</span>${properties.loadMoreText}</a></div>
+		    </div>
+		</div>
+	</div>
+</div>
+</sly>

@@ -1,0 +1,23 @@
+    <div class="watchbandBox watchbandBox0${resource.name} ${resource.name=='1'?'':'boxHide'}">
+        <div class="leo-design-more-box0${resource.name} mob">
+            <div class="leo-hot-list mob" boxid="watchbandBox">
+            </div>
+            <img class="watchbandImg" alt="${properties.title}" src="${properties.mobileProductImage}">
+        </div>
+        <ul class="leo-design-watchband-color mob" data-sly-use.comp="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='mobileColorBoxs'}" data-sly-list.boxs="${comp.multifieldResources}">
+          <li class="${boxsList.first?'active':''}" data-product-image="${boxs.productImage}"><span class="colorBoxs${boxsList.index}" style="${'background: url({0});' @ format=boxs.colorImage,context='styleString'}"></span></li>
+        </ul>
+        <div class="leo-design-more-watchband-copy fl">
+            <div class="design-title"><img alt="${properties.title}" src="${properties.titleImage}"></div>
+            <h3 class="leo-cont-title">${properties.title}</h3>
+            <p class="leo-cont-copy">${properties.description}</p>
+            <ul class="leo-design-watchband-color pc" data-sly-use.dcomp="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='desktopColorBoxs'}" data-sly-list.dboxs="${dcomp.multifieldResources}">
+               <li class="${dboxsList.first?'active':''}" data-product-image="${dboxs.productImage}"><span class="colorBoxs${dboxsList.index}" style="${'background: url({0});' @ format=dboxs.colorImage,context='styleString'}"></span></li>
+            </ul>
+        </div>
+        <div class="leo-design-more-watchband-img pc">
+         <img class="watchbandImg" alt="${properties.title}" src="${properties.desktopProductImage}">
+        </div>
+
+    </div>
+

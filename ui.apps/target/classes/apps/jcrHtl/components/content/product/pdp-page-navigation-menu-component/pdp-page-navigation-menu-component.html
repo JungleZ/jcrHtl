@@ -1,0 +1,43 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">PDP Page Navigation Menu Component</p>
+<sly data-sly-use.pdpPageNavigationMenuLogic="com.huawei.consumer.site.core.components.product.PdpPageNavigationMenuComponent" ></sly>
+
+<div id="pdp_nav" class="conv3_nav conv3_pdp_nav" data-pdpmenu-currentpagename="${pdpPageNavigationMenuLogic.pdpPageMenuCurrentPageName}">     
+   	<div class="navcon">        
+        <div class="logo_wrap" data-sly-use.logoLinkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=pdpPageNavigationMenuLogic.logoLink}">
+            <a cat="Navigation" act="Click On Logo" lab="<page title>" href="${logoLinkHelper.link}" class="a-common">
+                <img class="logo" src="${pdpPageNavigationMenuLogic.logoImageUrl}" alt="${pdpPageNavigationMenuLogic.logoImageAlt}">
+            </a>
+        </div>
+			<div class="menu">                
+				<div class="tit">
+       			<span>${"MENU" @i18n}</span>
+      	    </div>
+		 <ul >                    
+			 <li id="pdpComponentFeatrues"   data-sly-test="${pdpPageNavigationMenuLogic.featurePageUrl}" ><a x-cq-linkchecker="valid" href="${pdpPageNavigationMenuLogic.featurePageUrl@extension='html'}" class="a-subsection a-common" cat="PDP Navigation" act="Click on Features" lab="<product name>">${"FEATURES" @i18n}</a><i></i></li>     
+		     <li id="pdpComponentSpecification" data-sly-test="${pdpPageNavigationMenuLogic.specPageUrl}"><a x-cq-linkchecker="valid"  href="${pdpPageNavigationMenuLogic.specPageUrl@extension='html'}" class="a-subsection a-common" cat="PDP Navigation" act="Click on Specifications" lab="<product name>">${"SPECIFICATIONS" @i18n}</a><i></i></li>       
+			 <li id="pdpComponentProductSupport" data-sly-test="${pdpPageNavigationMenuLogic.supportPageUrl}"><a x-cq-linkchecker="valid" href="${pdpPageNavigationMenuLogic.supportPageUrl@extension='html'}" class="a-subsection a-common" cat="PDP Navigation" act="Click on Support" lab="<product name>">${"PRODUCT SUPPORT" @i18n}</a><i></i></li>         
+		 </ul>      
+         <sly data-sly-test="${pdpPageNavigationMenuLogic.getPdpPageMenuCurrentPageName=='feature'}" >
+			 	<div class="side_nav" data-sly-test="${pdpPageNavigationMenuLogic.isEmptyParterSection&&pdpPageNavigationMenuLogic.getCanBuyValue&&!pdpPageNavigationMenuLogic.getBuyLinkValue}">             
+						<a id="pdpComponentButtom" class="btn_buy a-common a-pdp-nav-buy" cat="Buy Clicks" act="Click on Floating Button" lab="${pdpPageNavigationMenuLogic.getfeatureMarketingName}" href="javascript:;" onclick="go_buy();" style="display: block;">${"BUY" @i18n}</a>
+				</div>    
+
+			 	<div class="side_nav" data-sly-test="${pdpPageNavigationMenuLogic.getCanBuyValue&&pdpPageNavigationMenuLogic.getBuyLinkValue}">             
+						<a id="pdpComponentButtom" class="btn_buy a-common a-pdp-nav-buy" cat="Buy Clicks" act="Click on Floating Button" lab="${pdpPageNavigationMenuLogic.getfeatureMarketingName}" href="${pdpPageNavigationMenuLogic.getBuyLinkValue}" style="display: block;">${"BUY" @i18n}</a>
+				</div> 
+          </sly>
+
+           <sly data-sly-test="${pdpPageNavigationMenuLogic.getPdpPageMenuCurrentPageName=='spec'||pdpPageNavigationMenuLogic.getPdpPageMenuCurrentPageName=='otherSpec'}" >
+			 	<div class="side_nav" data-sly-test="${pdpPageNavigationMenuLogic.isEmptyParterSection&&pdpPageNavigationMenuLogic.getCanBuyValue&&!pdpPageNavigationMenuLogic.getBuyLinkValue}">             
+						<a id="pdpComponentButtom" class="btn_buy a-common a-pdp-nav-buy" cat="Buy Clicks" act="Click on Floating Button" lab="${pdpPageNavigationMenuLogic.getfeatureMarketingName}" href="${pdpPageNavigationMenuLogic.getFeaturePageAnchorUrl}"  style="display: block;">${"BUY" @i18n}</a>
+				</div>    
+			 	<div class="side_nav" data-sly-test="${pdpPageNavigationMenuLogic.getCanBuyValue&&pdpPageNavigationMenuLogic.getBuyLinkValue}">             
+                    <a id="pdpComponentButtom" class="btn_buy a-common a-pdp-nav-buy" cat="Buy Clicks" act="Click on Floating Button" lab="${pdpPageNavigationMenuLogic.getfeatureMarketingName}" href="${pdpPageNavigationMenuLogic.getBuyLinkValue}" style="display: block;">${"BUY" @i18n}</a>
+				</div> 
+            </sly>
+
+		</div>       
+	 </div>       
+</div>      
+
+

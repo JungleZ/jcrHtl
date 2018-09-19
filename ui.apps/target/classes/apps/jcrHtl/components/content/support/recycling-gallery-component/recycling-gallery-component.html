@@ -1,0 +1,17 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Recycling Gallery Component</p>
+<div class="conv3_recyle_content">
+	<div class="grp_kv">
+		<div class="kv_gallery" style="background: url(${properties.bgImage @ context='html'}) center center no-repeat;">
+			<img src="${properties.bgImage}" alt="${properties.title}"/>
+		</div>
+		<div class="kv_txt">
+			<div class="kv_txt_wrap">
+				<h1>${properties.title @ content='html'}</h1>
+				<p>${properties.contentText @ content='html'}</p>
+				<sly data-sly-use.completePath="${'com.huawei.consumer.site.core.components.home.PresenterComponent' @ path=properties.buttonUrl}">
+					<a href="${completePath.linkCompletePath}" target="${properties.newTab ? '_blank' : '_self'}">${properties.buttonText}</a>
+				</sly>
+			</div>
+		</div>
+	</div>
+</div>

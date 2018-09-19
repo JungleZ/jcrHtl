@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <img/>
+    <imgs/>
+    <jcr:content
+        cq:lastModified="{Date}2018-05-14T21:41:14.932+08:00"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="jcrHtl Design"
+        sling:resourceType="wcm/core/components/designer">
+        <page jcr:primaryType="nt:unstructured">
+            <par
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/parsys"
+                components="[group:jcrHtl]">
+                <colctrl
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="jcrHtl/components/content/colctrl"
+                    layouts="2;cq-colctrl-lt0&#x9;2 Columns (50%, 50%)"/>
+                <cq:authoring jcr:primaryType="nt:unstructured">
+                    <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="image/*"
+                            droptarget="image"
+                            resourceType="jcrHtl/components/content/image"
+                            type="Images"/>
+                    </assetToComponentMapping>
+                </cq:authoring>
+            </par>
+            <logo
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="jcrHtl/components/structure/logo"
+                absParent="2">
+                <image/>
+            </logo>
+        </page>
+        <home-page jcr:primaryType="nt:unstructured">
+            <content
+                jcr:lastModified="{Date}2018-05-14T21:41:14.922+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/parsys"
+                components="[group:Huawei CBG Site-Common,group:Huawei CBG Site-Contact Us,group:Huawei CBG Site-Home,group:Huawei CBG Site-Legal,group:Huawei CBG Site-P10,group:Huawei CBG Site-Press,group:Huawei CBG Site-Product,group:Huawei CBG Site-Public,group:Huawei CBG Site-Support,group:jcrHtl]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </content>
+        </home-page>
+    </jcr:content>
+    <clientlib-all/>
+    <clientlib-site/>
+    <favicon.ico/>
+    <fonts/>
+    <clientlib-home/>
+    <static/>
+    <TCL.png/>
+</jcr:root>

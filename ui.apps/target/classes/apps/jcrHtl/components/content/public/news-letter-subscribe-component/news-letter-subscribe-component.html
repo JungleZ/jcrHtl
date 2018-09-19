@@ -1,0 +1,23 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">News Letter Subscribe Component</p>
+<sly data-sly-use.newsLetterSubscribeComp="com.huawei.consumer.site.core.components.publics.NewsLetterSubscribeComponent">
+    <div class="sign_up" data-sly-test="${!newsLetterSubscribeComp.hideSubscribe}">
+        <div class="inner">
+            <input id="email_input" placeholder="${newsLetterSubscribeComp.placeHolder}" data-sly-test="${newsLetterSubscribeComp.placeHolder}"> 
+            <a id="subscribe_email" class="a-newsletter" href="javascript:;" data-sly-test="${newsLetterSubscribeComp.defaultSubscribeButtonText}">${newsLetterSubscribeComp.defaultSubscribeButtonText}</a>
+            <a id="unsubscribe_email" class="a-newsletter" href="javascript:;" data-sly-test="${newsLetterSubscribeComp.defaultUnsubscribeButtonText}">${newsLetterSubscribeComp.defaultUnsubscribeButtonText}</a>
+            <p class="attention">${newsLetterSubscribeComp.errorMessage}</p>
+            <p class="attention2" style="display: none;">${newsLetterSubscribeComp.successSubscribeMessage}</p>
+            <p class="attention4" style="display: none;">${newsLetterSubscribeComp.successUnsubscribeMessage}</p>
+        </div>
+    <input type="hidden" id="defaultSubscribeButtonText" value="${newsLetterSubscribeComp.defaultSubscribeButtonText}">
+    <input type="hidden" id="defaultUnsubscribeButtonText" value="${newsLetterSubscribeComp.defaultUnsubscribeButtonText}">
+    <input type="hidden" id="successButtonText" value="${newsLetterSubscribeComp.successButtonText}">
+    <input type="hidden" id="failedSubscribeButtonText" value="${newsLetterSubscribeComp.failedSubscribeButtonText}">
+    <input type="hidden" id="failedUnsubscribeButtonText" value="${newsLetterSubscribeComp.failedUnsubscribeButtonText}">
+    <input type="hidden" id="errorSubscribeButtonText" value="${newsLetterSubscribeComp.errorSubscribeButtonText}">
+    <input type="hidden" id="errorUnsubscribeButtonText" value="${newsLetterSubscribeComp.errorUnsubscribeButtonText}">
+    <input type="hidden" id="errorMessage" value="${newsLetterSubscribeComp.errorMessage}">
+    <input type="hidden" id="apiSubcribeURL" value="${newsLetterSubscribeComp.apiSubcribeURL}">
+    <input type="hidden" id="apiUnsubcribeURL" value="${newsLetterSubscribeComp.apiUnsubcribeURL}">
+    </div>
+</sly>

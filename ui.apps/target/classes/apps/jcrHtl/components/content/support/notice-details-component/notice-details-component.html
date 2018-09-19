@@ -1,0 +1,18 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Notice Details Component</p>
+<div id="NoticeDetailsComponent" class="conv3_wrap">
+    <div class="conv3_content support_notice_dt" data-sly-use.apisConst="${'com.huawei.consumer.site.core.utils.APIsConstants'}" data-sly-use.apiHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.apiUrl, key=apisConst.SERVICE_BULLETIN_INFO_API_KEY}" 
+    	data-api-url="${apiHelper.apiUrl}"
+    	data-no-results-message="${properties.noResultsMessage}">
+     <div class="conv3_title_group">
+            <h1 class="title"></h1>
+            <p></p>
+     </div>
+        <section class="conv3_notice-details">
+           <div class="content"></div>
+            <div class="view_more" style="display:none">
+				<a data-sly-test="${properties.buttonUrl}"  href="${properties.buttonUrl}.html">${properties.buttonText} </a>
+				<a data-sly-test="${!properties.buttonUrl}"  href="#">${properties.buttonText} </a>
+            </div>
+        </section>
+    </div>    
+</div>

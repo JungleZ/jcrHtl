@@ -1,0 +1,23 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Product VIP Service Component</p>
+<sly data-sly-use.instanceComp="com.huawei.consumer.site.core.components.p10.ProductVipServiceComponent">
+	<div class="W-section W-section7VIPService">
+		<div class="W-Container">
+			<div class="W-vipHeader">
+				<img src="${properties.headerImageUrl @ context='html'}">
+			</div>
+			<h2 class="W-sectionTitle">${properties.title @ context='html'}</h2>
+			<div class="W-VIPIcoGroup" data-sly-list.item="${instanceComp.items}">
+				<div class="W-VIPIconList">
+					<div class="W-allicon ${item.iconClass}"></div>
+					<h3>${item.serviceTitle @ context='html'}</h3>
+					<p>${item.serviceDesc @ context='html'}</p>
+				</div>
+				<sly data-sly-test.lastItem="${itemList.last}">
+					<div class="clearfix"></div>
+				</sly>
+			</div>
+			<h2 class="W-TitleVIP2">${properties.footerDesc}</h2>
+			<a href="${properties.buttonLink}" class="W-VIPbtn">${properties.buttonText}</a>
+		</div>
+	</div>
+</sly>

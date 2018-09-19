@@ -1,0 +1,30 @@
+<p style="text-align: center; color: black;"
+	data-sly-test="${wcmmode.edit}">need help with Component</p>
+<div class="center">
+	<h2 class="mobile_tittle">${properties.title}</h2>
+	<sly data-sly-use.comp="com.huawei.consumer.site.core.components.support.NeedHelpWithComponent" 
+			data-sly-test="${comp.tabItem}">
+		<div class="product_tab clearfix" data-sly-list.tabItem="${comp.tabItem}">
+			<div class="menu">
+				<a href="javascript:;" class="${tabItemList.first ? 'active' : ''}">${tabItem.tabName}</a>
+			</div>
+			<sly data-sly-test.displayCSS="${tabItemList.first ? 'display:block' : 'display:none'}" />
+			<div class="product_list ${tabItemList.first ? 'conv3_visible' : ''}" 
+				style="${displayCSS @ context='styleString'}">
+				<ul class="list_box clearfix" data-sly-list.productItem="${tabItem.listProducts}">
+					<li class="phone_list ${productItem.hideInMobile ? 'hidden-xs' : ''}">
+						<a cat="${tabItem.tabName}" act="Click on ${productItem.title}" lab="SupportHomePage" href="${productItem.link}" class="a-sup-list" target="_blank">
+							<img alt="${productItem.title}" src="${productItem.image}" />
+							<p class="phone_name">${productItem.title}</p>
+						</a>
+					</li>
+				</ul>
+				<sly data-sly-test="${tabItem.viewAllLink || tabItem.viewAllText}">
+					<div class="view_more">
+						<a href="${tabItem.viewAllLink}">${tabItem.viewAllText}</a>
+					</div>
+				</sly>
+			</div>
+		</div>
+	</sly>
+</div>

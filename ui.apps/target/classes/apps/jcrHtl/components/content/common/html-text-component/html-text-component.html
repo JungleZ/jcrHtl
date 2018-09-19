@@ -1,0 +1,20 @@
+<!--/* html text component*/-->
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">HTML Text Component</p>
+<p data-sly-test="${wcmmode.edit}">Custom Style</p>
+<sly data-sly-test="${properties.customStyle}">
+	<style type="text/css">
+		${properties.customStyle @ context = 'unsafe'}	
+	</style>
+</sly>
+
+<p data-sly-test="${wcmmode.edit}">Html content</p>
+<sly data-sly-test="${properties.htmlContent}">
+	${properties.htmlContent @ context= 'unsafe' }
+</sly>
+
+<p data-sly-test="${wcmmode.edit}">Custom Javascript</p>
+<sly data-sly-test="${properties.customJs}">
+	<script type="text/javascript">
+		${properties.customJs @ context= 'unsafe' }
+	</script>
+</sly>

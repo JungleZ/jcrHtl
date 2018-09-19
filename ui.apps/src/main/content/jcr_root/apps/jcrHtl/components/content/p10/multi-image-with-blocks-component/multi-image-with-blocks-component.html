@@ -1,0 +1,39 @@
+<div class="special type4">
+
+    <div class="W-detailCommon-fluid">
+        <h3 class="W-detailSubTitle" data-sly-text="${properties.title}">ALWAYS ON. ALWAYS FAST.</h3>
+        <div class="W-detailConyWrap">
+            <p data-sly-text="${properties.description}">
+                HUAWEI P10 Plus’s 4 onboard antennas supports 4.5G networks for fast, stable connections – reaching data speeds up to 600 Mbps.
+            </p>
+            <p class="W-alwayOnTip" data-sly-text="${properties.tip}">*Tested in HUAWEI lab conditions. Actual speed varies based on local carrier network conditions.</p>
+
+        </div>
+        <div class="W-alwayOnBg">
+            <div class="desktop-background" style="${'background: url({0}) no-repeat center center;' @ format=properties.desktopImage,context='styleString'}"></div>
+            <div class="mobile-background" style="${'background: url({0}) no-repeat center center;' @ format=properties.mobileImage,context='styleString'}"></div>
+            <div class="W-rlWrap">
+                <sly data-sly-use.desktop="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='desktopImageLayer'}" data-sly-list="${desktop.multifieldResources}">
+                   <img class="W-respoisveImg W-hiddenMobi ${itemList.index == 0 ? 'netRight animate-X-right-pre' : ''} ${itemList.index == 1 ? 'netLeft animate-X-left-pre' : ''}"  data-sly-attribute.src="${item.imagePath}" data-sly-attribute.alt="${item.imageAlt}">
+                
+                </sly>
+                 <sly data-sly-use.mobile="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='mobileImageLayer'}" data-sly-list="${mobile.multifieldResources}">
+                   <img class="W-respoisveImg W-hiddenPc ${itemList.index == 0 ? 'netRight animate-X-right-pre' : ''} ${itemList.index == 1 ? 'netLeft animate-X-left-pre' : ''}"  data-sly-attribute.src="${item.imagePath}" data-sly-attribute.alt="${item.imageAlt}">
+
+                </sly>
+
+            </div>
+        </div>
+        <div class="W-OpticIcoGroup" data-sly-use.comp="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='blocks'}">
+
+            <div class="W-IconGroup" data-sly-list="${comp.multifieldResources}">
+                <div class="W-OpticIconList">
+                    <h3 data-sly-text="${item.title}">LARGE DISPLAY</h3>
+                    <div class="W-allicon" style="${'background: url({0}) no-repeat;' @ format=item.imagePath,context='styleString'}"></div>
+                    <p data-sly-text="${item.description}">5.5-inch 2K display; bolder colours, brighter detail.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

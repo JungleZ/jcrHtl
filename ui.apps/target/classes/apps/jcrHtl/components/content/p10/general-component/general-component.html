@@ -1,0 +1,130 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">General Component</p>
+
+
+<sly  data-generalcomponent-deskbackgroundimage="${properties.desktopBackgroundImage}" data-generalcomponent-desktopBackgroundColor="${properties.desktopBackgroundColor}"></sly>
+
+
+ <!--Type 6 pc背景图desktopBackgroundImage有值 innerWidth >= 768-->
+ <div data-sly-test="${properties.desktopBackgroundImage}" class="showDesktopBackgroundImage"style="${'background: url({0}) center center no-repeat;' @ format=properties.desktopBackgroundImage,context='styleString'}">
+    <div  id="generalComponent" class="one-level type6" >
+             <img data-sly-test="${properties.mobileBackgroundImage !=null}" class="mobile-background" src="${properties.mobileBackgroundImage}" />
+             <img data-sly-test="${properties.mobileBackgroundImage ==null}" class="mobile-background" style="background-color:${properties.mobileBackgroundColor@context='styleString'} ;height:1200px"/>
+        <div>
+            <div class="title">
+                <img data-sly-test="${properties.titleImage}" src="${properties.titleImage}" />
+                <h2>${properties.titleText}</h2>
+                <p>
+                   ${properties.description}
+                </p>
+            </div>
+            <div class="content-icon">
+    		  <ul class="content-icon-ul" data-sly-use.comp="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='blocks'}" data-sly-list.blocks="${comp.multifieldResources}">
+                    <li>
+                        <img class="icon-img"  src="${blocks.valueMap.imagePath}">
+                        <span class="icon-title">${blocks.valueMap.bottomImageBlocksText}</span>
+                    </li>
+                </ul>
+            </div>
+		  <sly data-sly-test="${properties.animationImage}">
+            <div class="content-bottom">
+                <img class="${properties.animationEffect == 'none'?'':''}${properties.animationEffect == 'bottom_top'?'animate-up-pre' : ''}${properties.animationEffect == 'top_bottom'?'animate-down-pre' : ''}${properties.animationEffect == 'right_left'?'animate-left-pre' : ''}${properties.animationEffect == 'left_right'?'animate-right-pre' : ''}"  src="${properties.animationImage}" />
+            </div>
+          </sly>
+        </div>
+
+    </div>
+
+</div>
+
+ <!--Type 6 pc背景图desktopBackgroundImage有值 innerWidth < 768-->
+ <div data-sly-test="${properties.desktopBackgroundImage}" class="hideMobileBackgroundImage">
+    <div  id="generalComponent" class="one-level type6" >
+             <img data-sly-test="${properties.mobileBackgroundImage !=null}" class="mobile-background" src="${properties.mobileBackgroundImage}" />
+             <img data-sly-test="${properties.mobileBackgroundImage ==null}" class="mobile-background" style="background-color:${properties.mobileBackgroundColor@context='styleString'} ;height:1200px"/>
+        <div>
+            <div class="title">
+                <img data-sly-test="${properties.titleImage}" src="${properties.titleImage}" />
+                <h2>${properties.titleText}</h2>
+                <p>
+                   ${properties.description}
+                </p>
+            </div>
+            <div class="content-icon">
+      <ul class="content-icon-ul" data-sly-use.comp="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='blocks'}" data-sly-list.blocks="${comp.multifieldResources}">
+                    <li>
+                        <img class="icon-img"  src="${blocks.valueMap.imagePath}">
+                        <span class="icon-title">${blocks.valueMap.bottomImageBlocksText}</span>
+                    </li>
+                </ul>
+            </div>
+		  <sly data-sly-test="${properties.animationImage}">
+            <div class="content-bottom">
+                <img class="${properties.animationEffect == 'none'?'':''}${properties.animationEffect == 'bottom_top'?'animate-up-pre' : ''}${properties.animationEffect == 'top_bottom'?'animate-down-pre' : ''}${properties.animationEffect == 'right_left'?'animate-left-pre' : ''}${properties.animationEffect == 'left_right'?'animate-right-pre' : ''}"  src="${properties.animationImage}" />
+            </div>
+          </sly>
+        </div>
+
+    </div>
+
+</div>
+
+ <!--Type 6 pc背景图desktopBackgroundImage没有值 innerWidth >= 768 -->
+  <div data-sly-test="${!properties.desktopBackgroundImage}" class="showDesktopBackgroundColor" style="${'background: {0};' @ format=properties.desktopBackgroundColor,context='styleString'}">
+	<div id="generalComponent" class="one-level type6" >
+             <img data-sly-test="${properties.mobileBackgroundImage !=null}" class="mobile-background" src="${properties.mobileBackgroundImage}" />
+             <img data-sly-test="${properties.mobileBackgroundImage ==null}" class="mobile-background" style="background-color:${properties.mobileBackgroundColor@context='styleString'} ;height:1200px"/>
+        <div>
+            <div class="title">
+                <img data-sly-test="${properties.titleImage}" src="${properties.titleImage}" />
+                <h2>${properties.titleText}</h2>
+                <p>${properties.description} </p>
+            </div>
+        	<div class="content-icon">
+      			<ul class="content-icon-ul" data-sly-use.comp="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='blocks'}" data-sly-list.blocks="${comp.multifieldResources}">
+                   	 <li>
+                      	  <img class="icon-img"  src="${blocks.valueMap.imagePath}">
+                      	  <span class="icon-title">${blocks.valueMap.bottomImageBlocksText}</span>
+                     </li>
+                 </ul>
+        	 </div>
+			 <sly data-sly-test="${properties.animationImage}">
+          	  <div class="content-bottom">
+              	  <img class="${properties.animationEffect == 'none'?'':''}${properties.animationEffect == 'bottom_top'?'animate-up-pre' : ''}${properties.animationEffect == 'top_bottom'?'animate-down-pre' : ''}${properties.animationEffect == 'right_left'?'animate-left-pre' : ''}${properties.animationEffect == 'left_right'?'animate-right-pre' : ''}"  src="${properties.animationImage}" />
+         	   </div>
+        	 </sly>
+       </div>
+    </div>
+ </div>
+
+ <!--Type 6 pc背景图desktopBackgroundImage没有值 innerWidth < 768 -->
+  <div data-sly-test="${!properties.desktopBackgroundImage}" class="hideDesktopBackgroundColor">
+	<div id="generalComponent" class="one-level type6" >
+             <img data-sly-test="${properties.mobileBackgroundImage !=null}" class="mobile-background" src="${properties.mobileBackgroundImage}" />
+             <img data-sly-test="${properties.mobileBackgroundImage ==null}" class="mobile-background" style="background-color:${properties.mobileBackgroundColor@context='styleString'} ;height:1200px"/>
+        <div>
+            <div class="title">
+                <img data-sly-test="${properties.titleImage}" src="${properties.titleImage}" />
+                <h2>${properties.titleText}</h2>
+                <p>${properties.description} </p>
+            </div>
+        	<div class="content-icon">
+      			<ul class="content-icon-ul" data-sly-use.comp="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='blocks'}" data-sly-list.blocks="${comp.multifieldResources}">
+                   	 <li>
+                      	  <img class="icon-img"  src="${blocks.valueMap.imagePath}">
+                      	  <span class="icon-title">${blocks.valueMap.bottomImageBlocksText}</span>
+                     </li>
+                 </ul>
+        	 </div>
+			 <sly data-sly-test="${properties.animationImage}">
+          	  <div class="content-bottom">
+              	  <img class="${properties.animationEffect == 'none'?'':''}${properties.animationEffect == 'bottom_top'?'animate-up-pre' : ''}${properties.animationEffect == 'top_bottom'?'animate-down-pre' : ''}${properties.animationEffect == 'right_left'?'animate-left-pre' : ''}${properties.animationEffect == 'left_right'?'animate-right-pre' : ''}"  src="${properties.animationImage}" />
+         	   </div>
+        	 </sly>
+       </div>
+    </div>
+ </div>
+
+
+
+
+

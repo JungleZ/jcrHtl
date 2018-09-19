@@ -1,0 +1,9 @@
+<!--container-component-->
+<p style="text-align: center; color:black;margin:0px;padding:0px;" data-sly-test="${wcmmode.edit}">Level 2 Container Component</p>
+ <div class="W-expandBtnWrap" data-act="${properties.act}">
+        <button class="twolevel-open-btn W-trigger" style="display: block;"> <span class="W-trigger-clip"> <span class="W-trigger-icon"></span> </span> <span class="W-trigger-label">${properties.learnMoreText}</span> </button>
+        <button class="twolevel-close-btn W-trigger btn-learnmore-close" style="display: none;"> <span class="W-trigger-clip"> <span class="W-trigger-icon"></span> </span> <span class="W-trigger-label"> </span> </button>
+    </div>
+    <div class="W-designDetail" style="${wcmmode.edit?'':'overflow:hidden; height:0' @context='styleString'}">
+        <sly data-sly-resource="${ @path='level2_container', resourceType='wcm/foundation/components/parsys'}" />    
+    </div>

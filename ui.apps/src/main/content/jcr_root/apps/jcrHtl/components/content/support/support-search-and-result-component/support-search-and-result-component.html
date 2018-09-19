@@ -1,0 +1,94 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Support Search And Result Component</p>
+<sly data-sly-use.supportSearch="com.huawei.consumer.site.core.components.support.SupportSearchAndResultComponent" data-sly-test="${supportSearch}">
+	<div class="support-search-and-result-comp"
+		data-lag-enter-search-term="${properties.emptyMessage}"
+		data-page-size="${properties.pageSize}"
+		data-tag-match="${supportSearch.tagMatch}"
+		data-api-url="${supportSearch.apiUrl}"
+		data-no-results-message="${properties.noResultsMessage}"
+		data-length-90-message="${properties.length90Message}"
+		data-length-2-message="${properties.length2Message}"
+		data-more-term-message="${properties.moreTermMessage}"
+	>
+		<!--top conv3_content start-->
+		<div class="search_bar">
+			<h1>${properties.title} '<span class="search_pro_name"></span>'</h1>
+			<form action="">
+				<input type="text" class="my_keys" id="fill_keywords" maxlength="50" placeholder='${properties.inputPlaceHolder}'>
+				<i class="res-search-icon"></i>
+				<a class="btn" id="search" href="javascript:;"></a>
+				<div class="sup_pro_list autocomplete-suggestions" style="display:none;">
+				</div>
+			</form>
+			<ul id="support_prolist" class="sup_product_list clearfix"></ul>
+			<div class="support-top3">
+				<ul class="search-recommend-prolist clearfix" id="ucm_sup_prolist"
+					style="display:none" data-sly-list.item="${supportSearch.defaultItems}">
+					<li class="clearfix" data-sly-use.itemLinkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=item.redirectLink}">
+						<a href="${itemLinkHelper.link}" target="${item.openInNewPage ? '_blank' : ''}">
+							<img alt="${item.imageAlt}" title="${item.title}" src="${item.imageUrl}"/>
+						</a>
+						<div>
+							<h2><a href="${itemLinkHelper.link}" class="title" target="${item.openInNewPage ? '_blank' : ''}"><span>${item.title}</span></a></h2>
+							<p class="clearfix">
+						</div>
+					</li>
+				</ul>
+				<script>
+					if(window.location.host.indexOf("consumer.huawei.com") > -1){
+						$("#ucm_sup_prolist a").each(function(){
+							var _u = $(this).attr("href")
+							if(_u.indexOf(".htm") < 0){
+								var _u1 = _u.substring(0,_u.lastIndexOf("/"))
+								var p = _u.substring(_u.lastIndexOf("/"),_u.length).toLowerCase()
+								_u = _u1 + p + ".htm"
+								$(this).attr("href",_u)
+							}
+						})
+					}
+				</script>
+			</div>
+		</div>
+		<!--top search_bar end-->
+		<div class="search_result">
+			<ul data-sly-list.resultTab="${supportSearch.resultTabList}">
+				<li class="result_menu ${resultTabList.first ? 'active' : ''}"><a href="javascript:;" type="${resultTab.key}">${resultTab.value}<span id="${'{0}_num' @ format=resultTab.key}"></span></a></li>
+				<li class="result_details">
+					<ul id="${'{0}_show_list' @ format=resultTab.key}" class="show_list"></ul>
+					<div class="load_more more_btn" id="${'{0}_load_more_btn' @ format=resultTab.key}"><a href="javascript:;"><span>+</span>${properties.loadMoreText}</a></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="top-product-clone" style="display:none">
+		<li class="clearfix">
+			<!--<a target="_blank"><img  width="155" height="155"></a>
+			<div><h2><a target="_blank" class="title"></a></h2></div>-->
+	
+			<a target="_blank">
+				<p><img width="" height=""></p>
+				<span class="title"></span>
+			</a>
+		</li>
+	</div>
+
+	<div id="download-clone" style="display:none">
+		<li class="all_search">
+			<a class="details_download_btn a-download no_press" cat="Download">
+				<h4></h4>
+				<p></p>
+			</a>
+		</li>
+	</div>
+
+	<div id="newline-clone" style="display:none">
+		<li class="all_search">
+			<a target="_blank">
+				<h4></h4>
+				<p></p>
+			</a>
+		</li>
+	</div>
+	<a href="${currentPage.path @ selectors = 'html'}" style="display:none" id="support-search-url"></a>
+	<input type="hidden" id="sup_search_num" value="-1">
+</sly>

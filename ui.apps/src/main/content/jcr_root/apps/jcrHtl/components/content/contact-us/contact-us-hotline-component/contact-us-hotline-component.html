@@ -1,0 +1,34 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Contact Us Hotline Component</p>
+<sly data-sly-use.hotlineComp="com.huawei.consumer.site.core.components.contactus.ContactUsHotlineComponent">
+	<div class="conv3_contact_hotline conv3_contact_module" data-countryApiUrl="${hotlineComp.countryApiUrl}" data-infoApiUrl="${hotlineComp.infoApiUrl}">
+		<h2 class="for_seo">${properties.titleForSeo}</h2>
+		<div class="desc">
+			<p>${properties.contactTitle}</p>
+			<p>${properties.descText}</p>
+		</div>
+		<div class="conv3_form_module">
+			<div class="tit cs_open" act="" f="0">
+				<span>+</span> ${properties.detailTitle}
+			</div>
+			<div class="content">
+				<div class="column">
+					<div class="left">
+						<div class="conv3_global_selector">
+							<div class="select first_select">
+								<span data-sitecode="" class="active"></span>
+								<ol id="hotline_country_region" _mark="${properties.mark}" style="display: block;">
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+				<ul class="list_text">
+					<li><span>${properties.hotlineLabel}</span><p id="hotline_support_number"></p></li>
+					<li><span>${properties.supportLanguageLabel}</span><p id="hotline_support_language"></p></li>
+					<li><span>${properties.supportTimeLabel}</span><p id="hotline_support_time"></p></li>
+					<li><span>${properties.remarkLabel}</span><p id="hotline_support_remark"></p></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</sly>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    cityErrorMessage="Please Select City"
+    defaultCityText="CITY"
+    defaultLocation="beijing"
+    defaultProvinceText="PROVINCE"
+    noResultMessage="There is no result"
+    noServiceMapLocationMessage="Sorry,the service center that you inquired can not be located temporarily."
+    popupButton1Text="Transit"
+    popupButton2Text="Driving"
+    popupSearchDefaultText="FROM"
+    provinceErrorMessage="Please Select Country"
+    submitButtonText="SUBMIT"
+    title="SEARCHING RECYLING POINT"/>

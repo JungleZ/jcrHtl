@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component name="com.community.htl.core.CustomStep">
+        <implementation class="com.community.htl.core.CustomStep"/>
+        <service servicefactory="false">
+            <provide interface="com.adobe.granite.workflow.exec.WorkflowProcess"/>
+        </service>
+        <property name="service.description" value="My First Workflow Step Implementation."/>
+        <property name="service.vendor" value="WorkflowTag"/>
+        <property name="process.label" value="Outsite My First Workflow Step "/>
+        <property name="service.pid" value="com.community.htl.core.CustomStep"/>
+        <reference name="resolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" cardinality="1..1" policy="static" bind="bindResolverFactory" unbind="unbindResolverFactory"/>
+    </scr:component>
+</components>

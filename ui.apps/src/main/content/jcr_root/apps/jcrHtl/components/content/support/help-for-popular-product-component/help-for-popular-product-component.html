@@ -1,0 +1,24 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Help For Popular Product Component</p>
+<sly data-sly-use.helpComp="com.huawei.consumer.site.core.components.support.HelpForPopularProductComponent">
+	<div class="bottom" >
+		<h2>${properties.title}</h2>
+		<!--/* Begin Edit Mode */-->
+		<div data-sly-list.item="${helpComp.items}" data-sly-test="${wcmmode.edit}">
+			<p><strong>Begin ${item}</strong></p>
+			<div class="section">
+				<div class="submenu editor">
+					<sly data-sly-resource="${item @ resourceType='huawei-cbg-site/components/content/support/help-for-popular-product-component/sub-product-component'}" />
+				</div>
+			</div>
+			<p><strong>End ${item}</strong></p>
+		</div>
+		<!--/* End Edit Mode */-->
+		<div class="section" data-sly-test="${!wcmmode.edit}">
+			<div class="submenu">
+				<div data-toggle-plugin data-sly-list.item="${helpComp.items}">
+					<sly data-sly-resource="${item @ resourceType='huawei-cbg-site/components/content/support/help-for-popular-product-component/sub-product-component'}" />
+				</div>
+			</div>
+		</div>
+	</div>
+</sly>

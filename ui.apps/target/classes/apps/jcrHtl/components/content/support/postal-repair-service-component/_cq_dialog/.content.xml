@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Postal Repair Service Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <contentTab
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Content"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Title"
+                                fieldLabel="Title"
+                                name="./title"/>
+                            <productTypeText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Product Type Text"
+                                fieldLabel="Product Type Text"
+                                name="./productTypeText"/>
+                            <selectProductTypePlaceholder
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Select Product Type Placeholder"
+                                fieldLabel="Select Product Type Placeholder"
+                                name="./selectProductTypePlaceholder"/>
+                            <productTypeErrorText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Product Type Error Text"
+                                fieldLabel="Product Type Error Text"
+                                name="./productTypeErrorText"/>
+                            <productModelText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Product Model Text"
+                                fieldLabel="Product Model Text"
+                                name="./productModelText"/>
+                            <productModelPlaceholder
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Product Model Placeholder"
+                                fieldLabel="Product Model Placeholder"
+                                name="./productModelPlaceholder"/>
+                            <productModelErrorText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Product Model Error Text"
+                                fieldLabel="Product Model Error Text"
+                                name="./productModelErrorText"/>
+                            <imeiText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="IMEI/SN Text"
+                                fieldLabel="IMEI/SN Text"
+                                name="./imeiText"/>
+                            <imeiErrorText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="IMEI/SN Error Text"
+                                fieldLabel="IMEI/SN Error Text"
+                                name="./imeiErrorText"/>
+                            <issueDescriptionText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Issue Description Text"
+                                fieldLabel="Issue Description Text"
+                                name="./issueDescriptionText"/>
+                            <issueDescriptionErrorText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Issue Description Error Text"
+                                fieldLabel="Issue Description Error Text"
+                                name="./issueDescriptionErrorText"/>
+                            <nameText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Name Text"
+                                fieldLabel="Name Text"
+                                name="./nameText"/>
+                            <nameErrorText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Name Error Text"
+                                fieldLabel="Name Error Text"
+                                name="./nameErrorText"/>
+                            <cityText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="City Text"
+                                fieldLabel="City Text"
+                                name="./cityText"/>
+                            <cityErrorText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="City Error Text"
+                                fieldLabel="City Error Text"
+                                name="./cityErrorText"/>
+                            <postalCodeText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Postal Code Text"
+                                fieldLabel="Postal Code Text"
+                                name="./postalCodeText"/>
+                            <postalCodeErrorText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Postal Code Error Text"
+                                fieldLabel="Postal Code Error Text"
+                                name="./postalCodeErrorText"/>
+                            <addressText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Address Text"
+                                fieldLabel="Address Text"
+                                name="./addressText"/>
+                            <addressErrorText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Address Error Text"
+                                fieldLabel="Address Error Text"
+                                name="./addressErrorText"/>
+                            <phoneNumberText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Phone Number Text"
+                                fieldLabel="Phone Number Text"
+                                name="./phoneNumberText"/>
+                            <phoneNumberErrorText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Phone Number Error Text"
+                                fieldLabel="Phone Number Error Text"
+                                name="./phoneNumberErrorText"/>
+                            <emailAddressText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Email Address Text"
+                                fieldLabel="Email Address Text"
+                                name="./emailAddressText"/>
+                            <emailAddressErrorText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Email Address Error Text"
+                                fieldLabel="Email Address Error Text"
+                                name="./emailAddressErrorText"/>
+                            <privacyPolicyText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="Privacy Policy Text"
+                                fieldLabel="Privacy Policy Text"
+                                name="./privacyPolicyText"/>
+                            <privacyPolicyErrorText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Privacy Policy Error Text"
+                                fieldLabel="Privacy Policy Error Text"
+                                name="./privacyPolicyErrorText"/>
+                            <verificationCodeText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Verification Code Text"
+                                fieldLabel="Verification Code Text"
+                                name="./verificationCodeText"/>
+                            <verificationCodeErrorText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Verification Code Error Text"
+                                fieldLabel="Verification Code Error Text"
+                                name="./verificationCodeErrorText"/>
+                            <submitButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Submit Button Text"
+                                fieldLabel="Submit Button Text"
+                                name="./submitButtonText"/>
+                            <alreadySubmitErrorText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Already Submit Error Text"
+                                fieldLabel="Already Submit Error Text"
+                                name="./alreadySubmitErrorText"/>
+                            <serviceTermTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Service Term Title"
+                                fieldLabel="Service Term Title"
+                                name="./serviceTermTitle"/>
+                            <serviceErrorText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Service Error Text"
+                                fieldLabel="Service Error Text"
+                                name="./serviceErrorText"/>
+                            <sendEmailErrorText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Send Email Error Text"
+                                fieldLabel="Send Email Error Text"
+                                name="./sendEmailErrorText"/>
+                            <submitSuccessUrl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="Submit Success Url"
+                                fieldLabel="Submit Success Url"
+                                name="./submitSuccessUrl"
+                                rootPath="/content/huawei-cbg-site"/>
+                        </items>
+                    </column>
+                </items>
+            </contentTab>
+            <apiUrlsTab
+                jcr:primaryType="nt:unstructured"
+                jcr:title="API URLs"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <submitExpInfoApiUrl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="API URL to submit form"
+                                fieldLabel="Submit Exp Info API URL"
+                                name="./submitExpInfoApiUrl"/>
+                            <expressRepairPolicyURL
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="API URL to get express repair policy"
+                                fieldLabel="Express Repair Policy URL"
+                                name="./expressRepairPolicyURL"/>
+                            <expressRepairTypeListURL
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="API URL to get express repair type list"
+                                fieldLabel="Express Repair Type List URL"
+                                name="./expressRepairTypeListURL"/>
+                            <expressRepairIDNameURL
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="API URL to get express repair id name"
+                                fieldLabel="Express Repair ID Name URL"
+                                name="./expressRepairIDNameURL"/>
+                            <sessionUuidURL
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="API URL to get session uuid"
+                                fieldLabel="Session Uuid URL"
+                                name="./sessionUuidURL"/>
+                            <verificationImageCodeURL
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="API URL to get verification image code"
+                                fieldLabel="Verification Image Code URL"
+                                name="./verificationImageCodeURL"/>
+                        </items>
+                    </column>
+                </items>
+            </apiUrlsTab>
+        </items>
+    </content>
+</jcr:root>

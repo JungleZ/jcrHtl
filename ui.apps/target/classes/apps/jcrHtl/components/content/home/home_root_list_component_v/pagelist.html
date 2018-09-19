@@ -1,0 +1,26 @@
+<sly  data-sly-use.t="ProductCompareComponent" />
+
+		<div  data-sly-test="${properties.type=='page_list'}" class="slideshow ${t.hello}" data-sly-list.subPage="${t.productResourceList}" style="height: 920px; overflow: hidden">
+              <div class="slide">
+              	<img src="${subPage.valueMap.pageImagePath}">
+                <div class="prduct-infor">
+                	<p class="name">${subPage.valueMap.jcr:title} pageList</p>
+                    <p class="tag">${subPage.valueMap.jcr:productName}</p>
+                </div>
+              </div>
+
+        </div>
+
+<sly  data-sly-use.tt="test.js" />
+        <div data-sly-test="${properties.type=='fixed'}" data-sly-list.obj="${tt.prons}" class="slideshow" style="height: 920px; overflow: hidden">
+
+            
+                <div class="slide  ${properties.blocks}" >
+                    <img src="${obj.image1}">
+                    <div class="prduct-infor">
+                        <p class="name">${obj.brife} fixed</p>
+                        <p class="tag">${obj.tag}</p>
+                    </div>
+              </div>
+
+        </div>

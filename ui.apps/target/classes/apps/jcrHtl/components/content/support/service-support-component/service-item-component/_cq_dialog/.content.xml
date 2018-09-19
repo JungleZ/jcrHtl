@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Service Item"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <columns
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <contentTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Content"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <bgImageUrl
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Image Url"
+                                        name="./bgImageUrl"
+                                        rootPath="/content/dam"/>
+                                    <iconSVG
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        fieldLabel="Theme"
+                                        name="./icon">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <price
+                                                jcr:primaryType="nt:unstructured"
+                                                text="price"
+                                                value="price"/>
+                                            <warranty
+                                                jcr:primaryType="nt:unstructured"
+                                                text="warranty"
+                                                value="warranty"/>
+                                            <vip
+                                                jcr:primaryType="nt:unstructured"
+                                                text="vip"
+                                                value="vip"/>
+                                            <reparaturauftrag
+                                                jcr:primaryType="nt:unstructured"
+                                                text="reparaturauftrag"
+                                                value="reparaturauftrag"/>
+                                            <trade
+                                                jcr:primaryType="nt:unstructured"
+                                                text="trade"
+                                                value="trade"/>
+                                            <reservation
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Reservation"
+                                                value="Reservation"/>
+                                            <Reparaturstatus
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Reparaturstatus"
+                                                value="Reparaturstatus"/>
+                                            <Recycling
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Recycling"
+                                                value="Recycling"/>
+                                            <umfrage
+                                                jcr:primaryType="nt:unstructured"
+                                                text="umfrage"
+                                                value="umfrage"/>
+                                            <hi_care
+                                                jcr:primaryType="nt:unstructured"
+                                                text="hi_care"
+                                                value="hi_care"/>
+                                        </items>
+                                    </iconSVG>
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                        fieldLabel="Title"
+                                        name="./title"/>
+                                    <descText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Description"
+                                        name="./descText"/>
+                                    <url
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Url"
+                                        name="./url"
+                                        rootPath="/content/huawei-cbg-site"/>
+                                    <openInNewTab
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                        name="./openInNewTab"
+                                        text="Open In New Tab"
+                                        value="true"/>
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Analytics"
+                                                sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <cat
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldDescription="This value is used for Analytics purpose"
+                                                        fieldLabel="Analytics Category (cat)"
+                                                        name="./cat"/>
+                                                    <act
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldDescription="This value is used for Analytics purpose"
+                                                        fieldLabel="Analytics Action (act)"
+                                                        name="./act"/>
+                                                    <lab
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldDescription="This value is used for Analytics purpose"
+                                                        fieldLabel="Analytics Label (lab)"
+                                                        name="./lab"/>
+                                                </items>
+                                            </title>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </contentTab>
+                </items>
+            </columns>
+        </items>
+    </content>
+</jcr:root>

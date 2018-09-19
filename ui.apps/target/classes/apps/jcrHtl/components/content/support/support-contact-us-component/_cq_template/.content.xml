@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    title="CONTACT US">
+    <contacts jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            contactName="online-chat"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            contactName="email-us"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            contactName="service-center"/>
+        <_x0034_
+            jcr:primaryType="nt:unstructured"
+            contactName="call-us"/>
+    </contacts>
+    <online-chat
+        jcr:primaryType="nt:unstructured"
+        cssClass="online_chat"
+        openInNewPage="true"
+        title="Online Chat"
+        type="online-chat"/>
+    <email-us
+        jcr:primaryType="nt:unstructured"
+        cssClass="email_us"
+        title="Email Us"
+        type="normal-link"
+        url="http://consumer.huawei.com/testv27-demo/contact-us/index.htm"/>
+    <service-center
+        jcr:primaryType="nt:unstructured"
+        cssClass="service_center"
+        title="Service Center"
+        type="normal-link"
+        url="http://consumer.huawei.com/testv27-demo/support/service-center/index.htm"/>
+    <call-us
+        jcr:primaryType="nt:unstructured"
+        cssClass="call_us"
+        descText="&lt;span>Language: &lt;/span>&lt;span>Num: &lt;/span>&lt;span>Time: &lt;/span>"
+        title="Call Us"
+        type="call-us"/>
+</jcr:root>

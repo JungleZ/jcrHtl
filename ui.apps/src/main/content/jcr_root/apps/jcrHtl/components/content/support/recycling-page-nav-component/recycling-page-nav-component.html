@@ -1,0 +1,21 @@
+<div class="conv3_recyle_nav" data-sly-use.navs="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='tabitems'}">
+	<div data-sly-test="${wcmmode.edit}">Recycling Page Navigation Component</div>
+    <ul class="recy_nav_md"  data-sly-list.nav="${navs.multifieldResources}" >
+        <li class="${currentPage.path == nav.url ? 'active':''}">
+        	<a data-sly-use.linkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=nav.url}" 
+        		href="${currentPage.path == nav.url ? 'javascript:;' : linkHelper.link}">${nav.title}</a>
+       	</li>
+    </ul>
+    <div class="conv3_global_selector">
+        <div class="select recy_nav">
+        	<div data-sly-list.nav="${navs.multifieldResources}" data-sly-unwrap>
+           		<span data-sly-test="${currentPage.path == nav.url}">${nav.title}</span>
+            </div>
+            <ol _mark="RECYCLENAV" data-sly-list.nav="${navs.multifieldResources}">
+                <a data-sly-test="${currentPage.path != nav.url}" data-sly-use.linkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=nav.url}" href="${linkHelper.link}"> 
+                    <li >${nav.title}</li>
+              	</a>
+            </ol>
+        </div>
+    </div>
+</div>

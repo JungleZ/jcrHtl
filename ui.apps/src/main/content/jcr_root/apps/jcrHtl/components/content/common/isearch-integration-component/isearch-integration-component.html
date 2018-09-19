@@ -1,0 +1,120 @@
+<!--HWDocContent-->
+<!--HWDocMeta-->
+<!-- isearch integration component -->
+<sly data-sly-use.meta="com.huawei.consumer.site.core.components.common.ISearchIntegrationComponent">
+    <!--/* for products */-->
+    <sly data-sly-test="${pageProperties.mainTemplate=='consumer_product'}">
+    <meta name="APP_ID" content="${meta.appId}" />
+    <meta name="DOC_ID" content="${meta.docId}" />
+    <meta name="RESERVE_FIELD2" content="consumer_product"/>	
+    <meta name="RESERVE_FIELD22" content="${meta.productPbi1}"/>
+    <meta name="DREDATE" content="${meta.publishTime || meta.lastModifiedTime}"/>
+    <meta name="RESERVE_FIELD11" content="${meta.publishDate || meta.lastModifiedDate}"/>
+    <meta name="DOC_KEYWORDS" content="${meta.keywords}"/>
+    <meta name="DRETITLE" content="${pageProperties.jcr:title}"/>
+    <meta name="DOC_DESCRIPTION" content="${pageProperties.jcr:description}"/>
+    <meta name="DREDATE_YEAR_MONTH" content="${meta.publishYearMonth || meta.createdYearMonth}"/>
+    <meta name="RESERVE_FIELD19" content="${meta.keywords}"/>
+    <meta name="RESERVE_FIELD32" content="${meta.productAssetPath}"/>
+    </sly>
+    <!--/* for support products */-->
+    <sly data-sly-test="${pageProperties.mainTemplate=='support_product'}">
+    <meta name="APP_ID" content="${meta.appId}" />
+    <meta name="DOC_ID" content="${meta.docId}" />
+    <meta name="RESERVE_FIELD2" content="support_product"/>	
+    <meta name="RESERVE_FIELD19" content="${meta.keywords}"/>		
+    <meta name="RESERVE_FIELD22" content="${meta.productPbi2||meta.productPbi1}"/>
+    <meta name="RESERVE_FIELD32" content="${meta.productAssetPath}"/>
+    <meta name="RESERVE_FIELD39" content="${meta.productMarketingName}"/>
+    <meta name="RESERVE_FIELD41" content="${meta.productMarketingName}"/>
+    <meta name="DOC_KEYWORDS" content="${meta.keywords}"/>
+    <meta name="DRETITLE" content="${pageProperties.jcr:title}"/>
+    <meta name="DOC_DESCRIPTION" content="${pageProperties.jcr:description}"/>
+    <meta name="DREDATE_YEAR_MONTH" content="${meta.createdYearMonth}"/>
+    </sly>
+    <!--/* for press news page */-->
+    <sly data-sly-test="${pageProperties.subTemplate=='consumer_news'}">
+    <meta name="APP_ID" content="${meta.appId}" />
+    <meta name="DOC_ID" content="${meta.docId}" />    
+    <meta name="RESERVE_FIELD2" content="${pageProperties.mainTemplate}" />
+    <meta name="RESERVE_FIELD22" content="${pageProperties.subTemplate}" />
+    <meta name="DREDATE" content="${meta.publishTime || meta.lastModifiedTime}" />
+    <meta name="RESERVE_FIELD11" content="${meta.publishDate || meta.lastModifiedDate}" />
+    <meta name="DOC_KEYWORDS" content="${meta.keywords}" />
+    <meta name="RESERVE_FIELD36" content="${pageProperties.resourceDownloadUrl}" />
+    <meta name="DRETITLE" content="${pageProperties.jcr:title}" />
+    <meta name="DOC_DESCRIPTION" content="${pageProperties.jcr:description}" />
+    <meta name="DREDATE_YEAR_MONTH" content="${meta.publishYearMonth || meta.createdYearMonth}" />
+    <meta name="RESERVE_FIELD19" content="${meta.keywords}" />
+    <meta name="RESERVE_FIELD32" content="${pageProperties.resourceUrl}" />
+    </sly>
+    <!--/* for press awards page */-->
+    <sly data-sly-test="${pageProperties.subTemplate=='consumer_awards'}">
+    <meta name="APP_ID" content="${meta.appId}" />
+    <meta name="DOC_ID" content="${meta.docId}" />    
+    <meta name="RESERVE_FIELD2" content="${pageProperties.mainTemplate}" />
+    <meta name="RESERVE_FIELD22" content="${pageProperties.subTemplate}" />
+    <meta name="DREDATE" content="${meta.publishTime || meta.lastModifiedTime}" />
+    <meta name="RESERVE_FIELD11" content="${meta.publishDate || meta.lastModifiedDate}" />
+    <meta name="DOC_KEYWORDS" content="${meta.keywords}" />
+    <meta name="RESERVE_FIELD36" content="${pageProperties.awardCountry}" />
+    <meta name="DRETITLE" content="${pageProperties.jcr:title}" />
+    <meta name="DOC_DESCRIPTION" content="${pageProperties.jcr:description}" />
+    <meta name="DREDATE_YEAR_MONTH" content="${meta.publishYearMonth || meta.createdYearMonth}" />
+    <meta name="RESERVE_FIELD19" content="${meta.keywords}" />
+    <meta name="RESERVE_FIELD32" content="${pageProperties.mainImage}" />
+    </sly>   
+    <!--/* for press events page */-->
+    <sly data-sly-test="${pageProperties.subTemplate=='consumer_event'}">
+    <meta name="APP_ID" content="${meta.appId}" />
+    <meta name="DOC_ID" content="${meta.docId}" />    
+    <meta name="RESERVE_FIELD2" content="${pageProperties.mainTemplate}" />
+    <meta name="RESERVE_FIELD22" content="${pageProperties.subTemplate}" />
+    <meta name="DREDATE" content="${meta.publishTime || meta.lastModifiedTime}" />
+    <meta name="RESERVE_FIELD11" content="${meta.publishDate || meta.lastModifiedDate}" />
+    <meta name="DOC_KEYWORDS" content="${meta.keywords}" />
+    <meta name="DRETITLE" content="${pageProperties.jcr:title}" />
+    <meta name="DOC_DESCRIPTION" content="${pageProperties.jcr:description}" />
+    <meta name="DREDATE_YEAR_MONTH" content="${meta.publishYearMonth || meta.createdYearMonth}" />
+    <meta name="RESERVE_FIELD19" content="${meta.keywords}" />
+    <meta name="RESERVE_FIELD32" content="${pageProperties.mainImage}" />
+    <meta name="RESERVE_FIELD33" content="${pageProperties.resourceUrl}" />
+    </sly>   
+     <!--/* for press media coverage page */-->
+    <sly data-sly-test="${pageProperties.subTemplate=='consumer_mediacoverage'}">
+    <meta name="APP_ID" content="${meta.appId}" />
+    <meta name="DOC_ID" content="${meta.docId}" />         
+    <meta name="RESERVE_FIELD2" content="${pageProperties.mainTemplate}" />
+    <meta name="RESERVE_FIELD22" content="consumer_media_coverage" />
+    <meta name="DREDATE" content="${meta.publishTime || meta.lastModifiedTime}" />
+    <meta name="RESERVE_FIELD11" content="${meta.publishDate || meta.lastModifiedDate}" />
+    <meta name="DOC_KEYWORDS" content="${meta.keywords}" />
+    <meta name="DRETITLE" content="${pageProperties.jcr:title}" />
+    <meta name="DOC_DESCRIPTION" content="${pageProperties.jcr:description}" />
+    <meta name="DREDATE_YEAR_MONTH" content="${meta.publishYearMonth || meta.createdYearMonth}" />
+    <meta name="RESERVE_FIELD19" content="${meta.keywords}" />
+    <meta name="RESERVE_FIELD32" content="${pageProperties.mainImage}" />
+    <meta name="RESERVE_FIELD33" content="${pageProperties.resourceUrl}" />
+    <meta name="RESERVE_FIELD36" content="${pageProperties.resourceDownloadUrl}" />
+    </sly>
+     <!--/* for press video page */-->
+    <sly data-sly-test="${pageProperties.subTemplate=='consumer_video'}">
+    <meta name="APP_ID" content="${meta.appId}" />
+    <meta name="DOC_ID" content="${meta.docId}" />    
+    <meta name="RESERVE_FIELD2" content="${pageProperties.mainTemplate}" />
+    <meta name="RESERVE_FIELD22" content="${pageProperties.subTemplate}" />
+    <meta name="DREDATE" content="${meta.publishTime || meta.lastModifiedTime}" />
+    <meta name="RESERVE_FIELD11" content="${meta.publishDate || meta.lastModifiedDate}" />
+    <meta name="DOC_KEYWORDS" content="${meta.keywords}" />
+    <meta name="DRETITLE" content="${pageProperties.jcr:title}" />
+    <meta name="DOC_DESCRIPTION" content="${pageProperties.jcr:description}" />
+    <meta name="DREDATE_YEAR_MONTH" content="${meta.publishYearMonth || meta.createdYearMonth}" />
+    <meta name="RESERVE_FIELD19" content="${meta.keywords}" />
+    <meta name="RESERVE_FIELD32" content="${pageProperties.videoPath}" />
+    <meta name="RESERVE_FIELD33" content="${pageProperties.mainImage}" />
+    <meta name="RESERVE_FIELD25" content="${pageProperties.videoCategory}" />
+    </sly>
+</sly>
+<!--/HWDocMeta-->
+<!--/HWDocContent-->
+

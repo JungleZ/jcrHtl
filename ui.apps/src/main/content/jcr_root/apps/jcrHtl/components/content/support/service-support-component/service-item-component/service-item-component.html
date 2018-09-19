@@ -1,0 +1,26 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Service Item Component</p>
+
+<sly data-sly-test.isCustomImage="${properties.bgImageUrl}"/>
+<sly data-sly-test.isHiCare="${properties.icon == 'hi_care'}"/>
+<sly data-sly-test="${properties.title || properties.descText}">
+<li data-sly-test="${isHiCare}" class="a-common ${wcmmode.edit ? 'editor' : ''} li_hi_care">
+	<a class="${isCustomImage ? '' : 'hi_care'}" cat="${properties.cat}" act="${properties.act}" lab="${properties.lab}">
+		<sly data-sly-test="${isCustomImage}">
+			<img src="${properties.bgImageUrl}"	class="img-service-thumb" />
+		</sly> 
+		${properties.title}<small>${properties.descText}</small>
+	</a>
+</li>
+
+<li class="a-common ${wcmmode.edit ? 'editor' : ''} ${isHiCare ? 'li_hi_care' : ''}"
+	data-sly-attribute.data-href="${isHiCare ? '#' : ''}"
+	data-sly-use.linkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=properties.url}">
+	<a href="${linkHelper.link}" class="${isCustomImage ? '' : properties.icon}" target="${properties.openInNewTab ? '_blank' : ''}" cat="${properties.cat}" act="${properties.act}" lab="${properties.lab}">
+		<sly data-sly-test="${isCustomImage}">
+			<img src="${properties.bgImageUrl}"	class="img-service-thumb" />
+		</sly> 
+		${properties.title}<small>${properties.descText}</small>
+	</a>
+</li>
+</sly>
+

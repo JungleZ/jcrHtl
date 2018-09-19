@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="huawei-cbg-site/components/content/support/repair-status-query-component"
+    acceptedTime="Accepted Time"
+    apiUrl="http://consumer.huawei.com/support/services/service/repair/validateQueryRepair"
+    backBtnText="BACK"
+    codeErr="Please enter the correct verification code."
+    errorBgImg="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/webasset/img_con_v27_inquiry_error.png"
+    imageCodeApi="http://consumer.huawei.com/support/servlet/authMage"
+    imeiSnErr="Please enter the correct IMEI/SN."
+    imeiText="Product IMEI/SN"
+    key="[3,4]"
+    numberErr="Please enter the correct Repair Order Number."
+    pickupTime="Pick-up Time"
+    queryErr="Please select query methods."
+    queryMethod="Please select query methods"
+    queryMethodInput="Please select query methods"
+    reminder="&lt;h2>Kindly Reminder&lt;/h2>&#xd;&#xa;                &lt;ul>&#xd;&#xa;                    &lt;li>• Only supports to track the repair status within 1 month&lt;/li>&#xd;&#xa;                    &lt;li>• Press &lt;span>*#06#&lt;/span> on phone dial pad to get the IMEI/MEID.&lt;/li>&#xd;&#xa;                    &lt;li>• You can get the IMEI/MEID/MAC/SN from the giftbox or label of phone.&lt;/li>&#xd;&#xa;                &lt;/ul>&#xd;&#xa;            &lt;/div>"
+    repairStt="Repair Status"
+    rsNotMatchtxt="Sorry, the system can not query the match information."
+    sessionidApi="http://consumer.huawei.com/support/services/base/basecommonService/sessionuuid"
+    submitBtnText="SUBMIT"
+    title="[REPAIR STATUS QUERY]">
+    <dropDownItem jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            errorMessage="Please enter the correct IMEI/SN."
+            key="3"
+            title="IMEI/SN"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            errorMessage="Please enter the correct Repair Order Number."
+            key="4"
+            title=" Repair Order Number"/>
+    </dropDownItem>
+    <repairSttItems jcr:primaryType="nt:unstructured">
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            key="1"
+            value="En Reparación"/>
+        <_x0034_
+            jcr:primaryType="nt:unstructured"
+            key="2"
+            value="Repair completed"/>
+        <_x0035_
+            jcr:primaryType="nt:unstructured"
+            key="3"
+            value="Entregado"/>
+        <_x0036_
+            jcr:primaryType="nt:unstructured"
+            key="4"
+            value="Fat factory maintenance"/>
+        <_x0037_
+            jcr:primaryType="nt:unstructured"
+            key="5"
+            value="Fat factory maintenance is complete"/>
+    </repairSttItems>
+</jcr:root>

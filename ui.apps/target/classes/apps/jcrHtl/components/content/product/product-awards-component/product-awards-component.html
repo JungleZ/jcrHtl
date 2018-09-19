@@ -1,0 +1,16 @@
+<p style="text-align: center; color: black;" data-sly-test="${wcmmode.edit}">Product Awards Component</p>
+<div class="awards-simple-wrapper ${properties.style == 'white' ? 'reverse' : ''}">
+    <h2>${properties.title}</h2>
+    <ul class="awards-simple" 
+        data-sly-use.comp="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='awards'}"
+        data-sly-list.awards="${comp.multifieldResources}">
+        <li class="num2">
+            <div class="img-wrapper">
+                <img
+                    src="${awards.valueMap.imagePath}" />
+            </div>
+            <div class="text-wrapper">${awards.valueMap.description}</div>
+        </li>
+    </ul>
+    <div class="clearfix"></div>
+</div>

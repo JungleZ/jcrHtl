@@ -1,0 +1,26 @@
+<p style="text-align: center; color:black;margin:0px;padding:0px;" data-sly-test="${wcmmode.edit}">Image with Blocks Component</p>
+<div class="two-level type4">
+
+            <div class="title">
+                <h2>${properties.title}</h2>
+                <p>
+                    ${properties.description}
+                </p>
+            </div>
+            <div class="content">
+                <div>
+                    <img src="${properties.animationImage }">
+                </div>
+            </div>
+            <div class="content-icon">
+                <ul class="content-icon-ul" data-sly-use.comp="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='blocks'}" data-sly-list.blocks="${comp.multifieldResources}">
+                    <li>
+                        <span class="icon-title">${blocks.valueMap.title}</span>
+                        <img class="icon-img" src="${blocks.valueMap.imagePath}">
+                        <span class="icon-descript">${blocks.valueMap.dscription}</span>
+                    </li>
+                   
+
+                </ul>
+            </div>
+        </div>

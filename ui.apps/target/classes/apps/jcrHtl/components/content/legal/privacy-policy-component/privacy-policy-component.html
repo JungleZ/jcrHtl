@@ -1,0 +1,23 @@
+	<div class="content">
+		<div class="column_contain">
+			<div class="column_width">
+				<div class="conv3_global_selector privacy-policy"
+					data-policy-parent="${properties.referencePage}">
+					<div class="select">
+						<span class="policy-selector-span">English</span>
+						<ol style="display: none;" class="policy-selector-ol"
+							data-sly-use.policy="com.huawei.consumer.site.core.components.legal.PrivacyPolicyComponent"
+							data-sly-list.page="${policy.policyPages}">
+							<li data-code="${page.name}" data-content-path="${page.path}"
+								class="policy-selector-li">${page.title}</li>
+						</ol>
+					</div>
+				</div>
+				<div class="word">
+					<div id="policy-content" class="ct"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+

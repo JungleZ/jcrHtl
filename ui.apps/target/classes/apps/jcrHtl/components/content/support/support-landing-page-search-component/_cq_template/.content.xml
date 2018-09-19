@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    apiURL="http://consumer.huawei.com/support/services/service/isearch/open/list"
+    backgroundImg1024_768="/content/dam/huawei-cbg-site/en-master/support/img_con_v27_sup_banner_sm.jpg"
+    backgroundImg350="/content/dam/huawei-cbg-site/en-master/support/img_con_v27_banner_xs_350.jpg"
+    backgroundImg420="/content/dam/huawei-cbg-site/en-master/support/img_con_v27_banner_xs_350.jpg"
+    backgroundImg767="/content/dam/huawei-cbg-site/en-master/support/img_con_v27_sup_banner_xs.jpg"
+    backgroundImgDesktop="/content/dam/huawei-cbg-site/en-master/support/img_con_v27_support_banner.jpg"
+    bottomLinkText="How do I know which product model I have?"
+    bottomLinkURL="/testv27-demo/support/find-model/index.htm"
+    getRelProApiURL="http://consumer.huawei.com/support/services/service/product/info/list"
+    hotSearchesText="Hot Searches:"
+    iconQuestion="/content/dam/huawei-cbg-site/en-master/support/img_con_v27_icon_ques.png"
+    inputPlaceHolder="Enter the product model or keywords"
+    moreTermMessage="Please enter more term"
+    noResultsMessage="Sorry, No results were found."
+    searchresultPageLink="/content/huawei-cbg-site/en-ref/index/support-search-and-result"
+    searchTermEmpty="Please enter a search term"
+    title="HOW CAN WE HELP">
+    <hotSearchKeyWords jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            hotSearchKeyWord="Mate 8"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            hotSearchKeyWord="Mate 7"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            hotSearchKeyWord="P8"/>
+        <_x0034_
+            jcr:primaryType="nt:unstructured"
+            hotSearchKeyWord="Mate S"/>
+        <_x0035_
+            jcr:primaryType="nt:unstructured"
+            hotSearchKeyWord="P9"/>
+    </hotSearchKeyWords>
+</jcr:root>

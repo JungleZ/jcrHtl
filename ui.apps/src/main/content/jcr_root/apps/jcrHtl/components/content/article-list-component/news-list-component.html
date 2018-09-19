@@ -1,0 +1,11 @@
+<div class="articleList">
+    <div class="conv3_sponsorships_home conv3_news_home">
+    
+        <div class="content" data-sly-use.news="com.community.htl.core.NewsListComponent">
+           <ol _mark="year" data-sly-list="${news.years}">
+                           <li data-sly-attribute.value="${item}" data-sly-text="${item}"></li>
+           </ol>
+    
+        </div>
+    </div>
+</div>

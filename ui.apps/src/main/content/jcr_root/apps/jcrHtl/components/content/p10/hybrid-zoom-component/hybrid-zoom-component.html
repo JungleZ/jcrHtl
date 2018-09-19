@@ -1,0 +1,32 @@
+<div class="special type2 W-detailCommon-fluid">
+
+    <h3 class="W-detailSubTitle" data-sly-text="${properties.title}">title</h3>
+    <div class="W-detailConyWrap" data-sly-text="${properties.description}">
+        description
+    </div>
+    <div class="W-hybirdZoom">
+        <div class="desktop-background" style="${'background: url({0}) no-repeat center center;' @ format=properties.desktopImage,context='styleString'}"></div>
+        <img class="W-respoisveImg W-hiddenPc" data-sly-attribute.src="${properties.mobileImage}" data-sly-attribute.alt="${properties.mobileImageAlt}" />
+        <img data-sly-attribute.src="${properties.zoomFrameImage}" class="zoomphoneFrameModel" data-sly-attribute.alt="${properties.zoomFrameImageAlt}" />
+        <div class="W-zoomImgHold">
+            <img data-sly-attribute.src="${properties.zoomImage}" class="zoomImg" data-sly-attribute.alt="${properties.zoomImageAlt}" />
+        </div>
+    </div>
+    <div class="W-zoomCtlWrap">
+        <div class="W-zoomMinus">
+            <a href="javascript:hybirdZoomOut()">-</a>
+            <!-- - -->
+        </div>
+        <div class="W-zoomControl">
+            <input type="hidden" class="W-zoomSlider" value="23" />
+        </div>
+        <div class="W-zoomPlus">
+            <a href="javascript:hybirdZoomIn()">+</a>
+            <!-- + -->
+        </div>
+    </div>
+
+    <div class="W-zoomControlCopy" data-sly-text="${properties.zoomText}">
+        ZOOM
+    </div>
+</div>

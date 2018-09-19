@@ -1,0 +1,8 @@
+#base=js
+find-a-service-store-component.js
+script_con_uk_support.js
+script_con_fr_support.js
+map-options.js
+normal-map-type.js
+fixed-map-type.js
+with-distance-map-type.js

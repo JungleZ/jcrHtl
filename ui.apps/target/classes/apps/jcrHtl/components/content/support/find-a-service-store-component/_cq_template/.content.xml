@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    cityErrorMessage="Please Select City"
+    defaultCityText="CITY"
+    defaultLocation="beijing"
+    defaultProvinceText="PROVINCE"
+    errorMessage="The network cannot connect to Google server"
+    inputErrorMessage="Please enter an address or a postcode."
+    invalidRequestMessage="The request of address localization was invalid."
+    mapType="normal"
+    noResultMessage="There is no result"
+    noServiceMapLocationMessage="Sorry,the service center that you inquired can not be located temporarily."
+    overQueryLimitMessage="The requests have been exceeding the limited times in such a short period."
+    popupButton1Text="Transit"
+    popupButton2Text="Driving"
+    popupSearchDefaultText="FROM"
+    provinceErrorMessage="Please Select Country"
+    requestDeniedMessage="The webpage is not available for address localization."
+    searchDefaultText="Postcode, Address"
+    submitButtonText="SUBMIT"
+    title="FIND A Service STORE"
+    unknownErrorMessage="A request of  address localization could not be processed due to a server error. The request may succeed if you try again."
+    zeroResultMessage="Currently there is no ASC in this area, please expand the searching scope.">
+    <distances jcr:primaryType="nt:unstructured">
+        <item1
+            jcr:primaryType="nt:unstructured"
+            title="5-mile"
+            value="5"/>
+        <item2
+            jcr:primaryType="nt:unstructured"
+            title="10-mile"
+            value="10"/>
+        <item3
+            jcr:primaryType="nt:unstructured"
+            title="25-mile"
+            value="25"/>
+        <item4
+            jcr:primaryType="nt:unstructured"
+            title="25+ mile"
+            value="163"/>
+    </distances>
+</jcr:root>

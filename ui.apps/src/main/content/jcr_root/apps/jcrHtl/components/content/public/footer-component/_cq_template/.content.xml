@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    copyrightContent="©2017 Huawei Technologies Co. 1998-2017. All rights reserved."
+    placeHolderLabel="Sign up to our email"
+    subscribeButtonLabel="SUBSCRIBE">
+    <locations jcr:primaryType="nt:unstructured">
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            label="FIND A STORE"
+            link="http://consumer.huawei.com/testv27-demo/store-finder/index.htm"/>
+    </locations>
+    <supportLinks jcr:primaryType="nt:unstructured">
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            label="Site Map"
+            link="http://consumer.huawei.com/testv27-demo/site-map/index.htm"/>
+        <_x0034_
+            jcr:primaryType="nt:unstructured"
+            label="Contact Us"
+            link="http://consumer.huawei.com/testv27-demo/contact-us/index.htm"/>
+        <_x0035_
+            jcr:primaryType="nt:unstructured"
+            label="Certification"
+            link="http://consumer.huawei.com/en/certification/index.htm"/>
+        <_x0036_
+            jcr:primaryType="nt:unstructured"
+            label="Terms Of Use"
+            link="http://consumer.huawei.com/testv27-demo/terms-of-use/index.htm"/>
+        <_x0037_
+            jcr:primaryType="nt:unstructured"
+            label="Privacy Policy"
+            link="http://consumer.huawei.com/testv27-demo/privacy-policy/index.htm"/>
+        <_x0038_
+            jcr:primaryType="nt:unstructured"
+            label="Cookie"
+            link="http://consumer.huawei.com/testv27-demo/cookie-policy/index.htm"/>
+    </supportLinks>
+    <socials jcr:primaryType="nt:unstructured">
+        <_x0039_
+            jcr:primaryType="nt:unstructured"
+            link="https://www.facebook.com/huaweimobile"
+            socialType="Facebook"/>
+        <_x0031_0
+            jcr:primaryType="nt:unstructured"
+            link="https://twitter.com/huaweimobile"
+            socialType="Twitter"/>
+        <_x0031_1
+            jcr:primaryType="nt:unstructured"
+            link="https://www.instagram.com/huaweimobile"
+            socialType="Instagram"/>
+        <_x0031_2
+            jcr:primaryType="nt:unstructured"
+            link="https://www.youtube.com/c/huaweimobile"
+            socialType="Youtube"/>
+        <_x0031_3
+            jcr:primaryType="nt:unstructured"
+            link="https://plus.google.com/+HuaweiMobile"
+            socialType="Googleplus"/>
+    </socials>
+</jcr:root>

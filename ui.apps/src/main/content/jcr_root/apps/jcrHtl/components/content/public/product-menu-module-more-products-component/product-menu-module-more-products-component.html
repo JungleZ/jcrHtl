@@ -1,0 +1,69 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Header Module - More Products Component</p>
+<sly data-sly-use.moreProducts="com.huawei.consumer.site.core.components.publics.ProductMenuMoreProductsComponent" data-sly-test="${moreProducts}">
+<div class="menu_module_products">
+    <div class="data-menu-more-products" style="display: none;">${moreProducts.moreProductsListJSONData @ context = "unsafe"}</div>
+   <div class="explore common_menu wrap_others slide_wrap" style="display: none;">
+      <div class="see_wrap">
+         <div class="see_close">
+            <i class="icon_public"></i>
+            <span>
+               <pre class="icon_public"></pre>
+               BACK
+            </span>
+         </div>
+         <ul class="see_phone_uList" data-sly-list.product="${moreProducts.moreProductsList}">
+            <li data-sly-use.linkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=product.productLink}"
+                data-sly-use.wrapValueHelper="${'com.huawei.consumer.site.core.components.common.HelperComponent' @productRootPath=product.pathOfCategoryAdminPage}">
+               <sly data-sly-test.seprator="${(product.productCategory && product.productName) ? ' / ' : ''}" />
+               <sly data-sly-test.actOfProduct="${'Click on {0}{1}{2}' @ format=[product.productCategory, seprator, product.productName]}"/>
+               <a cat="Menu: More Products" act="${actOfProduct}" lab="Header - <page title>" href="${linkHelper.link}" class="a-common">
+                  <div class="img_center_word" style="background-size:cover; background-image: url('${product.backgroundImg @ context='unsafe'}');">
+                     <div class="see_rgb">
+                        <h3 style="color: ${product.textColor @ context='styleToken'};">${product.productName}</h3>
+                        <span style="background-color: ${product.textColor @ context='styleToken'};"></span><em style="color: ${product.textColor @ context='styleToken'};">${product.productDesc}</em>
+                     </div>
+                     <img class="pc_phone" time="" alt="${product.productImageAlt}" src="${product.productImage}">
+                  </div>
+               </a>
+               <a class="pro_wrap img_bottom_word a-common" href="javascript:;" cat="Menu: More Products" act="${actOfProduct}" lab="Header - <page title>" pbi1="${product.linkPbi1}" wrap="${wrapValueHelper.wrapValue}" ><i>${product.linkToText}</i></a>
+            </li>
+         </ul>
+      </div>
+      <ul class="see_all" data-sly-list.addProduct="${moreProducts.additionalProductsList}">
+          <sly data-sly-use.wrapValueHelper="${'com.huawei.consumer.site.core.components.common.HelperComponent' @productRootPath=addProduct.pathOfCategoryAdminPage}">
+              <a href="javascript:;" class="a-menu pro_wrap a-common" lab="" act="" cat="" pbi1="${addProduct.linkPbi1}" wrap="${wrapValueHelper.wrapValue}" ><i>${addProduct.linkToText}</i></a>
+          </sly>
+      </ul>
+   </div>
+</div>
+<sly data-sly-list.categoryMenu="${moreProducts.categoryAdminList}">
+<sly data-sly-test.hasSubCategory="${categoryMenu.listSubCategories}" />
+<div class="menu_module_${categoryMenu.categoryTitle}">
+    <div class="${categoryMenu.categoryTitle}  common_menu other_products slide_wrap" style="display: none">
+        <div class="see_wrap">
+            <div class="see_close">
+            	<span><pre class="icon_public"></pre>${moreProducts.backText}</span><pre>${categoryMenu.categoryTitle}</pre><i class="icon_public"></i>
+            </div>
+            <ul class="see_all sub_types" data-sly-test="${hasSubCategory}" data-sly-list.subCategory="${categoryMenu.listSubCategories}">
+                <a href="javascript:;" pbi2="${subCategory.pbi2Value}"><i>${subCategory.categoryTitle}</i></a>
+            </ul>
+            <ul class="see_phone_uList"></ul>
+            <style>
+                .common_menu .see_wrap .see_phone_uList:empty:after { content:"${moreProducts.noResultMsg @ context='styleString'}" ;display:block;font-size: 18px; letter-spacing: 6px; text-align: center; margin-top:40px; }
+            </style>
+        </div>
+        <div class="list_compare" style="display: none" data-enable-compare="${categoryMenu.enableCompare}">
+            <div class="list_compare_title">${moreProducts.selectedLabel}</div>
+            <div class="list_compare_body"></div>
+            <div class="list_compare_btn" style="display: none" data-compare-link="${categoryMenu.comparePagePath}.html"><a href="javascript:;">${moreProducts.compareLabel}</a></div>
+        </div>
+        <div data-sly-test="${!categoryMenu.listSubCategories}" class="load_more load_more_products" style="display: none" pbi1="${categoryMenu.pbi1Value}">
+            <div class="text"><span>+</span>${moreProducts.loadmoreLabel}</div>
+        </div>
+        <div data-sly-test="${categoryMenu.listSubCategories}" class="load_more load_more_products" style="display: none">
+            <div class="text"><span>+</span>${moreProducts.loadmoreLabel}</div>
+        </div>
+    </div>
+</div>
+</sly>
+</sly>

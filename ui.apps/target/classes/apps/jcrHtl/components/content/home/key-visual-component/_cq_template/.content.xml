@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    posterImgAlt="Huawei Global"
+    posterMobileImgUrl="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/webasset/img_con_v27_s1_bg_m.jpg"
+    posterPcImgUrl="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/webasset/img_con_v27_s1_banner.jpg"
+    titleText="Title"
+    videoUrl="/content/dam/huawei-cbg-site/en-master/home/hero.mp4">
+    <item jcr:primaryType="nt:unstructured">
+        <item1
+            jcr:primaryType="nt:unstructured"
+            link=""
+            openInNewpage="false"
+            text="Explore"
+            type="red-button"/>
+    </item>
+</jcr:root>

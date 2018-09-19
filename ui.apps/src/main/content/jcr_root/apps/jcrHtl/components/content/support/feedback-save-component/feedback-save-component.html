@@ -1,0 +1,47 @@
+<p style="text-align: center; color:black" data-sly-test="${wcmmode.edit}">Feedback Save Component</p>
+<div class="conv3_content"
+    data-sly-use.apisConst="${'com.huawei.consumer.site.core.utils.APIsConstants'}"
+    data-sly-use.apiHelper1="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.getFAQInfoURL, key=apisConst.SERVICE_FAQ_INFO_API_KEY }"
+    data-sly-use.apiHelper2="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.sendYesCommentURL, key=apisConst.SERVICE_FAQ_APPRAISE_API_KEY }"
+    data-sly-use.apiHelper3="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.sendNoCommentURL, key=apisConst.SERVICE_SEND_SUPPORT_COMMENT_API_KEY }">
+    <div class="conv3_title_group">
+        <h1></h1>
+    </div>
+    <section class="conv3_faq_content" 
+             data-mode="${wcmmode.edit ? 'EDIT' : ''}"
+             data-success-message="${properties.successMessage}"
+             data-error-message="${properties.errorMessage}"
+             data-get-faq-info-url="${apiHelper1.apiUrl}"
+             data-send-yes-comment-url="${apiHelper2.apiUrl}"
+             data-send-no-comment-url="${apiHelper3.apiUrl}" 
+             data-faq-id-error-message="${properties.faqIDErrorMessage}"
+             data-faq-comments-lenght-error-message="${properties.faqCommentsLenghtErrorMessage}"
+             data-faq-comments-empty-error-message="${properties.faqCommentsEmptyErrorMessage}"
+             >
+        <p id ="conv3_faq_content"></p>
+        <div class="jwplayer_video_area" data-video-image="" data-video-id="videoPlayer" data-video-ratio="16:9" data-t-cat="consumer-en" data-t-act="FAQVideo" data-t-label="FAQVideo" data-t-ignore-link="true"></div>
+        <div class="conv3_faq_feedback">
+            <span>${properties.yesNoDescription}</span>
+            <a class="conv3_faq_icon faq_feedback_yes y-cbg-faq-apply" data-flag="1"  href="javascript:void(0)">
+                <img alt="" src="${properties.yesIconImage}">${properties.yesOptionText}</a>
+            <a class="conv3_faq_icon faq_feedback_no y-cbg-faq-apply" data-flag="0" href="javascript:void(0)">
+                <img alt="" src="${properties.noIconImage}">${properties.noOptionText}</a>
+        </div>
+        <div class="conv3_faq_feedback conv3_send_faq_comment">
+            <p>
+                <span>${properties.emailDescription}</span>
+                <sly data-sly-use.completePath="${'com.huawei.consumer.site.core.components.home.PresenterComponent' @ path=properties.contactUsURL}">
+	                <a href="${completePath.linkCompletePath}" class="conv3_faq_icon">
+	                    <img alt="" src="${properties.emailIconImage}">${properties.emailOptionText}</a>
+                </sly>
+            </p>
+            <p class="faq_comment_title">${properties.commentDescription}</p>
+            <form action="">
+                <textarea id="conv3_faq_comments"></textarea>
+                <p class="text-right">
+                    <a class="conv3_faq_submit" href="javascript:;">${properties.submitButtonText}</a>
+                </p>
+            </form>
+        </div>
+    </section>
+</div>

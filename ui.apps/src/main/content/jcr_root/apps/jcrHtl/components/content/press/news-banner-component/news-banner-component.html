@@ -1,0 +1,22 @@
+<h2 style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">News Banner Component</h2>
+<div class="conv3_news_home" data-sly-use.data="com.huawei.consumer.site.core.components.press.NewsBannerComponent">
+    <div class="recommend">
+        <div class="swipe_ul">
+            <ul data-sly-list="${data.bannerChildren}">
+                <li>
+                    <em><img data-sly-attribute.src="${item.imagePath}" data-sly-attribute.alt="${item.imageAlt}"></em>
+                    <span>
+                        <img class="bg" data-sly-attribute.src="${properties.bgPath}" data-sly-attribute.alt="${properties.bgImageAlt}">
+                        <b data-sly-text="${data.timeStrings[itemList.index]}" ></b>
+                        <p data-sly-text="${item.newsTitle}">Huawei Jumps to Number 72 on Interbrand's Best Global Brands Report</p>
+                        <a cat="Press Banner" act="${currentPage.title}" lab="${item.newsTitle}-position${itemList.count}" data-sly-text="${properties.readMoreTxet}"  href="${item.url||currentPage.path @ extension='html'}">Read more</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+
+        <ol class="tabs" data-sly-list="${data.timeStrings}">
+            <li class="${itemList.first ? 'current' : ''}"></li>
+        </ol>
+    </div>
+</div>

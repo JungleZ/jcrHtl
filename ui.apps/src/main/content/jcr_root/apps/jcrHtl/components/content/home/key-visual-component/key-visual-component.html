@@ -1,0 +1,47 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Key Visual component</p>
+<sly data-sly-use.buttonBean="com.huawei.consumer.site.core.components.home.KeyVisualComponent" data-sly-test="${buttonBean}">
+	<div class="section1 kv ${properties.videoType == 'dynamic-media-video'? ' dynamicmedia':''}" style="background-size:cover;" 
+			data-change-bg-img="true"
+			data-landing-bg-desktop="${properties.posterPcImgUrl @ context='unsafe'}" 
+			data-landing-bg-mobile="${properties.posterMobileImgUrl @ context='unsafe'}"
+	>
+	<h1 class="for_seo">${properties.posterImgAlt}</h1>
+	<a href="${properties.posterImgUrl}" name="sspu"></a>
+	<h2 class="for_seo">&nbsp;</h2>
+	<sly data-sly-test="${!wcmmode.edit}" data-sly-unwrap>
+		<sly data-sly-test="${properties.videoType == 'common-video'}">
+			<video data-sly-test="${properties.videoUrl}" id="video_home_s1" poster="${properties.posterPcImgUrl}" x-webkit-airplay="true" 
+					webkit-playsinline="true" alt="${properties.posterImgAlt}"
+					loop="loop" time="" autoplay="autoplay">
+				<source type="video/mp4" src="${properties.videoUrl}">
+			</video>
+		</sly>
+		
+		<sly data-sly-test="${properties.videoType == 'youtube-video' && properties.videoUrl}">
+			<div class="videoWrapper" style="position: relative; padding-bottom: 56.25%; padding-top: 0px; height: 0;">
+				<iframe style="position: absolute; pointer-events: none;" width="100%"
+					height="100%"
+					src="${properties.videoUrl}?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=${buttonBean.videoId}"
+					frameborder="0" allowfullscreen=""></iframe>
+			</div>
+		</sly>
+		<sly data-sly-test="${properties.videoType == 'dynamic-media-video'}">
+			<div class="videoWrapper" style="position: relative; padding-bottom: 56.25%; padding-top: 0px; height: 0;">
+				<sly data-sly-resource="${'./dmvideo' @ resourceType='huawei-cbg-site/components/content/home/key-visual-dm-component'}" />
+			</div>
+		</sly>
+	</sly>
+	<div class="text appearance">${properties.titleText}</div>
+	
+	<div class="btns" data-sly-list.item="${buttonBean.buttonItems}">
+		<sly data-sly-test.styleCSS= "${item.type == 'red-button' ? '#ef2f34' : '#000'}"/>
+		<span class="a-homecat" cat="${item.cat}" act="${item.act}" lab="${item.lab}">
+			<a href="${item.link}" target="${item.openInNewpage ? '_blank' : ''}"
+					style="background-color:${styleCSS @ context = 'styleString'}"
+					class="${item.type == 'Red button' ? 'btn_explore appearance' : 'btn_cta appearance'}" v="http://www.qq.com/">
+					${item.text}
+			</a>
+		</span>
+	</div>
+	</div>	
+</sly>

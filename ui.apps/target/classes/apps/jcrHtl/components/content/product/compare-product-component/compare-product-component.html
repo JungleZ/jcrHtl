@@ -1,0 +1,87 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Compare Product Component</p>
+
+
+
+<div class="compare_wrap" data-sly-use.compare="com.huawei.consumer.site.core.components.product.ProductCompareComponent">
+	<div class="compare_back">
+		<div class="content">
+			<div class="column_back pro_back" mark='${compare.categoryName}' categoryId='${compare.pbi1Value}'><i></i><span>${properties.backText}</span></div>
+<div class="column_txt">${properties.compareText}</div>
+		</div>
+	</div>
+	<div class="compare_Model compare_part" id="compare-product-model" data-width-title="${'Width' @ i18n}" data-height-title="${'Height' @ i18n}" data-depth-title="${'Depth' @ i18n}" data-weight-title="${'Weight' @ i18n}">
+
+		<div class="compare_content">
+			<div class="compare">
+				<div class="compare_title"><b>${'MODEL NO.' @ i18n}</b></div>
+				<div class="compare_list">
+					<ul class="compare_uList">
+
+						<li class="pro_content">
+							<a class="column_pic_bg"></a>
+							<div class="column_grey_bg">
+								<img alt="${compare.categoryName}" src="/etc/designs/huawei-cbg-site/images/common/img_con_v27_pro_bg.png">
+							</div>
+							<div class="column_phone_name"></div>
+							<div class="column_remove_btn" p='0'><a href="javascript:;">${'Remove' @ i18n}</a></div>
+						</li>
+
+						<li class="pro_content">
+							<a class="column_pic_bg"></a>
+							<div class="column_grey_bg">
+								<img alt="${compare.categoryName}" src="/etc/designs/huawei-cbg-site/images/common/img_con_v27_pro_bg.png">
+							</div>
+							<div class="column_phone_name"></div>
+							<div class="column_remove_btn" p='1'><a href="javascript:;">${'Remove' @ i18n}</a></div>
+						</li>
+							
+						<li class="pro_content">
+							<a class="column_pic_bg"></a>
+							<div class="column_grey_bg">
+								<img alt="${compare.categoryName}" src="/etc/designs/huawei-cbg-site/images/common/img_con_v27_pro_bg.png">
+							</div>
+							<div class="column_phone_name"></div>
+							<div class="column_remove_btn" p='2'><a href="javascript:;">${'Remove' @ i18n}</a></div>
+						</li>
+							
+					</ul>
+					<div class="search_box"><div class="conv3_global_selector">
+						
+						<div class="select">
+							<span data-text="${compare.categoryName}">${compare.categoryName}</span>
+							<ol _mark='${compare.categoryName}' data-sly-list.product=${compare.productResourceList}>
+								<li class="a-compare" n='${product.productName}'  data-product-path="${product.path}" f="1" p='0'>${product.productName}</li>
+
+							</ol>
+						</div>
+						<div class="select">
+							<span  data-text="${compare.categoryName}">${compare.categoryName}</span>
+							<ol _mark='${compare.categoryName}' data-sly-list.product=${compare.productResourceList}>
+								<li class="a-compare" n='${product.productName}' data-product-path="${product.path}" f="1" p='1'>${product.productName}</li>
+
+							</ol>
+						</div>							
+						<div class="select">
+							<span data-text="${compare.categoryName}">${compare.categoryName}</span>
+							<ol _mark='${compare.categoryName}' data-sly-list.product=${compare.productResourceList}>
+								<li class="a-compare" n='${product.productName}'  data-product-path="${product.path}" f="1" p='2'>${product.productName}</li>
+
+							</ol>
+						</div>
+							
+					</div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <sly data-sly-list.spec="${compare.categorySpecList}">
+	<div class="compare_property_${spec.propertyKey} compare_part compare_part_base" data-property-key="${spec.propertyKey}"><div class="compare_content">
+		<div class="compare_title"><div class="compare_center"><b>${spec.propertyTitle}</b><div class="column_colse"></div></div></div>
+		<div class="compare_list"><ul class="compare_uList"><li class="none"></li><li class="none"></li><li class="none"></li></ul></div>
+	</div></div>
+    </sly>
+	
+</div>
+
+
+

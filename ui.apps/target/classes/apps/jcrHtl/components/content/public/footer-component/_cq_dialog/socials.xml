@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Socials"
+    sling:resourceType="granite/ui/components/foundation/section">
+    <layout
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+    <items jcr:primaryType="nt:unstructured">
+        <column
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <socials
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/form/multifield"
+                    class="full-width"
+                    fieldDescription="Click 'Add field' to add a social"
+                    fieldLabel="Socials">
+                    <field
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                        acs-commons-nested="NODE_STORE"
+                        name="./socials">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            method="absolute"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <socialType
+                                          jcr:primaryType="nt:unstructured"
+                                          sling:resourceType="granite/ui/components/foundation/form/select" 
+                                          fieldLabel="Social type"
+                                          name="./socialType">
+                                          <items jcr:primaryType="nt:unstructured">
+                                              <facebook
+                                                  jcr:primaryType="nt:unstructured"
+                                                  text="Facebook"
+                                                  value="Facebook"/>
+                                              <twitter
+                                                  jcr:primaryType="nt:unstructured"
+                                                  text="Twitter"
+                                                  value="Twitter"/>
+                                              <instagram
+                                                  jcr:primaryType="nt:unstructured"
+                                                  text="Instagram"
+                                                  value="Instagram"/>
+                                              <googleplus
+                                                  jcr:primaryType="nt:unstructured"
+                                                  text="Googleplus"
+                                                  value="Googleplus"/>
+                                              <youtube
+                                                  jcr:primaryType="nt:unstructured"
+                                                  text="Youtube"
+                                                  value="Youtube"/>
+                                              <linkedIn
+                                                  jcr:primaryType="nt:unstructured"
+                                                  text="LinkedIn"
+                                                  value="LinkedIn"/>
+                                              <pinterest
+                                                  jcr:primaryType="nt:unstructured"
+                                                  text="Pinterest"
+                                                  value="Pinterest"/>
+                                              <tumblr
+                                                  jcr:primaryType="nt:unstructured"
+                                                  text="Tumblr"
+                                                  value="Tumblr"/>
+                                              <snapchat
+                                                  jcr:primaryType="nt:unstructured"
+                                                  text="Snapchat"
+                                                  value="Snapchat"/>
+                                              <line
+                                                  jcr:primaryType="nt:unstructured"
+                                                  text="Line"
+                                                  value="Line"/>
+                                          </items>
+                                      </socialType>
+                                    <link
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldDescription="Link"
+                                        fieldLabel="Link"
+                                        name="./link"
+                                        rootPath="/content/huawei-cbg-site"/>
+                                    <openInNewPage
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                        text="Open in New Page"
+                                        value="true"
+                                        name="./openInNewPage" />
+                                    <act
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldDescription="This value is used for Analytics purpose"
+                                        fieldLabel="Analytics Action (act)"
+                                        name="./act"/>
+                                </items>
+                            </column>
+                        </items>
+                    </field>
+                </socials>
+            </items>
+        </column>
+    </items>
+</jcr:root>

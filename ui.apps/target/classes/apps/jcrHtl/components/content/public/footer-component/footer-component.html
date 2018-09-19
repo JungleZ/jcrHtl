@@ -1,0 +1,48 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Footer Component</p>
+<sly data-sly-use.footerComp="com.huawei.consumer.site.core.components.publics.FooterComponent">
+<div class="foot_module foot_v27">
+    <div class="conv3_footer">
+    	<div id="pro_declaration" data-sly-test=${footerComp.policy}>
+    		${footerComp.policy @ context='html'}
+    	</div>
+        <div data-sly-resource="${ @path='news-letter-subscribe', resourceType='huawei-cbg-site/components/content/public/news-letter-subscribe-component'}" data-sly-unwrap="${!wcmmode.edit}"></div>
+        <div class="icons_mobile" data-sly-list.socialItem="${footerComp.socials}">
+            <a href="${socialItem.link}" sns="${socialItem.socialType}" class="social_follow icon_public icon_${socialItem.socialType}"></a>
+        </div>
+        <div class="listcon">
+            <div class="column">
+               <sly data-sly-resource="${ @path='content1', resourceType='wcm/foundation/components/iparsys'}" />
+            </div>
+            <div class="column">
+                <sly data-sly-resource="${ @path='content2', resourceType='wcm/foundation/components/iparsys'}" />
+            </div>
+            <div class="column">
+               <sly data-sly-resource="${ @path='content3', resourceType='wcm/foundation/components/iparsys'}" />
+            </div>
+            <div class="column">
+                <sly data-sly-resource="${ @path='content4', resourceType='wcm/foundation/components/iparsys'}" />
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="uk_icon">
+                <div class="tags">
+                    <a data-sly-test="${!locationItem.link}" class="a-common uk region_change" cat="Footer" act="" lab="<page title>" href="javascript:;" data-current-site="${footerComp.currentSite}">${footerComp.currentSite}</a>
+                    <sly data-sly-list.locationItem="${footerComp.locations}">
+                        <a data-sly-test="${locationItem.link}" class="a-common ${locationItem.cssClass}" cat="Footer" act="${locationItem.act}" lab="<page title>" href="${locationItem.link}" target="${locationItem.openInNewPage ? '_blank' : ''}" >${locationItem.label}</a>
+                    </sly>
+                </div>
+                <div class="icons" data-sly-list.socialItem="${footerComp.socials}">
+                    <a href="javascript:;" sns="${socialItem.socialType}" cat="Social Follows" act="${socialItem.act}" lab="<page title>" class="social_follow icon_public icon_${socialItem.socialType} external_link pop_fancybox" v="${socialItem.link}"></a>
+                </div>
+            </div>
+            <div class="menu_copy">
+                <div class="menu" data-sly-list.supportLinkItem="${footerComp.supportLinks}">
+                    <a cat="Footer" act="${supportLinkItem.act}" target="${supportLinkItem.openInNewPage ? '_blank' : ''}" href="${supportLinkItem.link}" lab="<page title>" class="a-common">${supportLinkItem.label}</a>
+                </div>
+                <div class="copy">${footerComp.copyrightContent}</div>
+            </div>
+        </div>
+    </div>
+</div>
+</sly>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    bgImageAlt1="SPEAK.YOUR STYLE"
+    bgImageAlt2="INSPIRED BY OUR PASSION FOR PERFORMANCE"
+    bgImageURL1="/content/dam/huawei-cbg-site/en-master/home/img_con_v27_s4_banner1.jpg"
+    bgImageURL2="/content/dam/huawei-cbg-site/en-master/home/img_con_v27_s4_banner2.jpg"
+    titleText1="SPEAK.YOUR STYLE"
+    titleText2="INSPIRED BY OUR PASSION FOR PERFORMANCE">
+    <buttons1 jcr:primaryType="nt:unstructured">
+        <item1
+            jcr:primaryType="nt:unstructured"
+            openInNewPage="false"
+            text="TALKBAND B3"
+            type="black-button"/>
+        <item2
+            jcr:primaryType="nt:unstructured"
+            openInNewPage="false"
+            text="BUY"
+            type="red-button"/>
+    </buttons1>
+    <buttons2 jcr:primaryType="nt:unstructured">
+        <item1
+            jcr:primaryType="nt:unstructured"
+            openInNewPage="false"
+            text="HUAWEI MATE 9"
+            type="black-button"/>
+        <item2
+            jcr:primaryType="nt:unstructured"
+            openInNewPage="false"
+            text="BUY"
+            type="red-button"/>
+    </buttons2>
+</jcr:root>

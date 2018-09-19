@@ -1,0 +1,32 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Site map component</p>
+<sly data-sly-use.sitemapComponent="com.huawei.consumer.site.core.components.publics.SitemapComponent" 
+        data-sly-test="${sitemapComponent.pageList}">
+	<div class="conv3_wrap conv3_sitemap_wrap">
+	     <div class="content">
+	         <div class="column_contain">
+                 <div class="column_width">
+                     <div class="word">
+                        <h1>${properties.headingText}</h1>
+                        <div class="ct" data-sly-list.siteParent="${sitemapComponent.pageList}">
+                        	<sly data-sly-test.displayCSS="${siteParent.isDisplay ? '' : 'display:none'}" />
+                        	<sly data-sly-test.floatCSS="${(siteParentList.last && siteParentList.even) ? 'float:left' : ''}"/>
+                   			<div class="${siteParentList.odd ? 'fl' : 'fr'}" style="${displayCSS @ context='styleString'};${floatCSS @ context='styleString'}">
+	                   			 <p>
+		                            <a class="title">${siteParent.title}</a>
+		                         </p>
+		                         <sly data-sly-list.child="${siteParent.children}">
+		                         	<sly data-sly-test.isWrapperId="${child.wrapHeaderId}"></sly>
+		                             <p data-sly-use.linkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=child.link}">
+	                               	 	<a data-sly-test="${isWrapperId && child.isDisplay}" href="javascript:;" class="a-common sitemap_wrapper" wrap="${child.wrapHeaderId}" cat="${child.wrapHeaderId == 'menu_module_allphone' ? 'Menu: Phones' : 'Menu: More Products'}" act="${child.act}" lab="Sitemap - <page title>">${child.title}</a>
+	                               	 	<a data-sly-test="${!isWrapperId && child.isDisplay}" href="${linkHelper.link}" target="${child.openInNewpage ? '_blank' : ''}" cat="Sitemap" act="${child.act}" lab="<page title>">${child.title}</a>
+	                                </p>
+		                         </sly>
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+	     </div>
+	 </div>
+ </sly>
+

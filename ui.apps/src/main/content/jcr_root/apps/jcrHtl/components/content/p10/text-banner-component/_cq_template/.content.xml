@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <textBannerItems jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            buttonText="COLOUR"
+            descText="Take some of the most outstanding pictures of your life: 20MP + 12MP camera modules, Optical Image Stabilisation (OIS), Artistic portraits and unique selfies in Leica image style. Redefine modern portrait photography.&#xd;&#xa;"
+            mbImageUrl="#"
+            pcImageUrl="/content/dam/huawei-cbg-site/common/component/mkt/p10/bokehBg2.jpg"
+            title="HUAWEI + LEICA"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            buttonText="MONOCHROME"
+            descText="Leica Dual Camera 2.0 enables wide aperture photography for stunning artistic portraits with natural bokeh effect. Exclusive depth-of-field technology makes your portraits sharper, clearer, and more beautiful.&#xd;&#xa;"
+            mbImageUrl="#"
+            pcImageUrl="/content/dam/huawei-cbg-site/common/component/mkt/p10/bokehBg.jpg"
+            title="NATURAL BOKEH EFFECT"/>
+    </textBannerItems>
+</jcr:root>

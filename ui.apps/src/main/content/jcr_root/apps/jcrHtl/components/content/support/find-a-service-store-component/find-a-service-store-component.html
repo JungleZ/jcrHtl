@@ -1,0 +1,103 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Find Service Store Component</p>
+
+<!-- import clientlib css base on mapType -->
+<div data-sly-use.clientLibMap="${'/libs/granite/sightly/templates/clientlib.html'}" data-sly-unwrap>
+	<sly data-sly-test="${properties.mapType == 'fixed'}">
+		<sly data-sly-call="${clientLibMap.css @ categories='huawei-cbg-site.components.map.fixed'}"/>
+	</sly>
+	<sly data-sly-test="${properties.mapType == 'withDistance'}">
+		<sly data-sly-call="${clientLibMap.css @ categories='huawei-cbg-site.components.map.with-distance'}"/>
+	</sly>	
+</div>
+
+<div class="conv3_content">
+	<div class="conv3_sc_search"
+		data-sly-use.apisConst="${'com.huawei.consumer.site.core.utils.APIsConstants'}"
+	    data-sly-use.provinceUrlHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.provinceApiUrl, key=apisConst.FIND_A_SERVICE_STORE_PROVINCE_API_URL }"
+	    data-sly-use.cityUrlHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.cityApiUrl, key=apisConst.FIND_A_SERVICE_STORE_CITY_API_URL }"
+	    data-sly-use.normalTypeUrlHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.normalTypeApiUrl, key=apisConst.FIND_A_SERVICE_STORE_NORMAL_TYPE_API_URL}"
+	    data-sly-use.fixedTypeUrlHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.fixedTypeApiUrl, key=apisConst.FIND_A_SERVICE_STORE_FIXED_TYPE_API_URL}"
+	    data-sly-use.withDistanceTypeUrlHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.withDistanceTypeApiUrl, key=apisConst.FIND_A_SERVICE_STORE_WITH_DISTANCE_TYPE_API_URL }">
+	    <div class="sc_search_tit">
+	        <h1>${properties.title}</h1>
+	        <ul>
+	            <li class="sc_icon_map active"><i class="h_map_icon"></i></li>
+	            <li class="sc_icon_list"><i class="h_map_icon"></i></li>
+	        </ul>
+	    </div>
+	    <div class="sc_search_cont">
+	    	<sly data-sly-test="${properties.mapType == 'normal'}">
+	         <div class="conv3_global_selector">
+	             <div class="select sc_country">
+	                 <span data-countryid="0" data-countryname="COUNTRY">${properties.defaultProvinceText}</span>
+	                 <ol id="service_center_country" _mark="COUNTRY">
+	                 </ol>
+	             </div>
+	             <div class="select sc_city">
+	                 <span data-cityid="0" data-cityname="CITY">${properties.defaultCityText}</span>
+	                 <ol id="service_center_city" _mark="CITY">
+	                 </ol>
+	             </div>
+	         </div>
+	         <!--<input type="button" value="$LAG_SERVICE_SUBMIT" class="sc_search_btn" id="cService_serach_btn">-->
+	         <a href="javascript:;" class="sc_search_btn" id="cService_serach_btn">${properties.submitButtonText}</a>
+	        </sly>
+	        
+	        <sly data-sly-test="${properties.mapType == 'withDistance'}">
+	         <form class="sc_search" action="">
+	            	<input type="text" class="my_keys" id="fill_keywords_input" maxlength="50" placeholder="${properties.searchDefaultText}" onfocus="">
+	            	<i class="res-search-icon"></i>
+	            	<a class="btn goto_search_btn"  href="javascript:;"></a>
+	        	</form>
+	        	<a href="javascript:;" class="sc_search_btn" id="cService_serach_btn">${properties.submitButtonText}</a>
+	        	<sly data-sly-use.component="com.huawei.consumer.site.core.components.support.FindAServiceStoreComponent">
+	         	<ul class="map-distance clearfix" data-sly-list.distances="${component.distances}">
+	         		<li><a href="javascript:;" class="${distancesList.last ? 'active': ''} z_distance" dis="${distances.value}">${distances.title}</a></li>
+	         	</ul>
+	        	</sly>
+	       	</sly>
+	        
+	    </div>
+	</div>
+	<ul class="conv3_sc_status" data-sly-test="${properties.mapType == 'normal' && properties.annotation}">
+		${properties.annotation @ context='html'}
+	</ul>
+	<div class="conv3_sc_map">
+	    <div id="map_canvas">
+	    </div>
+	</div>
+	<div class="conv3_sc_info">
+	    <ul class="sc_info_ul">
+	    </ul>
+	</div>
+	
+	<input type="hidden" id="mapType" value="${properties.mapType}">
+	<input type="hidden" id="provinceErrorMessage" value="${properties.provinceErrorMessage}">
+	<input type="hidden" id="cityErrorMessage" value="${properties.cityErrorMessage}">
+	<input type="hidden" id="inputErrorMessage" value="${properties.inputErrorMessage}">
+	<input type="hidden" id="noResultMessage" value="${properties.noResultMessage}">
+	<input type="hidden" id="provinceUrl" value="${provinceUrlHelper.apiUrl}">
+	<input type="hidden" id="cityUrl" value="${cityUrlHelper.apiUrl}">
+	<input type="hidden" id="normalTypeUrl" value="${normalTypeUrlHelper.apiUrl}">
+	<input type="hidden" id="fixedTypeUrl" value="${fixedTypeUrlHelper.apiUrl}">
+	<input type="hidden" id="withDistanceTypeUrl" value="${withDistanceTypeUrlHelper.apiUrl}">
+	<input type="hidden" id="latitude" value="${properties.latitude}">
+	<input type="hidden" id="longitude" value="${properties.longitude}">
+	<input type="hidden" id="defaultLocation" value="${properties.defaultLocation}">
+	<input type="hidden" id="noServiceMapLocationMessage" value="${properties.noServiceMapLocationMessage}">
+	<input type="hidden" id="zeroResultMessage" value="${properties.zeroResultMessage}">
+	<input type="hidden" id="errorMessage" value="${properties.errorMessage}">
+	<input type="hidden" id="invalidRequestMessage" value="${properties.invalidRequestMessage}">
+	<input type="hidden" id="overQueryLimitMessage" value="${properties.overQueryLimitMessage}">
+	<input type="hidden" id="requestDeniedMessage" value="${properties.requestDeniedMessage}">
+	<input type="hidden" id="unknownErrorMessage" value="${properties.unknownErrorMessage}">
+	<input type="hidden" id="popupSearchDefaultText" value="${properties.popupSearchDefaultText}">
+	<input type="hidden" id="popupButton1Text" value="${properties.popupButton1Text}">
+	<input type="hidden" id="popupButton2Text" value="${properties.popupButton2Text}">
+	<input type="hidden" id="searchDefaultText" value="${properties.searchDefaultText}">
+	<input type="hidden" id="defaultCityText" value="${properties.defaultCityText}">
+</div>
+    
+
+
+

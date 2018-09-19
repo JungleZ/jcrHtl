@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <products jcr:primaryType="nt:unstructured">
+        <item1
+            jcr:primaryType="nt:unstructured"
+            buttonText="Explore"
+            hideButtonInPC="yes"
+            newTab="true"
+            productImageUrl="/content/dam/huawei-cbg-site/en-master/home/img_con_v27_s3_banner1.png"
+            subTitle="REINVENT SMARTPHONE PHOTOGRAPHY."
+            title="HUAWEI MATE BOOK"/>
+        <item2
+            jcr:primaryType="nt:unstructured"
+            buttonText="Explore"
+            hideButtonInPC="yes"
+            productImageUrl="/content/dam/huawei-cbg-site/en-master/home/img_con_v27_s3_banner1.png"
+            subTitle="REINVENT SMARTPHONE PHOTOGRAPHY."
+            title="HUAWEI MATE BOOK"/>
+        <item3
+            jcr:primaryType="nt:unstructured"
+            buttonText="Explore"
+            hideButtonInPC="yes"
+            productImageUrl="/content/dam/huawei-cbg-site/en-master/home/img_con_v27_s3_banner1.png"
+            subTitle="REINVENT SMARTPHONE PHOTOGRAPHY."
+            title="HUAWEI MATE BOOK"/>
+        <item4
+            jcr:primaryType="nt:unstructured"
+            buttonText="Explore"
+            hideButtonInPC="yes"
+            productImageUrl="/content/dam/huawei-cbg-site/en-master/home/img_con_v27_s3_banner1.png"
+            subTitle="REINVENT SMARTPHONE PHOTOGRAPHY."
+            title="HUAWEI MATE BOOK"/>
+    </products>
+</jcr:root>

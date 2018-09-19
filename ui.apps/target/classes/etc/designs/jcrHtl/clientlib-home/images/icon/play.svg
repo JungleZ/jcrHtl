@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="164px" height="164px" viewBox="0 0 164 164" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
+    <title>为播放状态</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-638.000000, -1788.000000)">
+        <g id="Rectangle-17-Copy-2" transform="translate(0.000000, 1520.000000)">
+            <g id="为播放状态" transform="translate(640.000000, 270.000000)">
+                <g id="播放按钮">
+                    <g transform="translate(0.000000, 0.000000)">
+                        <circle id="Oval" stroke="#FFFFFF" stroke-width="3" cx="80" cy="80" r="80"></circle>
+                        <circle id="Oval" fill="#000000" opacity="0.3" cx="80" cy="80" r="80"></circle>
+                        <path d="M93.778277,60.6408986 L115.58119,99.8861424 C117.190469,102.782845 116.146807,106.435665 113.250104,108.044944 C112.358756,108.540137 111.355912,108.8 110.336247,108.8 L66.7304201,108.8 C63.4167116,108.8 60.7304201,106.113708 60.7304201,102.8 C60.7304201,101.780335 60.9902831,100.77749 61.4854764,99.8861424 L83.2883897,60.6408986 C84.8976688,57.7441962 88.5504885,56.7005334 91.4471909,58.3098125 C92.4266313,58.8539461 93.2341434,59.6614582 93.778277,60.6408986 Z" id="Triangle" fill="#FFFFFF" transform="translate(88.533333, 80.000000) rotate(90.000000) translate(-88.533333, -80.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

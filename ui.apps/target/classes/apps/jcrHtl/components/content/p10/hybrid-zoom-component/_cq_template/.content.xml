@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2017-06-19T18:04:57.458+08:00"
+    jcr:createdBy="admin"
+    jcr:lastModified="{Date}2017-06-19T18:14:04.095+08:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="huawei-cbg-site/components/content/p10/hybrid-zoom-component"
+    description=" HUAWEI P10 Plus’s 20MP + 12MP camera modules and HUAWEI’s versatile hybrid zoom improve the smoothness, clarity and simplicity                 of portrait photography.             "
+    desktopImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/img/zoomBg.jpg"
+    mobileImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/img/zoomBgMobi.jpg"
+    mobileImageAlt="Mobile Background Image Alt"
+    title="HYBRID ZOOM"
+    zoomFrameImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/img/zoomphoneFrameModel.png"
+    zoomImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/img/zoomImg.jpg"
+    zoomText="ZOOM"/>

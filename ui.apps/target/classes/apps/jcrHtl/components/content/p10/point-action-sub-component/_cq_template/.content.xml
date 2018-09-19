@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2017-04-17T15:44:39.876+08:00"
+    jcr:createdBy="admin"
+    jcr:lastModified="{Date}2017-04-17T18:13:34.554+08:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="huawei-cbg-site/components/content/p10/point-action-sub-component"
+    description="HUAWEI WATCH 2 Classic is compatible with standard 22mm straps. Swap them easily to fit your style."
+    desktopProductImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01.png"
+    latitude="0"
+    latitudeMobile="10%"
+    longitude="4"
+    longitudeMobile="40%"
+    mobileProductImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-mob.png"
+    title="SWAP THE BAND TO SUIT YOUR STYLE"
+    titleImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband.jpg"/>

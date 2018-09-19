@@ -1,0 +1,60 @@
+<p style="text-align: center; color:black;margin:0px;padding:0px;" data-sly-test="${wcmmode.edit}">Video Component</p>
+<!--Type 17 ÊÓÆµ°æ¿é-->
+    <div class="one-level type17">
+        <img class="mobile-background" src="${properties.mobileBackground}" data-video-mobile-background="${properties.mobileBackground}" data-video-desktop-background="${properties.desktop}"/>
+        <div>
+            <div class="title">
+                <h2>${properties.title}</h2>
+                <p>
+                    ${properties.description}
+                </p>
+            </div>
+
+
+            <div class="content-play-background">
+                <div>
+                    <img class="my_img" src="${properties.desktop }" width="1000" height="650" /> 
+                    <a class="play-btn icon"
+						data-video-image="${properties.desktopPayerBackgroundImage }"
+						data-t-ignore-link="true" href="${properties.videoLink }"
+						data-video-id="videoPlayer" data-t-label="${properties.title}"
+						data-video-ratio="16:9" data-video-name="${properties.videoName}">
+						<i class="play-btn-icon"></i>
+					</a>
+				<h2 class="title2">${properties.desktopTitle }</h2>
+                    <ul class="content-icon-ul-play" data-sly-use.comp="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='blocks'}" data-sly-list.blocks="${comp.multifieldResources}">
+                        <li>
+                            <a
+								data-video-image="${blocks.valueMap.desktopPayerBackgroundImage}"
+								data-t-ignore-link="true" href="${blocks.valueMap.videoPath}"
+								data-video-id="videoPlayer" data-t-label="${properties.title}"
+								data-video-ratio="16:9"
+								data-video-name="${blocks.valueMap.videoName}">
+								${blocks.valueMap.title} 
+								<i class="icon_public icon_play_lt"></i>
+							</a>
+						</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="W-section W-ShareWrap">
+            <div class="W-Container">
+                <div class="W-shareBlock">
+                    <a href="javascript:void(0)" class="W-shareCopy" cat="Social Share Clicks" act="Share Button" lab="<product name> - ${properties.videoName} - <page title>">${'Share' @ i18n}</a>
+                </div>
+                <div class="W-shareHideBlock" style="display: none;">
+                    <input class="W-shareURL" value="" style="opacity: 1;" cat="Social Share Clicks" act="Copy to Clipboard" videoname="${properties.videoName}">
+                    <a class="W-facebook-- external_link" href="https://www.facebook.com/sharer/sharer.php." rel="nofollow" cat="Social Share Clicks" act="Facebook Share" lab="<product name> - ${properties.videoName} - <page title>">
+                        <img src="/etc/designs/huawei-cbg-site/clientlib-p10/img/icoFacebook.png" height="16">
+                    </a>
+                    <a class="W-twitter-- external_link" href="http://twitter.com/intent/tweet" rel="nofollow" cat="Social Share Clicks" act="Twitter Share" lab="<product name> - ${properties.videoName} - <page title>">
+                        <img src="/etc/designs/huawei-cbg-site/clientlib-p10/img/icoTwitt.png" height="14">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+	</div>

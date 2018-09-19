@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    description="HUAWEI P10 sets an industry benchmark for style and craftsmanship with the first hyper diamond-cut finishing on a smartphone, which adds strength and colour. Finishes also available in high gloss and sandblast."
+    desktopImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/erjmdbg_1920X680.jpg"
+    image="/content/dam/huawei-cbg-site/common/component/mkt/p10/ejbk_cpt_zyjg_500X680px.png"
+    imagePosition="right"
+    title="COLOUR · STYLE · INNOVATION">
+    <blocks jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            description="benchmark for style and craftsmanship with the first"
+            imagePath="/content/dam/huawei-cbg-site/common/component/mkt/p10/ico_4in1.png"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            description="benchmark for style and craftsmanship with the first"
+            imagePath="/content/dam/huawei-cbg-site/common/component/mkt/p10/ico_4in1.png"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            description="benchmark for style and craftsmanship with the first"
+            imagePath="/content/dam/huawei-cbg-site/common/component/mkt/p10/ico_4in1.png"/>
+        <_x0034_
+            jcr:primaryType="nt:unstructured"
+            description="benchmark for style and craftsmanship with the first"
+            imagePath="/content/dam/huawei-cbg-site/common/component/mkt/p10/ico_4in1.png"/>
+    </blocks>
+</jcr:root>

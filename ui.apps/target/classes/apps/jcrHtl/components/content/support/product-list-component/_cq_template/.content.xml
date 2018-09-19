@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    currentCatePath="/content/huawei-cbg-site/en-master/support/phones"
+    length2Message="Enter two words at least"
+    loadMoreBtnText="LOAD MORE"
+    moreCategoryText="MORE"
+    resultEmptyText="Sorry, No results were found."
+    searchApiUrl="http://consumer.huawei.com/support/services/service/isearch/open/list"
+    searchInputPlaceHolder="Enter the product model"
+    searchTermEmpty="Please enter a search term">
+    <categoryItems jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            title="Smart Phones"
+            url="/content/huawei-cbg-site/en-master/support/phones"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            title="PC &amp; Tablets"
+            url="/content/huawei-cbg-site/en-master/support/tablets"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            title="Wearables"
+            url="/content/huawei-cbg-site/en-master/support/wearables"/>
+        <_x0034_
+            jcr:primaryType="nt:unstructured"
+            title="Accessories"
+            url="/content/huawei-cbg-site/en-master/support/accessories"/>
+    </categoryItems>
+    <subCategoryItems jcr:primaryType="nt:unstructured">
+        <_x0035_
+            jcr:primaryType="nt:unstructured"
+            icons="icon_mobile_wifi"
+            title="Mobile Wifi"
+            url="/content/huawei-cbg-site/en-master/support/mobile-broadband/mobile-wifi"/>
+        <_x0036_
+            jcr:primaryType="nt:unstructured"
+            icons="icon_dongles"
+            title="Dongles"
+            url="/content/huawei-cbg-site/en-master/support/mobile-broadband/dongles"/>
+        <_x0037_
+            jcr:primaryType="nt:unstructured"
+            icons="icon_wangles"
+            title="Wingles"
+            url="/content/huawei-cbg-site/en-master/support/mobile-broadband/wingles"/>
+        <_x0038_
+            jcr:primaryType="nt:unstructured"
+            icons="icon_cpe"
+            title="CPE"
+            url="/content/huawei-cbg-site/en-master/support/accessories0"/>
+        <_x0039_
+            jcr:primaryType="nt:unstructured"
+            icons="icon_plc"
+            title="PLCs"
+            url="/content/huawei-cbg-site/en-master/support/smart-home/plc"/>
+        <_x0031_0
+            jcr:primaryType="nt:unstructured"
+            icons="icon_4g_lte_routers"
+            title="4G LTE Routers"
+            url="/content/huawei-cbg-site/en-master/support/smart-home/4g-lte-routers"/>
+        <_x0031_1
+            jcr:primaryType="nt:unstructured"
+            icons="icon_wireless_routers"
+            title="Wi-Fi Repeaters"
+            url="/content/huawei-cbg-site/en-master/support/smart-home/wi-fi-repeaters"/>
+        <_x0031_2
+            jcr:primaryType="nt:unstructured"
+            icons="icon_wifi_repeaters"
+            title="Wireless Routers"
+            url="/content/huawei-cbg-site/en-master/support/smart-home/wireless-routers"/>
+        <_x0031_3
+            jcr:primaryType="nt:unstructured"
+            icons="icon_media_q"
+            title="MediaQ"
+            url="/content/huawei-cbg-site/en-master/support/smart-home/mediaq"/>
+    </subCategoryItems>
+</jcr:root>

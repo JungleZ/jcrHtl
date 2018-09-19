@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    imagePathLeft="/etc/designs/huawei-cbg-site/images/common/grayBackground.jpg"
+    imagePathRight="/etc/designs/huawei-cbg-site/images/common/grayBackground.jpg"
+    leftLab="HUAWEI FIT: The New Style of Fitness, position1"
+    linkText="Watch"
+    newsTitleLeft="Left News Title"
+    newsTitleRight="Right News Title"
+    rightLab="HUAWEI FIT: The New Style of Fitness, position2"
+    title="Huawei Video Center"/>

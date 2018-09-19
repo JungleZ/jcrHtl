@@ -1,0 +1,84 @@
+/*-------------------------awards simple-----------------------------*/
+.awards-simple-wrapper{
+    background-color:#000;
+    padding-bottom: 55px;
+}
+.awards-simple-wrapper.reverse {
+    background-color: white;
+}
+.awards-simple-wrapper.reverse .text-wrapper {
+    color: black;
+}
+.awards-simple-wrapper.reverse h2 {
+    background-color: white;
+    color: black;
+}
+.awards-simple-wrapper h2 {
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 8px;
+    padding: 45px 0px 30px 0px;
+    background: #000; /*add*/
+}
+.awards-simple{
+    display: table;
+    max-width: 1024px;
+    margin: 0px auto;
+    padding:0px;
+}
+.awards-simple li{
+    line-height:35px;
+    float:left;
+    box-sizing:border-box;
+    padding: 10px 20px;
+}
+/* .awards-simple li.num2{
+    width: 50%;
+}
+.awards-simple li.num3{
+    width: 33%;
+}
+.awards-simple li.num4{
+    width: 25%;
+} */
+.awards-simple .img-wrapper{
+    text-align: center;
+}
+.awards-simple .img-wrapper img{
+    max-width: 100%;
+}
+.awards-simple .text-wrapper{
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+}
+.clearfix{
+    clear: both;
+}
+@media screen and (max-width:767px){
+    .awards-simple-wrapper{
+        padding-bottom: 30px;
+    }
+    .awards-simple-wrapper h2 {
+        padding: 60px 0px 10px 0px;
+        letter-spacing: 3px;
+        font-size: 1rem;
+    }
+    .awards-simple{
+        max-width: 100%;
+    }
+    .awards-simple li{
+        float:left;
+    }
+     .awards-simple li.num2,.awards-simple li.num3,.awards-simple li.num4{
+        width: 50%;
+    } 
+    .awards-simple .text-wrapper {
+        line-height: 1.2rem;
+        font-size: .875rem;
+    }
+}
+/*-------------------------awards simple-----------------------------*/

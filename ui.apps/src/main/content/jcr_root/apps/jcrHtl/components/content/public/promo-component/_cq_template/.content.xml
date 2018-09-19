@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    componentTitle="PROMO"
+    loadMoreText="LOAD MORE">
+    <promos jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            promoAlt="Acquista Huawei P9 e P9Plus e ricevi in regalo l"
+            promoImage="/content/dam/huawei-cbg-site/en-master/public/hw_u_035764.jpg"
+            promoTitle="Acquista Huawei P9 e P9Plus e ricevi in regalo l'esclusivo kit Huawei Powerbox"
+            pubdate="2017-03-01T16:05:00.000+07:00"
+            summary="Operazione valida dal 15 Settembre al 30 Ottobre 2016"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            promoAlt="Ascend G7 AC Milan Edition 555"
+            promoImage="/content/dam/huawei-cbg-site/en-master/public/hw_u_035867.jpg"
+            promoTitle="Ascend G7 AC Milan Edition 555"
+            pubdate="2017-01-03T16:08:00.000+07:00"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            promoAlt="Ascend G7 AC Milan Edition"
+            promoImage="/content/dam/huawei-cbg-site/en-master/public/hw_u_035864.png"
+            promoTitle="Ascend G7 AC Milan Edition"
+            promoUrl="http://download-c.huawei.com/download/downloadCenter?downloadId=43764&amp;version=90230&amp;siteCode=it&amp;view=true"
+            pubdate="2016-11-10T16:09:00.000+07:00"
+            summary="OFFERTA SCADUTA. Operazione valida dal 12 Marzo al 12 maggio 2015 inclusi, nei punti vendita ufficiali AC Milan. Consulta il regolamento qui"/>
+        <_x0034_
+            jcr:primaryType="nt:unstructured"
+            promoAlt="Ascend G7 AC Milan Edition 333"
+            promoImage="/content/dam/huawei-cbg-site/en-master/public/hw_u_035866.jpg"
+            promoTitle="Ascend G7 AC Milan Edition 333"
+            pubdate="2016-10-05T16:10:00.000+07:00"
+            summary="OFFERTA SCADUTA. Operazione valida dal 12 Marzo al 12 maggio 2015 inclusi, nei punti vendita ufficiali AC Milan. Consulta il regolamento qui"/>
+        <_x0035_
+            jcr:primaryType="nt:unstructured"
+            promoAlt="Ascend G7 AC Milan Edition 222"
+            promoImage="/content/dam/huawei-cbg-site/en-master/public/hw_u_035865.jpg"
+            promoTitle="Ascend G7 AC Milan Edition 222"
+            pubdate="2016-03-10T16:11:00.000+07:00"
+            summary="OFFERTA SCADUTA. Operazione valida dal 12 Marzo al 12 maggio 2015 inclusi, nei punti vendita ufficiali AC Milan. Consulta il regolamento qui"/>
+        <_x0036_
+            jcr:primaryType="nt:unstructured"
+            promoAlt="Ascend G7 AC Milan Edition 6666"
+            promoImage="/content/dam/huawei-cbg-site/en-master/public/hw_u_035868.jpg"
+            promoTitle="Ascend G7 AC Milan Edition 6666"
+            pubdate="2014-03-12T16:12:00.000+07:00"
+            summary="Ascend G7 AC Milan Edition, Ascend G7 AC Milan Edition"/>
+    </promos>
+</jcr:root>

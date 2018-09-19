@@ -1,0 +1,23 @@
+<!--/* Indicates a possible user action.*/-->
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Image Banner Component</p>
+<sly data-sly-use.imgBannerComp="${'com.huawei.consumer.site.core.components.home.ImageBannerComponent'}" data-sly-test="${imgBannerComp}">
+<div class="section5 ${properties.imagePos == 'left' ? '' : 'word_img'}">
+   <div class="content">
+      <h2 class="for_seo">${properties.title}</h2>
+      <img class="bg appearance lazy_load" alt="${properties.bgImageAlt}" data-src="${properties.bgImageUrl}" src="/etc/designs/huawei-cbg-site/images/common/bg2800_490.png">
+      <div class="part1">
+         <strong class="delay300 appearance">${properties.title}</strong>
+      </div>
+      <div data-sly-test="${imgBannerComp.buttonList}" class="part2 ${imgBannerComp.buttonList.size > 1 ? 'two-btn' : ''}">
+         <p class="delay400 appearance">${properties.descText}</p>
+         <sly data-sly-list.button="${imgBannerComp.buttonList}">
+	         <span class="a-homecat" cat="${button.cat}" act="${button.act}" lab="${button.lab}">
+	         	<a target="${button.openInNewpage ? '_blank' : ''}" href="${button.link}" class="delay500 appearance">
+	         	${button.text}
+	         	</a>
+	         </span>
+         </sly>
+      </div>
+   </div>
+</div>
+</sly>

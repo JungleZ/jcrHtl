@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    appointmentDateErrorText="Please select appointment date."
+    appointmentTimeErrorText="Please select appointment time."
+    backButtonText="Back"
+    cityDropdown="City"
+    cityDropdownErrorText="Please select a city."
+    confirmBoxCancelButtonText="Confirm Again"
+    confirmBoxSubmitButtonText="Yes"
+    confirmBoxText="Your request has finished. Please make sure all information are correct, it could not edit after your submit."
+    emailAddressErrorText="Please input a valid email address."
+    emailAddressText="Email Address:"
+    faultInfoErrorText="Please select a valid defect symptom."
+    faxNumText="FAX number:"
+    fullReservationMessage="Appointment is overflow"
+    givenNameErrorText="Please input a valid given name."
+    givenNameText="Given Name:"
+    imeiNoErrorText="Please input a valid IMEI/SN."
+    imeiNoText="IMEI No.:"
+    inputVerificationCodeMessage="Please input a valid verification code."
+    mobilePhoneErrorText="Please input a valid mobile phone number."
+    mobilePhoneNumText="Mobile Phone Number:"
+    nextButtonText="Next Step"
+    operatorOptionsErrorText="Please select an operator."
+    privatePolicyErrorText="Please read and agree Privacy Policy."
+    privatePolicyText="I have read and agree &lt;a href=&quot;http://consumer.huawei.com/testv27-demo/privacy-policy/index.htm&quot; class=&quot;color-red&quot; target=&quot;_blank&quot;>Privacy Policy&lt;/a>"
+    productByIdApi="http://consumer.huawei.com/support/services/service/product/reservation/list"
+    productDropdown="Please select the product type."
+    productDropdownErrorText="Please select a product category."
+    productModelDropdown="Select Product Model"
+    productModelDropdownErrorText="Please select a product model."
+    productTypeApi="http://consumer.huawei.com/support/services/service/network/reservation/product/category"
+    provinceDropdown="Province"
+    provinceDropdownErrorText="Please select a province."
+    reminderText="&lt;p>Reminder&lt;/p>&#xd;&#xa;&lt;p>1.Input &lt;span class=&quot;color-red&quot;>*#06#&lt;/span> on phone to query the corresponding IMEI/MEID.&lt;/p>&#xd;&#xa;&lt;p>2.You can get the IMEI/MEID/MAC/SN from the giftbox or label of phone.&lt;/p>"
+    reservationAddressListApi="http://consumer.huawei.com/support/services/service/network/list"
+    reservationApplyApi="http://consumer.huawei.com/support/services/service/os/reservation/apply"
+    reservationCityApi="http://consumer.huawei.com/support/services/base/place/list"
+    reservationProblemInfoApi="http://consumer.huawei.com/support/services/service/network/problem/list"
+    reservationProvinceApi="http://consumer.huawei.com/support/services/base/place/country/site"
+    reservationTimeApi="http://consumer.huawei.com/support/services/service/os/reservation/time/range"
+    searchBtnText="Search"
+    selectAServiceCenterMessage="There is not service center available"
+    serviceCenterErrorText="Please select a service center."
+    serviceTypeErrorText="Please select a type of service."
+    sessionUuidURL="http://consumer.huawei.com/support/services/base/basecommonService/sessionuuid"
+    step1Text="Step 1"
+    step1Title="Select Product Model"
+    step2Text="Step 2"
+    step2Title="Please Select Operator"
+    step3Text="Step 3"
+    step3Title="Please Select Service Type"
+    step4Text="Step 4"
+    step4Title="Please Select Service Center"
+    step5Text="Step 5"
+    step5Title="Please Select Appointment Date"
+    step6Text="Step 6"
+    step6Title="Please Select Appointment Time"
+    step7Text="Step 7"
+    step7Title="Fault Information"
+    step8Text="Step 8"
+    step8Title="Your Information"
+    submitButtonText="SUBMIT"
+    submitRepeatMessage="Please don't submit an application within the same time period"
+    successPageUrl="http://consumer.huawei.com/testv27-demo/support/reservation/success/index.htm"
+    surnameErrorText="Please input a valid surname."
+    surnameText="Surname:"
+    telephoneNumText="Telephone Number:"
+    title="Appointment Service "
+    verificationCodeErrorText="Please input a valid verification code."
+    verificationCodeText="Verification Code:"
+    verificationImageCodeURL="http://consumer.huawei.com/support/servlet/authMage">
+    <operatorOptions jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            title="Operator"
+            url="0"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            title="Movil exito"
+            url="Movil exito"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            title="Virgin mobile"
+            url="Virgin mobile"/>
+        <_x0034_
+            jcr:primaryType="nt:unstructured"
+            title="Uff"
+            url="Uff"/>
+        <_x0035_
+            jcr:primaryType="nt:unstructured"
+            title="ETB"
+            url="ETB"/>
+        <_x0036_
+            jcr:primaryType="nt:unstructured"
+            title="Tigo"
+            url="Tigo"/>
+        <_x0037_
+            jcr:primaryType="nt:unstructured"
+            title="Claro"
+            url="Claro"/>
+        <_x0038_
+            jcr:primaryType="nt:unstructured"
+            title="Movistar"
+            url="Movistar"/>
+        <_x0039_
+            jcr:primaryType="nt:unstructured"
+            title="Avantel"
+            url="Avantel"/>
+        <_x0031_0
+            jcr:primaryType="nt:unstructured"
+            title="Otros"
+            url="Otros"/>
+    </operatorOptions>
+    <serviceType jcr:primaryType="nt:unstructured">
+        <_x0031_1
+            jcr:primaryType="nt:unstructured"
+            serviceName="service-type-1"
+            serviceTitle="Device Repair"
+            serviceValue="101"/>
+    </serviceType>
+</jcr:root>

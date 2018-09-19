@@ -1,0 +1,15 @@
+#base=js
+html5shiv.min.js
+
+respond.js
+jquery.min.js
+bootstrap.min.js
+modernizr-2.8.3.min.js
+jquery.edslider.js
+imagesloaded.js
+smartresize.js
+jquery.skidder.js
+jerry.js
+
+
+

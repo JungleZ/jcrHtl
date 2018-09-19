@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    description="PANTONE Colour Institute sets global trends for colour. Now, HUAWEI P10 Plus sets trends for smartphones. PANTONE + HUAWEI.         An exclusive partnership that adds colour to your life."
+    title="SET THE TONE">
+    <images jcr:primaryType="nt:unstructured">
+        <item1
+            jcr:primaryType="nt:unstructured"
+            color="HYPER DIAMOND-CUT FINISHING"
+            colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/material1.png"
+            colorImageAltText="HUAWEI-p10-plus-material1"
+            mainImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/improvF1.jpg"
+            mainImageAltText="HUAWEI-p10-plus-improv-f1"/>
+        <item2
+            jcr:primaryType="nt:unstructured"
+            color="SANDBLAST"
+            colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/material2.png"
+            colorImageAltText="HUAWEI-p10-plus-material2"
+            mainImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/improvF2.jpg"
+            mainImageAltText="HUAWEI-p10-plus-improv-f2"/>
+        <item3
+            jcr:primaryType="nt:unstructured"
+            color="HIGH GLOSS"
+            colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/material3.png"
+            colorImageAltText="HUAWEI-p10-plus-material3"
+            mainImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/improvF3.jpg"
+            mainImageAltText="HUAWEI-p10-plus-improv-f3"/>
+    </images>
+</jcr:root>

@@ -1,0 +1,35 @@
+<div class="conv3_video_home">
+    <h1 class="for_seo">${properties.title}</h1>
+    <div class="recommend">
+        <ul>
+            <li>
+                <em>		
+                    <img alt="${properties.left_img_alt}" src="${properties.imagePathLeft}">
+            		<a cat="Press Banner" act="${currentPage.title}" lab="${properties.newsTitleLeft}-position1" href="${properties.urlLeft @ extension='html'}" class="icon a-common"></a>
+            	</em>
+                <span>                	
+                	<b data-sly-use.pages="com.huawei.consumer.site.core.components.press.PressVideoBannerComponent">${pages.leftTimeString}</b>
+                    <p data-sly-text="${properties.newsTitleLeft}">${properties.newsTitleLeft}</p>
+                	<a cat="Press Banner" act="${currentPage.title}" lab="${properties.newsTitleLeft}-position1" href="${properties.urlLeft @ extension='html'}"  class="a-common" data-sly-text="${properties.linkText}">${properties.linkText}</a>
+            	</span>
+            </li>
+
+            <li>
+                <em>		
+                	<img alt="${properties.right_img_alt}" src="${properties.imagePathRight}">
+            		<a cat="Press Banner" act="${currentPage.title}" lab="${properties.newsTitleRight}-position2" href="${properties.urlRight @ extension='html'}"  class="icon a-common"></a>
+            	</em>
+                <span>                	
+                	<b data-sly-use.pages="com.huawei.consumer.site.core.components.press.PressVideoBannerComponent">${pages.rightTimeString}</b>
+                	 <p data-sly-text="${properties.newsTitleRight}">${properties.newsTitleRight}</p>
+                     <a cat="Press Banner" act="${currentPage.title}" lab="${properties.newsTitleRight}-position2" href="${properties.urlRight @ extension='html'}"  class="a-common" data-sly-text="${properties.linkText}">${properties.linkText}</a>
+            	</span>
+            </li>
+
+        </ul>
+        <ol class="tabs">
+            <li class="current"></li>
+            <li></li>
+        </ol>
+    </div>
+</div>

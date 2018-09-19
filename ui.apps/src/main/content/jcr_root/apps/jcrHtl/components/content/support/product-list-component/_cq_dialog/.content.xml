@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Product List"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <productCategory
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Category"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <categorySpecs
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                fieldDescription="Click '+' to add a new Field"
+                                fieldLabel="Category Items">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    acs-commons-nested="NODE_STORE"
+                                    name="./categoryItems">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                        method="absolute"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldLabel="Title"
+                                                    name="./title"/>
+                                                <url
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldLabel="Url"
+                                                    name="./url"
+                                                    rootPath="/content/huawei-cbg-site"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </categorySpecs>
+                            <MoreCategoryText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="More Text"
+                                name="./moreCategoryText"/>
+                            <loadMoreBtnText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Load More Button Text"
+                                name="./loadMoreBtnText"/>
+                            <searchInputPlaceHolder
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Search Input Place Holder"
+                                name="./searchInputPlaceHolder"/>
+                            <resultEmptyText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Result Empty Text"
+                                name="./resultEmptyText"/>
+                            <searchApiUrl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Search API URL"
+                                name="./searchApiUrl"/>
+                            <searchTermEmpty
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Search Term Empty"
+                                fieldLabel="Search Term Empty"
+                                name="./searchTermEmpty"/>
+                            <length2Message
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Length 2 Message"
+                                name="./length2Message"/>
+                        </items>
+                    </columns>
+                </items>
+            </productCategory>
+            <productSubCategory
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Sub-Category"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <subCategorySpecs
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                fieldDescription="Click '+' to add a new Field"
+                                fieldLabel="Sub-Category Items">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    acs-commons-nested="NODE_STORE"
+                                    name="./subCategoryItems">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                        method="absolute"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldLabel="Title"
+                                                    name="./title"/>
+                                                <url
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldLabel="Url"
+                                                    name="./url"
+                                                    rootPath="/content/huawei-cbg-site"/>
+                                                <image
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldLabel="Image"
+                                                    name="./image"
+                                                    rootPath="/content/dam"/>
+                                                <icons
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                    fieldLabel="Theme"
+                                                    name="./icons">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <icon_mobile_wifi
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Mobile Wifi"
+                                                            value="icon_mobile_wifi"/>
+                                                        <icon_dongles
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Dongles"
+                                                            value="icon_dongles"/>
+                                                        <icon_wangles
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Wingles"
+                                                            value="icon_wangles"/>
+                                                        <icon_cpe
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="CPE"
+                                                            value="icon_cpe"/>
+                                                        <icon_plc
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="PLCs"
+                                                            value="icon_plc"/>
+                                                        <icon_4g_lte_routers
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="4G LTE Routers"
+                                                            value="icon_4g_lte_routers"/>
+                                                        <icon_wireless_routers
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Wi-Fi Repeaters"
+                                                            value="icon_wireless_routers"/>
+                                                        <icon_wifi_repeaters
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Wireless Routers"
+                                                            value="icon_wifi_repeaters"/>
+                                                        <icon_media_q
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="MediaQ"
+                                                            value="icon_media_q"/>
+                                                    </items>
+                                                </icons>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </subCategorySpecs>
+                            <allSubCategoryRootPath
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                fieldDescription="Click '+' to add a new Field"
+                                fieldLabel="Product Path for All">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    acs-commons-nested="NODE_STORE"
+                                    name="./allSubCategoryRootPath">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                        method="absolute"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <url
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldLabel="Url"
+                                                    name="./url"
+                                                    rootPath="/content/huawei-cbg-site"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </allSubCategoryRootPath>
+                        </items>
+                    </columns>
+                </items>
+            </productSubCategory>
+            <currentCategory
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Current Category"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <currentCatePath
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="Please select the root path which contains support PDP pages."
+                                fieldLabel="Current Category Path"
+                                name="./currentCatePath"
+                                rootPath="/content/huawei-cbg-site"/>
+                            <currentPBIValue
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Please enter pbi1 or pbi2 value of products which will be shown in the list."
+                                fieldLabel="Current Category PBI"
+                                name="./currentPBIValue"/>
+                        </items>
+                    </columns>
+                </items>
+            </currentCategory>
+        </items>
+    </content>
+</jcr:root>

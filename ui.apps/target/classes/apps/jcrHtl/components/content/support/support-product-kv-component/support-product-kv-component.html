@@ -1,0 +1,11 @@
+<div class="product_kv" data-sly-use.product="com.huawei.consumer.site.core.models.ProductDetailModel" data-sly-use.apisConst="${'com.huawei.consumer.site.core.utils.APIsConstants'}" data-sly-use.apiHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.apiUrl, key=apisConst.SERVICE_PRODUCT_DETAIL_API_KEY }">
+    <h1 id="product_text" data-api-url="${apiHelper.apiUrl}">${product.model.marketingName}</h1>
+    <p><img style="width:210px" alt="${product.model.marketingName}" src="${product.model.assetPath}"></p>
+    <div class="conv3_global_selector">
+        <div class="select">
+            <span></span>
+            <ol _mark="Region" value="" id="productSelect">
+            </ol>
+        </div>
+    </div>
+</div>

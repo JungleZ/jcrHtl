@@ -1,0 +1,27 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Sub Product Component</p>
+<sly data-sly-test="${properties.tabName}"
+	 data-sly-use.subProduct="com.huawei.consumer.site.core.components.support.SubProductComponent">
+<div class="submenu_name ${properties.tabName}">
+	<a href="javascript:;" class="">${properties.tabName}</a>
+</div>
+<div class="product_info clearfix conv3_visible">
+	<div class="product_img" style="padding-top: 0px; height: auto;">
+		<img alt="${properties.tabName}" time=""
+			src="${properties.bgImageUrl}">
+	</div>
+	<div class="product_content">
+		<sly data-sly-list.contentItem="${subProduct.contentItemList}">
+			<h4>
+				<a cat="Support > HELP FOR POPULAR PRODUCTS" act="Click button from ${properties.tabName}" lab="${contentItem.title}" class="a-common" href="${contentItem.completedPath}">${contentItem.title}</a>
+			</h4>
+   		<p>${contentItem.description}</p>
+   		</sly>
+		<p class="view_more" data-sly-use.linkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=properties.learnMoreValue}">
+			<a class="a-common" cat="Support > HELP FOR POPULAR PRODUCTS"
+				act="${properties.act}" lab="${properties.lab}"
+				href="${linkHelper.link}"
+				target="_blank">${properties.learnMore}</a>
+		</p>
+	</div>
+</div>
+</sly>

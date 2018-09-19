@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <cookie
+        jcr:primaryType="nt:unstructured"
+        cookieText="We use cookies to improve our site and your experience. By continuing to browse our site you accept our cookie policy."
+        moreLabel="Find out more"/>
+    <main
+        jcr:primaryType="nt:unstructured"
+        logoImageAlt="Huawei"
+        logoImageUrl="/content/dam/huawei-cbg-site/en-master/public/img_con_v27_base_logo_svg.svg"
+        logoLink="/content/huawei-cbg-site/en"/>
+    <navigations jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            isMenuWrap="true"
+            title="PHONES"
+            wrapValue="wrap_phones"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            isMenuWrap="true"
+            title="MORE PRODUCTS"
+            wrapValue="wrap_more_products"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            link="/content/huawei-cbg-site/en/support"
+            title="SUPPORT"/>
+        <_x0034_
+            jcr:primaryType="nt:unstructured"
+            link="http://www.google.com"
+            title="SHOP"/>
+    </navigations>
+</jcr:root>

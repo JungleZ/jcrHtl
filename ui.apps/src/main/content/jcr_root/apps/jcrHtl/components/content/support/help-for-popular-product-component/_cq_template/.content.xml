@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    numbersOfProduct="1"
+    title="HELP FOR POPULAR PRODUCTS">
+    <item1
+        jcr:primaryType="nt:unstructured"
+        bgImageUrl="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/webasset/hw_u_035258.png"
+        lab="LEARN MORE"
+        learnMore="Learn More"
+        learnMoreValue="http://consumer.huawei.com/testv27-demo/support/mobile-phones/d3-sup.htm"
+        tabName="P9">
+        <contentItems jcr:primaryType="nt:unstructured">
+            <_x0031_
+                jcr:primaryType="nt:unstructured"
+                contentDesc="Convenient, safe, personalized. This time we’re taking a big step forward."
+                contentTitle="Enjoy the new features"
+                contentTitleLink="http://consumer.huawei.com/testv27-demo/support/mobile-phones/d3-sup.htm#newbie"
+                lab="Enjoy the new features!"/>
+            <_x0032_
+                jcr:primaryType="nt:unstructured"
+                contentDesc="Experience freer camera modes, more convenient apps using App twin, faster file transfer, integrated video editing. Try it all here."
+                contentTitle="Simulated using experience"
+                contentTitleLink="http://consumer.huawei.com/testv27-demo/support/mobile-phones/d3-sup.htm#simulator"
+                lab="Simulated using experience"/>
+            <_x0033_
+                jcr:primaryType="nt:unstructured"
+                contentDesc="Want a deeper understanding of the new generation of LEICA Dual Cameras? Or would you like to learn more about the new convenience and security solutions MATE 9 has in store for you? Enter here."
+                contentTitle="Operation treasure-house"
+                contentTitleLink="http://consumer.huawei.com/testv27-demo/support/mobile-phones/d3-sup.htm#topic"
+                lab="Operation treasure-house"/>
+        </contentItems>
+    </item1>
+</jcr:root>

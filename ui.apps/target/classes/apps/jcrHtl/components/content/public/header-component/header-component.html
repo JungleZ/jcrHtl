@@ -1,0 +1,49 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Header Component</p>
+<sly data-sly-use.headerComp="com.huawei.consumer.site.core.components.publics.HeaderComponent">
+<div id="top_nav" class="head_module head_v27"><div id="normal_nav" class="conv3_nav">
+    <div data-sly-test="${headerComp.cookieText}" class="cookie_tip" style="display: none;">
+        <div class="cookie_content">
+            <div class="cookie_txt" data-sly-use.cookieLinkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=headerComp.cookieCompletePath}">
+            	<i>${headerComp.cookieText @ context='html'}</i> 
+            	<a target="${headerComp.cookieNewTab ? '_blank' : ''}" href="${cookieLinkHelper.link}">
+            		${headerComp.cookieMoreLabel}
+            	</a>
+            </div>
+            <div class="close_btn"><span></span></div>
+        </div>
+    </div>
+    <div class="navcon">
+        <div class="logo_wrap" data-sly-use.logoLinkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=headerComp.logoLink}">
+            <a cat="Navigation" act="Click On Logo" lab="<page title>" href="${logoLinkHelper.link}" class="a-common">
+                <img class="logo" src="${headerComp.logoImageUrl}" alt="${headerComp.logoImageAlt}">
+            </a>
+        </div>
+        <div class="menu">
+            <ul data-sly-list.navItem="${headerComp.navigationList}">
+            	<sly data-sly-test.isMenuWrap="${navItem.isMenuWrap}"></sly>
+            	<sly data-sly-test.wrapValue="${navItem.wrapValue}"></sly>
+                <li class="${isMenuWrap ? 'menu_wrap' : ''}" 
+                	wrap="${isMenuWrap ? wrapValue : ''}">
+                	<sly data-sly-test=${isMenuWrap}>
+                		<a class="a-common"
+                			href="javascript:;" cat="Navigation" act="Click On ${navItem.act}" lab="<page title>" >
+                			${navItem.title}
+                		</a><i></i>
+                	</sly>
+                	<sly data-sly-test=${!isMenuWrap} data-sly-use.linkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=navItem.link}">
+                		<a class="a-common" target="${navItem.newTab ? '_blank' : ''}"
+                			href="${linkHelper.link}" cat="Navigation" act="Click On ${navItem.act}" lab="<page title>">
+                			${navItem.title}
+                		</a><i></i>
+                	</sly>
+                </li>
+            </ul>
+            <div class="icon_close"><i></i></div>
+        </div>
+        <div class="icon_search menu_wrap" wrap="wrap_search">
+        	<i class="icon_public a-common" cat="Navigation" act="Click On Search" lab="<page title>"></i>
+        </div>
+        <div class="icon_menu"><i class="icon_public"></i></div>
+    </div>
+</div></div>
+</sly>

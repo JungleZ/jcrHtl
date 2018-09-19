@@ -1,0 +1,28 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">2 Image Banner Component</p>
+<sly data-sly-use.twoImgBannerComp="com.huawei.consumer.site.core.components.home.TwoImageBannerComponent">
+    <div class="section4 home_section4_content">
+        <div class="part1">
+            <h2 class="for_seo" style="display:none">${properties.titleText1}</h2>
+            <img class="bg lazy_load" time="" alt="${properties.bgImageAlt1}" data-src="${properties.bgImageURL1}" src="/etc/designs/huawei-cbg-site/images/common/bg1000_860.png">
+            <div class="tit appearance">${properties.titleText1}</div>
+            <sly data-sly-list.btn1="${twoImgBannerComp.buttonsOfBanner1}">
+                <div class="btn_wrap a-homecat ${twoImgBannerComp.buttonsOfBanner1.size > 1 ? 's4_double_btn' : ''}" cat="${btn1.cat}" act="${btn1.act}" lab="${btn1.lab}">
+                    <a data-sly-test="${btn1.type!='white-button'}" target="${btn1.openInNewpage ? '_blank' : ''}" href="${btn1.link}" style="background-color:${btn1.type=='black-button'? '#000' : '#ef2f34' @ context = 'styleString'}" class="delay200 appearance">${btn1.text}</a>
+                    <a data-sly-test="${btn1.type=='white-button'}" target="${btn1.openInNewpage ? '_blank' : ''}" href="${btn1.link}" class="delay200 appearance white_border">${btn1.text}</a>
+                </div>
+            </sly>
+        </div>
+        <div class="part2">
+          <img class="bg2 lazy_load" time="" alt="${properties.bgImageAlt2}" data-src="${properties.bgImageURL2}" src="/etc/designs/huawei-cbg-site/images/common/bg1000_860.png">
+          <div class="content">
+            <h2 class="delay700 appearance">${properties.titleText2}</h2>
+            <sly data-sly-list.btn2="${twoImgBannerComp.buttonsOfBanner2}">
+                <div class="btn_wrap2 a-homecat ${twoImgBannerComp.buttonsOfBanner2.size > 1 ? 's4_double_btn' : ''}" cat="${btn2.cat}" act="${btn2.act}" lab="${btn2.lab}">
+                    <a data-sly-test="${btn2.type!='white-button'}" target="${btn2.openInNewpage ? '_blank' : ''}" href="${btn2.link}" style="background-color:${btn2.type=='black-button'? '#000' : '#ef2f34' @ context = 'styleString'};" class="delay900 appearance">${btn2.text}</a>
+                    <a data-sly-test="${btn2.type=='white-button'}" target="${btn2.openInNewpage ? '_blank' : ''}" href="${btn2.link}" class="delay900 appearance white_border">${btn2.text}</a>
+                </div>
+           </sly>
+          </div>
+        </div>
+    </div>
+</sly>

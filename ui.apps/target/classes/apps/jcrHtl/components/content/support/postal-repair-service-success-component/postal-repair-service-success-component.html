@@ -1,0 +1,47 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Postal Repair Service Success Component</p>
+<div class="conv3_wrap conv3_express_succ_wrap">
+    <div class="conv3_content ex_succ">
+        <section class="container-1">
+            <div class="current-page pr clearfix d2d-suc">
+                <h1 class="title" style="font-size: 20px;">${properties.title}</h1>
+                <h2 style="font-size: 20px;">
+                    <sly data-sly-test.successIcon="${properties.successIcon}">
+                        <i class="support-icon repair_suc_icon" style="background-image: url(${successIcon @ context='html'});"></i>
+                    </sly>
+                    <sly data-sly-test="${!successIcon}">
+                        <i class="support-icon repair_suc_icon"></i>
+                    </sly>
+                    ${properties.successMessage}
+                </h2>
+                <p>
+                    <span>
+                        <sly data-sly-test.hotlineIcon="${properties.hotlineIcon}">
+                            <i class="support-icon hotline-logo" style="background-image: url(${hotlineIcon @ context='html'});"></i>
+                        </sly>
+                        <sly data-sly-test="${!successIcon}">
+                            <i class="support-icon hotline-logo"></i>
+                        </sly>                    
+                        ${properties.hotlinePhone}
+                    </span>
+                    <span>
+                        <sly data-sly-test.emailIcon="${properties.emailIcon}">
+                            <i class="support-icon email-logo" style="background-image: url(${properties.emailIcon @ context='html'});"></i>
+                        </sly>
+                        <sly data-sly-test="${!emailIcon}">
+                            <i class="support-icon email-logo"></i>
+                        </sly>
+                        <sly data-sly-use.linkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=properties.contactUsUrl}"></sly>
+                        <a href="${linkHelper.link}">${properties.emailText}</a>
+                    </span>
+                </p>
+            </div>
+        </section>
+        <div class="container-1 door2door d2d-suc x-suc2">
+            <div class="d2d-contain">
+                <div class="cont">
+                    <p>${properties.content}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

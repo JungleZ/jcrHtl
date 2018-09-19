@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="huawei-cbg-site/components/content/support/need-help-with-component"
+    tabName1="MOBILE PHONES"
+    tabName2="PC &amp; TABLETS"
+    tabName3="WEARABLES"
+    tabName4="MORE PRODUCTS"
+    tabName5="SOFTWARE AND TOOLS"
+    title="WHAT PRODUCT DO YOU NEED HELP WITH?"
+    viewAllLink1="http://consumer.huawei.com/testv27-demo/support/mobile-phones/index.htm"
+    viewAllLink2="http://consumer.huawei.com/testv27-demo/support/tablets/index.htm"
+    viewAllLink3="http://consumer.huawei.com/testv27-demo/support/wearables/index.htm"
+    viewAllLink4="http://consumer.huawei.com/testv27-demo/support/mobile-broadband/mobile-wifi/index.htm"
+    viewAllTxt1="VIEW ALL"
+    viewAllTxt2="VIEW ALL"
+    viewAllTxt3="VIEW ALL"
+    viewAllTxt4="VIEW ALL">
+    <product1 jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            image1="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/supportproduct/mate9p-sup-v27.png"
+            link1="http://consumer.huawei.com/testv27-demo/support/mobile-phones/c8655-v27-sup.htm"
+            title1="P9 Lite"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            image1="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/supportproduct/mate9p-sup-v27.png"
+            link1="http://consumer.huawei.com/testv27-demo/support/mobile-phones/mate9p-sup-v27.htm"
+            title1="Mate 9"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            image1="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/supportproduct/c8500s-v27-sup.png?2017-04-06-09:10"
+            link1="http://consumer.huawei.com/testv27-demo/support/mobile-phones/mate9p-sup-v27.htm"
+            title1="HUAWEI P10"/>
+    </product1>
+    <product2 jcr:primaryType="nt:unstructured">
+        <_x0034_
+            jcr:primaryType="nt:unstructured"
+            image2="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/supportproduct/m1-v27-sup.png"
+            link2="http://consumer.huawei.com/testv27-demo/support/tablets/m1-v27-sup.htm"
+            title2="MediaPad M1 8.0"/>
+        <_x0035_
+            jcr:primaryType="nt:unstructured"
+            image2="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/supportproduct/matebook-v27-sup.png?2017-04-06-09:10"
+            link2="http://consumer.huawei.com/testv27-demo/support/tablets/matebook-v27-sup.htm"
+            title2="MATEBOOK"/>
+        <_x0036_
+            jcr:primaryType="nt:unstructured"
+            image2="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/supportproduct/mediapad-v27-sup.png"
+            link2="http://consumer.huawei.com/testv27-demo/support/tablets/mediapad-v27-sup.htm"
+            title2="MediaPad"/>
+    </product2>
+    <product3 jcr:primaryType="nt:unstructured">
+        <_x0037_
+            jcr:primaryType="nt:unstructured"
+            image3="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/supportproduct/watch-sup-v27.png?2017-04-06-09:10"
+            link3="http://consumer.huawei.com/testv27-demo/support/wearables/watch-sup-v27.htm"
+            title3="HUAWEI WATCH"/>
+    </product3>
+    <product4 jcr:primaryType="nt:unstructured">
+        <_x0038_
+            jcr:primaryType="nt:unstructured"
+            image4="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/supportproduct/m3-v27-sup.png"
+            link4="http://consumer.huawei.com/testv27-demo/support/wearables/watch-sup-v27.htm"
+            title4="M3"/>
+        <_x0039_
+            jcr:primaryType="nt:unstructured"
+            image4="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/supportproduct/b3000-v27-sup.png?2017-04-06-09:10"
+            link4="http://consumer.huawei.com/testv27-demo/support/mobile-broadband/dongles/b3000-v27-sup.htm"
+            title4="B3000"/>
+    </product4>
+    <product5 jcr:primaryType="nt:unstructured">
+        <_x0031_0
+            jcr:primaryType="nt:unstructured"
+            image5="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/webasset/img_con_env27_icon_emui.png"
+            link5="http://emui.huawei.com/en/"
+            title5="EMUI"/>
+        <_x0031_1
+            jcr:primaryType="nt:unstructured"
+            image5="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/webasset/img_con_v27_icon_doctor.png"
+            link5="http://download-c.huawei.com/download/downloadCenter?downloadId=16880&amp;version=19346&amp;siteCode=worldwide"
+            title5="Mobile Doctor V2"/>
+        <_x0031_2
+            jcr:primaryType="nt:unstructured"
+            image5="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/webasset/img_con_v27_icon_hisuite.png"
+            link5="http://consumer.huawei.com/minisite/HiSuite_en/"
+            title5="Huawei HiSuite"/>
+        <_x0031_3
+            jcr:primaryType="nt:unstructured"
+            image5="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/webasset/img_con_v27_icon_beta.png"
+            title5="Beta"/>
+    </product5>
+</jcr:root>

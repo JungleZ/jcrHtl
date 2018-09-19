@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2017-03-31T12:03:41.241+08:00"
+    jcr:createdBy="admin"
+    jcr:lastModified="{Date}2017-04-19T10:55:59.157+08:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="huawei-cbg-site/components/content/common/page-not-found-component"
+    description="THE PAGE YOU’RE LOOKING FOR CAN’T BE FOUND1"
+    feedback_text="FEEDBACK"
+    feedback_url="[/content/huawei-cbg-site/en]"
+    page_text="go to homepage"
+    page_url="/content/huawei-cbg-site/en"
+    pc_background_img="/etc/designs/huawei-cbg-site/images/common/img_con_en_error.jpg"
+    word="SORRY"/>

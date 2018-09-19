@@ -1,0 +1,101 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Postal Repair Service Component</p>
+<div class="conv3_wrap conv3_sup_express_wrap postal-repair-service-component"
+     data-sly-use.postalRepairSerCom="${'com.huawei.consumer.site.core.components.support.PostalRepairServiceComponent'}"
+     data-submit-exp-info-api-url="${postalRepairSerCom.submitExpInfoApiUrl}"
+     data-express-repair-policy-url="${postalRepairSerCom.expressRepairPolicyURL}"
+     data-express-repair-type-list-url="${postalRepairSerCom.expressRepairTypeListURL}"
+     data-express-repair-id-name-url="${postalRepairSerCom.expressRepairIDNameURL}"
+     data-session-uuid-url="${postalRepairSerCom.sessionUuidURL}"
+     data-verification-image-code-url="${postalRepairSerCom.verificationImageCodeURL}"
+     data-product-type-error="${properties.productTypeErrorText}"
+     data-product-model-error="${properties.productModelErrorText}"
+     data-imei-error="${properties.imeiErrorText}"
+     data-issue-description-error="${properties.issueDescriptionErrorText}"
+     data-name-error="${properties.nameErrorText}"
+     data-city-error="${properties.cityErrorText}"
+     data-postal-code-error="${properties.postalCodeErrorText}"
+     data-address-error="${properties.addressErrorText}"
+     data-phone-number-error="${properties.phoneNumberErrorText}"
+     data-email-address-error="${properties.emailAddressErrorText}"
+     data-privacy-policy-error="${properties.privacyPolicyErrorText}"
+     data-verification-code-error="${properties.verificationCodeErrorText}"
+     data-already-submit-error="${properties.alreadySubmitErrorText}"
+     data-product-type-text="${properties.productTypeText}"
+     data-product-model-text="${properties.productModelText}"
+     data-service-error-text="${properties.serviceErrorText}"
+     data-send-email-error-text="${properties.sendEmailErrorText}"
+     data-product-model-placeholder="${properties.productModelPlaceholder}"
+     >
+    <div class="conv3_content y-cbg-action">
+        <div class="container support-exp">
+            <section class="support-title">
+                <div class="content-left line-bottom clearfix">
+                    <h1>${properties.title}</h1>
+                </div>
+            </section>
+            <section class="container1 door2door">
+                <div class="support-exp-content" style="padding-top: 30px;padding-bottom: 10px;">
+                    <div class="exp-line">
+                        <div style=" margin-bottom: 15px;">
+                        
+                            <label><span class="color-red">*</span>${properties.productTypeText}</label>
+                            <select id="device-type" onchange="getExpressRepairIDName(this)">
+                                <option value="0">${properties.selectProductTypePlaceholder}</option>
+                            </select>
+                            <label style='margin-left:75px;' ><span class="color-red">*</span>${properties.productModelText}</label>
+                            <select onclick="document.location='/testv27-demo/support/express-repair/arrowchange().htm'" onchange="getExpressRepairModelIdName(this)" id="device-models">
+                                <option value="0" style="visibility:hidden;display:none;" >${properties.productModelPlaceholder}</option>
+                            </select>
+                            <input id="device-models-input" placeholder="" value="${properties.productModelPlaceholder}"  data-value ="" style="position: absolute;display: inline-block;margin-left: -195px;width: 164px;height: 25px;line-height: 25px;top: 1px; padding: 0;" type="text">   
+                        </div>
+                        
+                    </div>
+                    <div class="exp-line">
+                        <label><span class="color-red">*</span>${properties.imeiText}</label><input id="ext-num" type="text" class="w804">
+                    </div>
+                    <div class="exp-line"> 
+                        <label style="vertical-align:top;"><span class="color-red">*</span>${properties.issueDescriptionText}</label>
+                        <textarea id="ext-description" type="text"></textarea>
+                    </div>
+                    <div class="exp-line">
+                        <label><span class="color-red">*</span>${properties.nameText}</label><input id="ext-name" type="text" maxlength="50">
+                    </div>
+                    <div class="exp-line">
+                        <label><span class="color-red">*</span>${properties.cityText}</label><input id="ext-city" type="text">
+                        <label><span class="color-red">*</span>${properties.postalCodeText}</label><input id="ext-postal" type="text"  onkeyup="onlyIntegerKeyUp(event)">
+                    </div>
+                    <div class="exp-line">
+                        <label><span class="color-red">*</span>${properties.addressText}</label><input id="ext-address" type="text" class="w804">
+                    </div>
+                    <div class="exp-line">
+                        <label><span class="color-red">*</span>${properties.phoneNumberText}</label><input id="ext-phone" type="text"  onkeyup="onlyIntegerKeyUp(event)" maxlength="12" >
+                        <label><span class="color-red">*</span>${properties.emailAddressText}</label><input id="ext-email" type="text">
+                    </div>
+                    <div class="exp-line agree_exp">
+                        <label><span class="color-red">*</span></label>
+                        <label class="agree_line"><input type="checkbox" id="ext-policy" name="agree-repair"></label>
+                        <span>${properties.privacyPolicyText @ context='html'}</span>
+                    </div>
+                    <div class="exp-line">
+                        <label><span class="color-red">*</span>${properties.verificationCodeText}</label>
+                        <input type="text" id="vcode" class="input-code">
+                        <img class="auto-img" id="img_code" >
+                        <input type="hidden" class="auto-sessionid" id="auto-sessionid">
+                        <br>
+                        <a class="support-submit-shape" id='submit-express'>${properties.submitButtonText}</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <sly data-sly-use.completePath="${'com.huawei.consumer.site.core.components.home.PresenterComponent' @ path=properties.submitSuccessUrl}">
+            <a href="${completePath.linkCompletePath}" name="forsspu" id="exp-succ"></a>
+        </sly>
+    </div>
+</div>
+<div class="fixBox box_wrap"></div>
+<div class="fixShowBox box_wrap">
+    <h2>${properties.serviceTermTitle}</h2>
+    <div class="cont">
+    </div> 
+    <span class="fixbox-close"></span>
+</div>

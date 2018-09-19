@@ -1,0 +1,40 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Find A Store Component</p>
+<div class="main_wrapper">
+    <div class="find_store_wrapper" 
+    	data-sly-use.apisConst="${'com.huawei.consumer.site.core.utils.APIsConstants'}"
+	    data-sly-use.provinceUrlHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.provinceWsUrl, key=apisConst.FIND_A_STORE_PROVINCE_API_URL }"
+	    data-sly-use.cityUrlHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.cityWsUrl, key=apisConst.FIND_A_STORE_CITY_API_URL }"
+	    data-sly-use.salePointUrlHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.salePointWsUrl, key=apisConst.FIND_A_STORE_SALE_POINT_API_URL }">
+        <div class="find_store_wrap">
+            <h1 class="title_h1">${properties.title}</h1>
+            <div class="conv3_global_selector">
+                <div class="select">
+                    <span class="region_name">${properties.province}</span>
+                    <ol id="store_finder_region" _mark="PROVINCE"></ol>
+                </div>
+                <div class="select">
+                    <span>${properties.city}</span>
+                    <ol id="store_finder_province" _mark="CITY"> </ol>
+                </div>
+            </div>
+            <p class="find_store_text" id="_map" >${properties.description}</p>
+        </div>
+        <div class="map">
+            <div id="map" class="map_img"></div>
+            <div class="search_result_wrapper ">
+                <div class="search_result scroll_content">
+                    <div class="search_scroll_wrap">
+                        <div class="search_content">
+                            <h2 class="search_result_h2">${properties.searchResultFor} <b></b></h2>
+                            <ul id="search_result_list" class="search_result_list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" id="provinceWsUrl" value="${provinceUrlHelper.apiUrl}">
+        <input type="hidden" id="cityWsUrl" value="${cityUrlHelper.apiUrl}">
+        <input type="hidden" id="salePointWsUrl" value="${salePointUrlHelper.apiUrl}">
+        <input type="hidden" id="defaultLocation" value="${properties.defaultLocation}">		
+    </div>
+</div>

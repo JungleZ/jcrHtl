@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="huawei-cbg-site/components/content/support/warranty-service-and-period-component"
+    activeNotice1="Your product has not been activated."
+    activeNotice2="Please switch it on and active it."
+    applicableTxt="Applicable region"
+    backBtnTxt="BACK"
+    contactUsLink="http://consumer.huawei.com/testv27-demo/contact-us/index.htm"
+    currentSttTxt="Current status "
+    damageNoticeTxt="During the coverage period,  you can get a free repair for the covered device or exchange the covered device with a replacement product subject to a certain amount of service fee in Huawei authorized service center in case the covered device has failed due to accidental damage from handling. (Applied for the handset only which excludes accessories, charger and non built-in battery etc)."
+    damageTxt="Accidental Damage from Handling Coverage"
+    expDateTxt="Expiry date "
+    expectedExpDateTxt="Expected Expiry date"
+    extendedNoticeTxt="Extend the manufacture warranty period of the covered device. (Applied for the handset only which excludes accessories, charger and non built-in battery etc)."
+    extendedTxt="Extended Warranty"
+    imeisnTxt="IMEI/SN"
+    inputPlaceholder="Enter your device IMEI/MEID/MAC/SN for query."
+    laserNoticeTxt="Laser etching refers to an individualized custom service offered by HUAWEI in view of specified models. You may engrave favorite words/patterns on the back cover of your device."
+    laserTxt="Laser etching"
+    maintenaceNoticeTxt="Able to enjoy the maintenance service offered by HUAWEI, such as film application, cleaning and so on."
+    maintenaceTxt="Maintenance"
+    maintenanceTxt="Maintenance"
+    modelTxt="Model"
+    moreTxt="More"
+    mReminderTxt="&lt;h5>Kindly Reminder:&lt;/h5>&#xd;&#xa;                &#x9;&lt;p>&#xd;&#xa;                    &#x9;1. The product can enjoy a paid repair service. Please call hotline for details. &lt;a class='warranty-s-p-red feedback-link' href='javascript:;'>Email feedback&lt;/a>.&lt;br>&#xd;&#xa;                    &#x9;2. Please refer to &lt;a class='warranty-s-p-red warranty-policy-link'>Huawei United Kingdom warranty policy&lt;/a>.&lt;br>&#xd;&#xa;                    &#x9;3. If you have any questions related to the search result or Huawei United Kingdom warranty policy, please provide valid POP(proof of purchase) of your device to validate the IMEI/MEID/MAC/SN.&#xd;&#xa;                &#x9;&lt;/p>&#xd;&#xa;"
+    noQualifiedInfo="The product is not qualified for the warranty service provided under the consumer rights and interests law. Please consult the place of purchase for more details."
+    noRsReminder="&lt;p class=&quot;wq_note_tit&quot;>Kindly Reminder:&lt;/p>&#xd;&#xa;                &lt;p class=&quot;wq_note_cont&quot;>1.The Number you input maybe wrong, please retry.&lt;/p>&#xd;&#xa;                &lt;p class=&quot;wq_note_cont email-feedback-link&quot;>2.If your Number cannot be queried, you can feedback the POP to us for renew warrranty information. &lt;a>&lt;span class='wq_hw_red'>Email Feedback&lt;/span>&lt;/a>.&lt;/p>&#xd;&#xa;"
+    noRsTit="Sorry, the system can not query the match information."
+    onewayNoticeTxt="During the warranty period, in case a screen component breaks or cracks due to accidental collision, fall-off or extrusion when the device is used regularly, the component can be replaced once with an original one free of charge."
+    onewayTxt="One-way Free Logistics Service for Carry-in Repair"
+    policyLink="http://consumer.huawei.com/testv27-demo/support/warranty-policy/index.htm"
+    productActiveTxt="Your product has been activated."
+    reminder=" &lt;p class=&quot;wq_note_tit&quot;>Kindly Reminder:&lt;/p>&#xd;&#xa;                &lt;p class=&quot;wq_note_cont&quot;>1.Press &lt;span class='wq_hw_red'>*#06#&lt;/span> on phone dial pad to get the IMEI/MEID. &lt;/p>&#xd;&#xa;                 &lt;p class=&quot;wq_note_cont&quot;>2.You can get the IMEI/MEID/MAC/SN from the giftbox or label of phone.&lt;/p>"
+    rightTxt="RIGHTS AND INTERESTS"
+    rsDetailReminder="&lt;h5>Kindly Reminder:&lt;/h5>&#xd;&#xa;                &#x9;&lt;p>&#xd;&#xa;                    &#x9;1. Please refer to &lt;a class='warranty-s-p-red warranty-policy-link'>Huawei United Kingdom warranty policy&lt;/a>.&lt;br>&#xd;&#xa;                    &#x9;2. If you have any questions related to the search result or Huawei United Kingdom warranty policy, please provide valid POP(proof of purchase) of your device to validate the IMEI/MEID/MAC/SN. &lt;a class='warranty-s-p-red feedback-link'>Email feedback&lt;/a>.&#xd;&#xa;                &#x9;&lt;/p>&#xd;&#xa;"
+    rsMaintenaceReminder="&lt;h5>Kindly Reminder:&lt;/h5>&#xd;&#xa;                &#x9;&lt;p>&#xd;&#xa;                    &#x9;1. The product can enjoy a paid repair service. Please call hotline for details. &lt;a class='warranty-s-p-red feedback-link' href='javascript:;'>Email feedback&lt;/a>.&lt;br>&#xd;&#xa;                    &#x9;2. Please refer to &lt;a class='warranty-s-p-red warranty-policy-link'>Huawei United Kingdom warranty policy&lt;/a>.&lt;br>&#xd;&#xa;                    &#x9;3. If you have any questions related to the search result or Huawei United Kingdom warranty policy, please provide valid POP(proof of purchase) of your device to validate the IMEI/MEID/MAC/SN.&#xd;&#xa;                &#x9;&lt;/p>&#xd;&#xa;"
+    screenNoticeTxt="During the coverage period,  you can get a repair for the covered device in Huawei authorized service center in case the screen of the covered device breaks or cracks due to accidental damage from handling."
+    screenTxt="Screen Accidental Damage from Handling Coverage"
+    serviceLink="http://consumer.huawei.com/testv27-demo/support/service-center/index.htm"
+    spLocationTxt="Your device can be supported in "
+    submitBtnText="SUBMIT"
+    submitErrTxt="Enter The Correct IMEI/MEID/MAC/SN."
+    title="WARRANTY SERVICE AND PERIOD"
+    twowayNoticeTxt="During the warranty period, in case a screen component breaks or cracks due to accidental collision, fall-off or extrusion when the device is used regularly, the component can be replaced once with an original one free of charge."
+    twowayTxt="Two-way Free Logistics Service for Carry-in Repair"
+    usageCountTxt="Usage count: ">
+    <warrantyItems jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            icon="wsp-icon01"
+            serviceCateCode="ES01"
+            type="Extended Warranty"
+            typeNote="Extend the manufacture warranty period of the covered device. (Applied for the handset only which excludes accessories, charger and non built-in battery etc)."/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            icon="wsp-icon02"
+            serviceCateCode="ES04"
+            type="Maintenance"
+            typeNote="Able to enjoy the maintenance service offered by HUAWEI, such as film application, cleaning and so on."
+            usageCount="true"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            icon="wsp-icon03"
+            serviceCateCode="ES02"
+            type="Screen Accidental Damage from Handling Coverage"
+            typeNote="During the coverage period,  you can get a repair for the covered device in Huawei authorized service center in case the screen of the covered device breaks or cracks due to accidental damage from handling."
+            usageCount="true"/>
+        <_x0034_
+            jcr:primaryType="nt:unstructured"
+            icon="wsp-icon04"
+            serviceCateCode="ES03"
+            type="Accidental Damage from Handling Coverage"
+            typeNote="During the coverage period,  you can get a free repair for the covered device or exchange the covered device with a replacement product subject to a certain amount of service fee in Huawei authorized service center in case the covered device has failed due to accidental damage from handling. (Applied for the handset only which excludes accessories, charger and non built-in battery etc)."
+            usageCount="true"/>
+        <_x0035_
+            jcr:primaryType="nt:unstructured"
+            icon="wsp-icon05"
+            serviceCateCode="ES06"
+            type="One-way Free Logistics Service for Carry-in Repair"
+            typeNote="During the warranty period, in case a screen component breaks or cracks due to accidental collision, fall-off or extrusion when the device is used regularly, the component can be replaced once with an original one free of charge."/>
+        <_x0036_
+            jcr:primaryType="nt:unstructured"
+            icon="wsp-icon06"
+            serviceCateCode="ES05"
+            type="Two-way Free Logistics Service for Carry-in Repair"
+            typeNote="During the warranty period, in case a screen component breaks or cracks due to accidental collision, fall-off or extrusion when the device is used regularly, the component can be replaced once with an original one free of charge."/>
+        <_x0037_
+            jcr:primaryType="nt:unstructured"
+            icon="wsp-icon07"
+            type="Laser etching"
+            typeNote="Laser etching refers to an individualized custom service offered by HUAWEI in view of specified models. You may engrave favorite words/patterns on the back cover of your device."/>
+    </warrantyItems>
+</jcr:root>

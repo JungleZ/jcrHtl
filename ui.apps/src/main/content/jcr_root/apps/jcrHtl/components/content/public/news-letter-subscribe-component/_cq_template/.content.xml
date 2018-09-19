@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    defaultSubscribeButtonText="SUBSCRIBE"
+    defaultUnsubscribeButtonText="UNSUBSCRIBE"
+    errorMessage="please enter a vaild email address"
+    errorSubscribeButtonText="ERROR"
+    errorUnsubscribeButtonText="ERROR"
+    failedSubscribeButtonText="Subscribe failed."
+    failedUnsubscribeButtonText="Unsubscribe failed."
+    placeHolder="Sign up to our email"
+    subscribeApiURL="http://consumer.huawei.com/cmkt/services/service/newsletter/subscribe"
+    successButtonText="THANK YOU"
+    successSubscribeMessage="Thank you for subscription. You will be able hear about the newest informationabout our products, and campaigns."
+    successUnsubscribeMessage="Please confirm the unsubscription via the link in the email we just sent to you."
+    unsubscribeApiURL="http://consumer.huawei.com/cmkt/services/service/newsletter/unsubscribe"/>

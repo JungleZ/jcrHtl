@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2017-04-20T16:50:03.313+08:00"
+    jcr:createdBy="admin"
+    jcr:lastModified="{Date}2017-04-21T11:27:33.481+08:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="huawei-cbg-site/components/content/p10/bottom-image-with-blocks-component"
+    animationEffect="none"
+    animationPosition="right"
+    description="Take some of the most outstanding pictures of your life: 20MP + 12MP camera modules, Optical Image Stabilisation (OIS), Artistic                     portraits and unique selfies in Leica image style. Redefine modern portrait photography."
+    desktopAnimationImage="/etc/designs/huawei-cbg-site/clientlib-p10/image/designKVModel.png"
+    desktopBottomImage="/etc/designs/huawei-cbg-site/clientlib-p10/image/section2Bg.jpg"
+    hideBlocks="no"
+    mobileAnimationImage="/etc/designs/huawei-cbg-site/clientlib-p10/img/designKVModel.png"
+    mobileBottomImage="/etc/designs/huawei-cbg-site/clientlib-p10/image/section2BgMobi.jpg"
+    title="HUAWEI + LEICA"
+    type="left">
+    <blocks jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            description="benchmark for style and craftsmanship with the first"
+            imagePath="/etc/designs/huawei-cbg-site/clientlib-p10/image/ico_4in1.png"
+            title="TEST TEST1"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            description="benchmark for style and craftsmanship with the first2"
+            imagePath="/etc/designs/huawei-cbg-site/clientlib-p10/image/ico_4in1.png"
+            title="TEST TEST2"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            description="benchmark for style and craftsmanship with the first3"
+            imagePath="/etc/designs/huawei-cbg-site/clientlib-p10/image/ico_Stabilization.png"
+            title="TEST TEST3"/>
+    </blocks>
+</jcr:root>

@@ -1,0 +1,52 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Search Recycling Store Component</p>
+
+<div class="conv3_content">
+	<!-- conv3_recyle_nav END -->
+	<div class="conv3_recyle_content"
+		data-sly-use.apisConst="${'com.huawei.consumer.site.core.utils.APIsConstants'}"
+	    data-sly-use.provinceUrlHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.provinceUrl, key=apisConst.SEARCH_RECYCLING_STORE_PROVINCE_API_URL }"
+	    data-sly-use.cityUrlHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.cityUrl, key=apisConst.SEARCH_RECYCLING_STORE_CITY_API_URL }"
+	    data-sly-use.recycleAddressUrlHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.recycleAddressUrl, key=apisConst.SEARCH_RECYCLING_STORE_RECYCLE_ADDRESS_API_URL }">
+	    <div class="srp_search">
+	        <div class="srp_search_tit">
+	            <h1>${properties.title}</h1>
+	        </div>
+	        <div class="srp_search_cont">
+	            <div class="conv3_global_selector">
+	                <div class="select srp_country">
+	                    <span data-countryid="0" data-countryname="COUNTRY">${properties.defaultProvinceText}</span>
+	                    <ol id="recy_latticepoint_country" _mark="COUNTRY">
+	                    </ol>
+	                </div>
+	                <div class="select srp_city">
+	                    <span data-cityid="0" data-cityname="CITY">${properties.defaultCityText}</span>
+	                    <ol id="recy_latticepoint_city" _mark="CITY">
+	                    </ol>
+	                </div>
+	            </div>
+	            <!-- <input type="button" value="SUBMIT" class="srp_search_btn"> -->
+	            <a href="javascript:;" class="srp_search_btn" id="cPoint_serach_btn">${properties.submitButtonText}</a>
+	        </div>
+	    </div>
+	    <div class="srp_map" id="map_canvas">
+	    </div>
+	    <div class="srp_info">
+	        <ul class="sc_info_ul">
+	        </ul>
+	    </div>
+	</div>
+	<!-- conv3_recyle_content END -->
+	
+	<input type="hidden" id="provinceErrorMessage" value="${properties.provinceErrorMessage}">
+	<input type="hidden" id="cityErrorMessage" value="${properties.cityErrorMessage}">
+	<input type="hidden" id="noResultMessage" value="${properties.noResultMessage}">
+	<input type="hidden" id="provinceUrl" value="${provinceUrlHelper.apiUrl}">
+	<input type="hidden" id="cityUrl" value="${cityUrlHelper.apiUrl}">
+	<input type="hidden" id="recycleAddressUrl" value="${recycleAddressUrlHelper.apiUrl}">
+	<input type="hidden" id="defaultLocation" value="${properties.defaultLocation}">
+	<input type="hidden" id="noServiceMapLocationMessage" value="${properties.noServiceMapLocationMessage}">
+	<input type="hidden" id="popupSearchDefaultText" value="${properties.popupSearchDefaultText}">
+	<input type="hidden" id="popupButton1Text" value="${properties.popupButton1Text}">
+	<input type="hidden" id="popupButton2Text" value="${properties.popupButton2Text}">
+	<input type="hidden" id="defaultCityText" value="${properties.defaultCityText}">
+</div>

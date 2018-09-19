@@ -1,0 +1,23 @@
+<p style="text-align: center; color:black;margin:0px;padding:0px;" data-sly-test="${wcmmode.edit}">Color Image Banner Component</p>
+<div class="two-level type2">
+
+            <div class="title">
+                <h3>${properties.title}</h3>
+                <p>
+                    ${properties.description}
+                </p>
+            </div>
+            <div class="color-slide">
+                <ul data-hide-color="${properties.hideColor}" data-hide-arrow="${properties.hideArrow}" class="W-colorSlide" data-sly-use.comp="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='images'}" data-sly-list.blocks="${comp.multifieldResources}">
+					<li data-sly-test='${blocks.valueMap.imagePath}' data-color="${blocks.valueMap.colorCode}">
+                        <img src="${blocks.valueMap.imagePath}"
+                             class="W-hiddenMobi" title=""/>
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+        </div>
+        

@@ -1,0 +1,45 @@
+/* cn */
+/* global */
+/*loader local img*/
+.sc-loader {background-image: url(../imgs/logo-start-bg_cn.png);}
+
+body, textarea, input, select, textarea, button { font-family:'SamsungOne', 'Microsoft Yahei', '微软雅黑', 'Simsun', '宋体', arial !important; }
+
+/* home - header */
+.hp-header__title { font-family:'SamsungSharpSans','Microsoft Yahei','微软雅黑', 'Simsun', '宋体', arial !important; }
+
+/* home - brand ecosystem high */
+.hp-brand-ecocsystem-high__title { font-family:'SamsungSharpSans','Microsoft Yahei','微软雅黑', 'Simsun', '宋体', arial !important; }
+
+/* home - onetile cluster */
+.hp-onetile-cluster__title { font-family:'SamsungSharpSans','Microsoft Yahei','微软雅黑', 'Simsun', '宋体', arial !important; }
+
+/* news - header */
+.sc-news-header .s-title { font-family:'SamsungSharpSans','Microsoft Yahei','微软雅黑', 'Simsun', '宋体', arial !important; }
+
+/* offer - header */
+.sc-offer-header .s-title { font-family:'SamsungSharpSans','Microsoft Yahei','微软雅黑', 'Simsun', '宋体', arial !important; }
+
+/* offer - view - header */
+.sc-offer-view-header .s-title { font-family:'SamsungSharpSans','Microsoft Yahei','微软雅黑', 'Simsun', '宋体', arial !important; }
+
+/* product detials */
+.product-details__title { font-family: 'SamsungSharpSans','Microsoft Yahei','微软雅黑', 'Simsun', '宋体', arial !important; }
+
+/* shop - feature benefit */
+.feature-benefit__title { font-family:'SamsungSharpSans','Microsoft Yahei','微软雅黑', 'Simsun', '宋体', arial !important; }
+
+/* shop - feature benefit bundle */
+.feature-benefit-bundle__title { font-family:'SamsungSharpSans','Microsoft Yahei','微软雅黑', 'Simsun', '宋体', arial !important; }
+
+/* shop - header */
+.shop-header__title { font-family:'SamsungSharpSans','Microsoft Yahei','微软雅黑', 'Simsun', '宋体', arial !important; }
+
+/* shop - product pairing */
+.product-pairing__sub_title { font-family:'SamsungSharpSans','Microsoft Yahei','微软雅黑', 'Simsun', '宋体', arial !important; }
+
+/* shop - related products */
+.related-products__title { font-family:'SamsungSharpSans','Microsoft Yahei','微软雅黑', 'Simsun', '宋体', arial !important; }
+
+/* feature-benefit-carousel */
+.feature-benefit-carousel__title { font-family:'SamsungSharpSans','Microsoft Yahei','微软雅黑', 'Simsun', '宋体', arial !important; }

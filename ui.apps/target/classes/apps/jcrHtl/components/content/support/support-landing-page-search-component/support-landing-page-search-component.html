@@ -1,0 +1,36 @@
+<p style="text-align: center; color:black" data-sly-test="${wcmmode.edit}">Support Landing Page Search</p>
+<sly data-sly-use.supportLPSearchComp="com.huawei.consumer.site.core.components.support.SupportLandingPageSearchComponent">
+    <div class="top_banner" data-change-background="true"
+        data-landing-bg-desktop="${properties.backgroundImgDesktop @ context='unsafe'}"
+        data-landing-bg-pc="${properties.backgroundImg1024_768 @ context='unsafe'}"
+        data-landing-bg767="${properties.backgroundImg767 @ context='unsafe'}"
+        data-landing-bg420="${properties.backgroundImg420 @ context='unsafe'}"
+        data-landing-bg350="${properties.backgroundImg350 @ context='unsafe'}"
+        data-background-cover="image"
+        data-search-term-empty="${properties.searchTermEmpty}"
+        data-more-term-message="${properties.moreTermMessage}"
+        data-no-results-message="${properties.noResultsMessage}"
+    >
+        <h1>${properties.title}</h1>
+        <div class='support_form'>
+            <input type="text" class="my_keys" maxlength="50" placeholder="${properties.inputPlaceHolder}" onfocus="hasRel(this)">
+            <a class="btn" id="search" href="javascript:void(0)"></a>
+            <ul class="rel_prodocuts"></ul>
+        </div>
+        <ul class="search_list">
+            <li class="search_name search_tittle">${properties.hotSearchesText}</li>
+            <sly data-sly-list.keyword="${supportLPSearchComp.hotSearchKeyWords}">
+                <li class="search_name">
+                    <a onclick="goSearch(this)" href="javascript:void(0)">${keyword.hotSearchKeyWord}</a>
+                </li>
+            </sly>
+        </ul>
+        <h2>
+            <img alt="" src="${properties.iconQuestion @ context='unsafe'}">
+            <a href="${supportLPSearchComp.bottomLinkURL}">${properties.bottomLinkText}</a>
+        </h2>
+        <input type="hidden" id="support_search" value="${supportLPSearchComp.searchResultPageLink}">
+        <input type="hidden" id="isearchUrl" value="${supportLPSearchComp.apiSearchURL}">
+        <input type="hidden" id="apiRelProURL" value="${supportLPSearchComp.apiRelProURL}">
+    </div>
+</sly>

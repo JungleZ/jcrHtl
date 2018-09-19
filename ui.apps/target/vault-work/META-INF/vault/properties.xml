@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>jcrHtl - UI apps</comment>
+<entry key="createdBy">issuser</entry>
+<entry key="name">jcrHtl.ui.apps</entry>
+<entry key="created">2018-06-22T09:49:52.405+0800</entry>
+<entry key="groupId">jcrHtl</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">jcrHtl</entry>
+<entry key="description">UI apps package for jcrHtl</entry>
+<entry key="artifactId">jcrHtl.ui.apps</entry>
+<entry key="path">/etc/packages/jcrHtl/jcrHtl.ui.apps.zip</entry>
+</properties>

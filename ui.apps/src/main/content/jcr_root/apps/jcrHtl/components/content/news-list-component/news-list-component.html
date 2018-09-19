@@ -1,0 +1,14 @@
+<div class="conv3_sponsorships_home conv3_news_home">
+
+    <div class="content" data-sly-use.news="com.huawei.consumer.site.core.components.press.NewsListComponent">
+       <ol _mark="year" data-sly-list="${news.years}">
+                        <li data-sly-attribute.value="${item}" data-sly-text="${item}"></li>
+                    </ol>
+                     <sly data-sly-list="${news.items}">
+	                     <a data-sly-test="${item.resourceDownloadUrl}" cat="news" act="File Downloads" lab="${item.title}" href="${item.resourceDownloadUrl}" x-cq-linkchecker="valid" class="btn_download a-download"><i></i>DOWNLOAD PDF</a>
+	
+	                    <a data-sly-test="${item.resourceUrl}" cat="news" act="View PDF"  lab="${item.title}" href="${item.resourceUrl}" x-cq-linkchecker="valid" class="btn_view btn_download a-viewpdf" target="_blank">VIEW PDF</a>
+	                    
+                    </sly>
+    </div>
+</div>

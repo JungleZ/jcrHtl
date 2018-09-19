@@ -1,0 +1,44 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Contact Item Component</p>
+<sly data-sly-use.contactItemComp="com.huawei.consumer.site.core.components.support.SupportContactUsItemComponent">
+		<p data-sly-test="${wcmmode.edit}"><b>Type</b>: ${contactItemComp.type}</p>
+		<sly data-sly-test.onlineChat="${contactItemComp.type == 'online-chat'}">
+			<li style="display:none" class="a-onlinechat" data-sly-use.itemLinkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=contactItemComp.url}">
+				<sly data-sly-test="${!contactItemComp.scriptChat}">
+					<script type="text/javascript" src="http://huawei.whoson.com/include.js?domain=consumer.huawei.com"></script>
+				</sly>
+				<sly data-sly-test="${contactItemComp.scriptChat}">
+					${contactItemComp.scriptChat @ context='unsafe'}
+				</sly>
+			</li>
+		</sly>
+		<sly data-sly-test.onlineChat="${contactItemComp.type == 'normal-link'}">
+			<li data-sly-use.itemLinkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=contactItemComp.url}">
+				<span class="img-thumb-new" data-sly-test="${contactItemComp.bgImageUrl}">
+					<img src="${contactItemComp.bgImageUrl}" />
+				</span>
+				<a href="${itemLinkHelper.link}" target="${contactItemComp.openInNewPage ? '_blank' : '_self' }"
+				    class="${contactItemComp.bgImageUrl ? '' : contactItemComp.cssClass} ${contactItemComp.bgImageUrl ? '' : contactItemComp.otherCssClass}"
+				    cat="${properties.cat}" act="${properties.act}" lab="${properties.lab}">
+					${contactItemComp.title}
+					<span>${contactItemComp.descText @ context='html'}</span>
+				</a>
+				<sly data-sly-test="${contactItemComp.customStyle}">
+					<style type="text/css">
+						${contactItemComp.customStyle @ context = 'unsafe'}
+					</style>
+				</sly>
+			</li>
+		</sly>
+		<sly data-sly-test.onlineChat="${contactItemComp.type == 'call-us'}">
+			<li class="call-us-api" data-apiUrlHotline="${contactItemComp.apiUrl}">
+				<span class="img-thumb-new" data-sly-test="${contactItemComp.bgImageUrl}">
+					<img src="${contactItemComp.bgImageUrl}" />
+				</span>
+				<a class="${contactItemComp.bgImageUrl ? '' : contactItemComp.cssClass} ${contactItemComp.bgImageUrl ? '' : contactItemComp.otherCssClass}"
+				   cat="${properties.cat}" act="${properties.act}" lab="${properties.lab}">
+					${contactItemComp.title}
+					<span class="call-us-desc">${contactItemComp.descText @ context='html'}</span>
+				</a>
+			</li>
+		</sly>
+</sly>

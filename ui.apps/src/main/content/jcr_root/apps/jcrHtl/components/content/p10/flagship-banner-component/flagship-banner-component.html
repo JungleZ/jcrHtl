@@ -1,0 +1,30 @@
+
+
+<div class="main-screen type0" data-sly-test="${properties.bannerType == 'textTitle'}" style="${'background-color:{0};' @ format=[properties.mobileBackgroundColorText],context='styleString'}">
+<div class="desktop-background" style="${'background: url({0}) center center; background-color:{1};' @ format=[properties.desktopImageText,properties.desktopBackgroundColorText],context='styleString'}"></div>
+    <img class="mobile-background" data-sly-attribute.src="${properties.mobileImageText}" data-sly-attribute.alt="${properties.mobileImageAltText}" />
+    <div class="title">
+        <h3 data-sly-text="${properties.textTitle}"></h3>
+        <span data-sly-text="${properties.textSubtitle}"></span>
+    </div>
+</div>
+
+<div class="main-screen type1" data-sly-test="${properties.bannerType == 'twoImages'}" style="${'background-color:{0};' @ format=[properties.mobileBackgroundColorTwo],context='styleString'}">
+    <div class="desktop-background" style="${'background: url({0}) center center; background-color:{1};' @ format=[properties.desktopImageTwo,properties.desktopBackgroundColorTwo],context='styleString'}"></div>
+    <img class="mobile-background" data-sly-attribute.src="${properties.mobileImageTwo}" data-sly-attribute.alt="${properties.mobileImageAltTwo}" />
+    <div class="title">
+        <img class="" data-sly-attribute.src="${properties.image1Two}" data-sly-attribute.alt="${properties.image1AltTwo}" />
+        <img data-sly-attribute.src="${properties.image2Two}" data-sly-attribute.alt="${properties.image2AltTwo}" />
+    </div>
+</div>
+
+<div class="main-screen type2" data-sly-test="${properties.bannerType == 'animation'}" style="${'background-color:{0};' @ format=[properties.mobileBackgroundColorAni],context='styleString'}">
+    <div class="desktop-background" style="${'background: url({0}) center center; background-color:{1};' @ format=[properties.desktopImageAni,properties.desktopBackgroundColorAni],context='styleString'}"></div>
+    <img class="mobile-background" data-sly-attribute.src="${properties.mobileImageAni}" data-sly-attribute.alt="${properties.mobileImageAltAni}" />
+    <div class="title">
+        <img class="solog-img" data-sly-attribute.src="${properties.imageAni}" data-sly-attribute.alt="${properties.imageAltAni}" />
+    </div>
+    <div class="product ">
+        <img class="animate-${properties.animationEffect}-pre" data-sly-attribute.src="${properties.animationImage}" data-sly-attribute.alt="${properties.animationImageAlt}" />
+    </div>
+</div>

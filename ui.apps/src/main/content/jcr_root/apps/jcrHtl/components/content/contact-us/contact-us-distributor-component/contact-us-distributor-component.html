@@ -1,0 +1,13 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Contact Us Distributor Component</p>
+<div class="distributors-ul-01" data-sly-test.distrName="${properties.distributorName}" data-distributor-name="${distrName}">
+	<li class='clearfix distributors_none Distr${properties.distributorName}'>
+		<sly data-sly-test="${properties.distributorImage || properties.text}">
+			<div class="left-1">
+				<img alt="${properties.distributorImageAlt}" src="${properties.distributorImage}" />
+			</div>
+			<div class="right-1">
+				${properties.text @ context='html'}
+			</div>
+		</sly>
+	</li>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2017-06-19T18:02:26.594+08:00"
+    jcr:createdBy="admin"
+    jcr:lastModified="{Date}2017-06-19T18:04:06.843+08:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="huawei-cbg-site/components/content/p10/small-image-component"
+    animationImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/eybk/ejbk_cpt_sxjg_1000X450.png"
+    description="HUAWEI P10 sets an industry benchmark for style and craftsmanship with the first hyper diamond-cut finishing on a smartphone,   which adds strength and colour. Finishes also available in high gloss and sandblast."
+    title="COLOUR · STYLE · INNOVATION"/>

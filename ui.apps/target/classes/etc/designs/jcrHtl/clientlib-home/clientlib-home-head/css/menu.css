@@ -1,0 +1,365 @@
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Screen style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.menu-container {
+    width: 100%;
+    margin: 0 auto;
+    background: #222;
+}
+/*.menu{
+	width:1242px;
+	margin:0 auto;
+	position:relative;
+}
+*/
+.menu-mobile {
+    display: none;
+    padding-bottom: 6px;
+	padding-left:10px;
+	position:relative;
+
+}
+
+.menu-mobile:after {
+    content: "\e056";
+	font-family: 'Glyphicons Halflings';
+    font-size: 22px;
+    padding: 0;
+    position: absolute;
+    right: 19px;
+	top:50%;
+	margin-top:-11px;
+    -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%);
+	color:#fff;
+}
+
+
+.menu-dropdown-icon:before {
+    content: "\e114";
+    font-family: 'Glyphicons Halflings';
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: 1.5em 2em;
+    color: #fff;
+}
+
+.menu-dropdown-icon.open:before{
+    content: "\e113";
+	font-family: 'Glyphicons Halflings';
+}
+.pc-logo{
+	padding-left:100px;
+}
+.menu > ul {
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+   /* position: relative;*/
+    /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+    box-sizing: border-box;
+	height:60px;
+}
+
+.menu > ul:before,
+.menu > ul:after {
+    content: "";
+    display: table;
+}
+
+.menu > ul:after {
+    clear: both;
+}
+
+.menu > ul > li {
+    float: left;
+    padding: 0;
+    margin: 0;
+	padding: 0 25px;
+}
+
+.menu > ul > li a {
+    text-decoration: none;
+	color:#fff;
+	padding: 1.5em 0;
+	display:block;
+	border-bottom:4px solid transparent;
+	font-size:12px;
+}
+
+.menu > ul > li a:hover {
+    border-bottom:4px solid #f70000;
+}
+
+.menu > ul > li > ul>.menu-ul-wrap{
+	width:1242px;
+	background: #1b1b1b;
+	margin:0 auto;
+}
+
+.menu > ul > li > ul {
+    display: none;
+    width: 100%;
+	background: #1b1b1b;
+    padding: 20px;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    margin: 0 auto;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.menu > ul > li > ul:before,
+.menu > ul > li > ul:after {
+    content: "";
+    display: table;
+}
+
+.menu > ul > li > ul:after {
+    clear: both;
+}
+
+.menu > ul > li > ul > li {
+    margin: 0;
+    padding-bottom: 0;
+    list-style: none;
+    width: 25%;
+    background: none;
+    float: left;
+}
+
+.menu > ul > li > ul > li a {
+    color: #777;
+    padding: .2em 0;
+    width: 95%;
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu > ul > li > ul > li > ul {
+    display: block;
+    padding: 0;
+    margin: 10px 0 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.menu > ul > li > ul > li > ul:before,
+.menu > ul > li > ul > li > ul:after {
+    content: "";
+    display: table;
+}
+
+.menu > ul > li > ul > li > ul:after {
+    clear: both;
+}
+
+.menu > ul > li > ul > li > ul > li {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    font-size: .8em;
+}
+
+.menu > ul > li > ul > li > ul > li a {
+    border: 0;
+}
+
+/*.menu > ul > li > ul.normal-sub {
+    width: 300px;
+    left: auto;
+    padding: 10px 20px;
+}*/
+
+.menu > ul > li > ul.normal-sub > li {
+    width: 100%;
+}
+
+.menu > ul > li > ul.normal-sub > li a {
+    border: 0;
+    padding: 1em 0;
+}
+
+.glyphicon-search:before {
+    font-size: 20px;
+	color:#fff
+}
+.login-infor{
+    position: absolute;
+    right: 100px;
+    top: 0;
+    text-align: right;
+}
+.login-infor a{
+	display:inline-block;
+	margin-top:19px;
+}
+
+.login-infor a.ico-user{
+	margin-right:30px;
+}
+.login-infor a.ico-search{
+	right:0;	
+}
+
+.menu-title{
+	font-size:18px;
+	font-weight: bold;
+	color:#fff;
+	border-bottom:2px solid #f70000;
+	display: inline-block;
+	padding:5px 0;
+	margin-bottom:15px;
+}
+
+
+.menu > ul > li a.sub-menu {
+	display: inline-block;
+	padding:8px 0;
+}
+.menu-pc{
+	border-right:1px solid #ccc;
+	height:318px
+}
+.menu-img{
+	text-align: center;
+}
+.menu-img img{
+	width:40%;
+}
+
+.menu-img .title{
+	font-size:18px;
+	color:#fff;
+	margin-top:10px;
+}
+
+.menu-img .tag{
+	margin-top:10px;
+	font-size:12px;
+	color:#fff;
+}
+
+.menu > ul > li a.menu-btn{
+	width:202px;
+	height:45px;
+	line-height:35px;
+	border:1px solid #fff;
+	border-radius:100px;
+	padding:5px;
+	display: inline-block;
+	margin-top:20px;
+}
+.menu > ul > li a.menu-btn:hover{
+	background:#f70000;
+	color:#fff;
+	border:1px solid #f70000;
+}
+
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+@media only screen and (max-width: 990px) {
+	.menu-pc{
+		border-right:0;
+		height:auto
+	}
+    .menu-container {
+        width: 100%;
+    }
+	.menu{
+		width:100%;
+	}
+
+    .menu-mobile {
+        display: block;
+    }
+    .menu-mobile img{
+        width:150px;
+		height:42px;
+    }
+    .menu-dropdown-icon:before {
+        display: block;
+    }
+    .menu > ul {
+        display: none;
+		width:100%;
+    }
+    .menu > ul > li {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .menu > ul > li a {
+        padding: 1.5em;
+        width: 100%;
+        display: block;
+    }
+    .menu > ul > li > ul {
+        position: relative;
+    }
+    .menu > ul > li > ul.normal-sub {
+        width: 100%;
+    }
+    .menu > ul > li > ul > li {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .menu > ul > li > ul > li:first-child {
+        margin: 0;
+    }
+    .menu > ul > li > ul > li > ul {
+        position: relative;
+    }
+    .menu > ul > li > ul > li > ul > li {
+        float: none;
+    }
+    .menu .show-on-mobile {
+        display: block;
+    }
+	.menu > ul > li:hover {
+		background: #8b0f0f;
+		border:0;
+	}
+	
+	.menu > ul {
+		height: auto;
+	}
+	
+	.menu > ul > li {
+		padding: 0;
+	}
+	
+    .menu .menu-ul-wrap >  li a {
+        padding: .5em;
+        width: 100%;
+		display:table-cell;
+		border-bottom:2px solid #f70000;
+    }	
+    .menu .menu-ul-wrap >  li >ul,li {
+		padding:0;
+		margin:0;
+		list-style-type:none;
+    }	
+	
+    .menu .menu-ul-wrap >  li >ul>li a{
+		border:0;
+		padding:1em;
+	}
+	
+	
+	
+}

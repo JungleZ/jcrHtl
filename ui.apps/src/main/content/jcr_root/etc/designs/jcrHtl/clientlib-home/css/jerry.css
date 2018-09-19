@@ -1,0 +1,390 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+.past3 .thumbnail{
+  border: none;
+  padding: 0;
+  background: url('/etc/designs/jcrHtl/clientlib-home/images/videoBG.png') center center;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  background-size: 100% 100%;
+  margin-bottom: 5%;
+}
+.past3 .thumbnail:hover{
+  background-size: 110% 110%;
+}
+
+
+.past3 .thumbnail .caption{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.past3 .thumbnail .caption img{
+   width: 100px;
+}
+
+
+
+
+
+
+.past4 .thumbnail{
+    border: none;
+    padding: 0;
+}
+
+ .past4  .caption{
+    background-color: #fff;
+    padding:20px 0 60px 0;
+    text-align: center
+}
+
+.past4  .caption h1{
+    
+    font-size: 50px;
+}
+
+.past4  .caption p{
+    text-align: center;
+    font-size: 20px;
+    color: #666;
+    padding: 20px;
+}
+
+.past4  .caption .more-btn{
+    text-align: center;  
+}
+
+.past4 .caption .more-btn a{
+    border-radius: 100px;
+    border:1px solid #666;
+    color: #666;
+    padding: 20px 45px;
+    font-size: 12px;
+}
+
+
+
+
+
+.past5 .thumbnail{
+    border: none;
+    padding: 0;
+}
+
+.past5  .caption{
+    background-color: #fff;
+    padding:20px 0 60px 0;
+    text-align: center
+}
+
+.past5  .caption h1{
+    
+    font-size: 50px;
+}
+
+.past5  .caption p{
+    text-align: center;
+    font-size: 20px;
+    color: #666;
+    padding: 20px; 
+}
+
+.past5  .caption .more-btn{
+    text-align: center;  
+}
+
+.past5 .caption .more-btn a{
+    border-radius: 100px;
+    border:1px solid #666;
+    color: #666;
+    padding: 20px 45px;
+    font-size: 12px;
+}
+
+
+
+.past6 .thumbnail{
+    border: none;
+    padding: 0;
+    background: url('/etc/designs/jcrHtl/clientlib-home/images/supportBG.png') no-repeat center center;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    background-size: 100% 100%;
+}
+
+.past6 .thumbnail:hover{
+    background-size: 110% 110%;
+}
+
+.past6 .thumbnail .caption h1{
+    font-size: 50px;
+}
+
+.past6 .thumbnail .caption p{
+    font-size: 22px;
+    color: #666;
+}
+
+
+
+.past6 .thumbnail .caption{
+    position: absolute;
+    top: 14%;
+    right: 5%;
+    width: 40%;
+}
+
+
+.past6 .thumbnail .caption  .gobtn{
+    border: 1px solid #666;
+    border-radius: 100px;
+    margin-top: 50px;
+	display: inline-block;
+	padding:10px 0;
+	width:120px;
+text-align:center;
+}
+
+
+
+
+.footer{
+    background-color: #eee ;
+    padding: 25.2px 37.4px;
+    
+    width: 100%;
+
+}
+
+.footer .footer-left{
+    float: left;
+    /* width: 70%; */
+    padding-top: 3%;
+}
+
+.footer .footer-left ul{
+    float: left;
+    margin-right: 6%;
+    color: #333;
+}
+
+
+
+.footer .footer-left ul li {
+    margin-bottom: 18.7px;
+}
+
+.footer .footer-left .about .first   ul  li:nth-child(5) a{
+    font-weight: bold; 
+}
+
+.footer .footer-left .about .first   ul li:nth-child(6) a{
+    font-weight: bold;
+}
+
+.footer .footer-left ul li a{
+    color: #333;
+    text-decoration: none;
+}
+
+.footer .footer-left ul .first {
+    margin-bottom: 19.4px;
+}
+
+.footer .footer-left ul .first img{
+    display: none;
+}
+
+.footer .footer-left ul .first ul{
+    margin-top: 20px;
+}
+
+.footer .footer-left ul .first ul li a{
+    font-weight: normal;
+}
+
+.footer .footer-left ul .first a{
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer .footer-right{
+    float: right;
+    /* width: 30%; */
+    padding: 3% 0 0 5%;
+    border-left: 1px solid #ccc;
+ 
+}
+
+.footer .footer-right p{
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+ .footer .footer-right .btn{
+     background-color: #D0021B ;
+     border: none;
+     color: #fff;
+ }
+
+ .footer .footer-right  .checkbox label{
+    padding-left: 35px;
+    margin: 20px 0 40px 0;
+ }
+
+ .footer .footer-right  .checkbox label  a{
+    text-decoration: underline;
+    color: #000;
+ }
+
+ .footer .footer-right ul .first{
+    margin-left: 4%;
+ }
+
+ .footer .footer-right ul li{
+     float: left;
+     margin-left: 8%;
+ }
+
+ .footer .footer-right ul li img{
+     width: 50px;
+ }
+
+
+
+/* copy */
+.copy{
+    background-color:  #333;
+    height: 70px;
+    padding: 20px;
+}
+
+.copy-left{
+    float: left;
+    width: 80%;
+    vertical-align: middle;
+}
+
+.copy-left p{
+    float: left;
+    color: #F2F2F2;
+    font-size: 17px;
+    line-height: 35px;
+    margin-right: 10%;
+}
+
+.copy-left ul li{
+    float: left;
+    color: #F2F2F2;
+    font-size: 17px;
+    
+    line-height: 35px;
+    border-right: 1px solid #979797;
+    padding: 0 20px;
+
+}
+
+.copy-right{
+    width: 20%;
+    float: right;
+}
+
+.copy-right p{    
+        color: #F2F2F2;
+        line-height: 35px;    
+        display: inline-block; 
+        color: #F2F2F2;
+}
+
+.copy-right img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*---------news----------*/
+.thumbnail img{
+	padding:0;
+	margin:0;
+	width:100%;
+}
+.past4-bg{
+	background:url(/etc/designs/jcrHtl/clientlib-home/images/PD-1.png) no-repeat center center;
+	background-size:100% 100%;
+	height:600px;
+}
+.past5-bg{
+	background:url(/etc/designs/jcrHtl/clientlib-home/images/PD-2.png) no-repeat center center;
+	background-size:100% 100%;
+	height:600px;	
+}
+
+.past4-bg:hover{
+	background-size:110% 110%;
+}
+.past5-bg:hover{
+	background-size:110% 110%;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+	
+.past3 .thumbnail {
+    background: url(/etc/designs/jcrHtl/clientlib-home/images/video.png) center center;
+    height: 20em;
+}	
+	
+	.past4-bg{
+		background:url(/etc/designs/jcrHtl/clientlib-home/images/TCL-6-series-TV.png) no-repeat center center;
+		background-size:100% 100%;
+		height:25em;
+	}
+	.past5-bg{
+		background:url(/etc/designs/jcrHtl/clientlib-home/images/TCL-6-series-TV-1.png) no-repeat center center;
+		background-size:100% 100%;
+		height:25em;	
+	}
+	
+	.past6 .thumbnail{
+		background:url(/etc/designs/jcrHtl/clientlib-home/images/support_centre_banner.png) no-repeat center center;
+		background-size:100% 100%;
+		height:15em;	
+	}	
+	
+}
+.caption .more-btn a{
+	text-decoration:none;
+	color:#666;
+}
+
+.caption .more-btn a:hover {
+	background:#d0021b;
+	color:#fff;
+	border-color:#d0021b;
+}
+.caption .go a{
+	background:transparent
+}
+.caption .go a:active{
+	background:transparent
+}
+.caption .go a:visited{
+	background:transparent
+}
+

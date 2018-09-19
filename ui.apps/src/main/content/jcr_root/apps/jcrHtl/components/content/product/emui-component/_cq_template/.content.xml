@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    buttonText="FIND OUT MORE"
+    descText="EMUI is an exciting Android-based user interface developed by Huawei offering features such as colorful launchers, magazine unlock, music streaming, self-portrait beautification, photo mood watermarks, a photo timeline, smart notifications, lazy mode and Magic Touchplus."
+    imageUrl="/content/dam/huawei-cbg-site/en-master/p10/emui-4.1.png"
+    link="http://consumer.huawei.com/en"/>

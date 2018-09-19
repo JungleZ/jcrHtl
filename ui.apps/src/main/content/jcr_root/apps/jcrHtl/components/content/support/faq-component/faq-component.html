@@ -1,0 +1,49 @@
+<h2 style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Faq Component</h2>
+<div class="conv3_wrap">
+    <div id="cbg-help" class="topics conv3_sec" data-sly-use.apisConst="${'com.huawei.consumer.site.core.utils.APIsConstants'}" data-sly-use.apiHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.apiUrl, key=apisConst.SERVICE_FAQ_TO_FOUR_API_KEY }" 
+    	data-api-url="${apiHelper.apiUrl}"
+    	data-write-keywords-message="${properties.writeKeywordsMessage}"
+        data-sly-use.linkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=properties.faqDetailPage}"
+        data-faq-detail-page="${linkHelper.link}"
+    >
+        <h2 class="detail_title" data-sly-text="${properties.title}">TOPICS I NEED HELP WITH</h2>
+        <!-- help -->
+        <div id="conv3_filter">
+            <div class="filter_header clearfix">
+                <h2></h2>
+                <div class="filter_search">
+                    <input type="text" id="serchkey" data-sly-attribute.placeholder="${properties.phText}" class="help-search-input">
+                    <input type="submit" class="help-search-submit" value="">
+                </div>
+                <div class="filter_cate clearfix">
+                    <input type="button" value="Subject">
+                    <input type="button" value="Type">
+                </div>
+            </div>
+            <div class="filter_list help-filter">
+                <ul class="clearfix" id="productFaq">
+                </ul>
+            </div>
+            <!-- help-filter -->
+            <div class="filter_list_close">
+                <ul>
+                </ul>
+                <p>
+                    <span class="active" tcode="all" onclick="getFaqTypeDataListType('all')" data-sly-text="${properties.allTypeTitle || 'ALL'}">ALL</span>
+                    <span tcode="text" onclick="getFaqTypeDataListType('text')" data-sly-text="${properties.textTypeTitle || 'Graphic'}">Graphic</span>
+                    <span tcode="video" onclick="getFaqTypeDataListType('video')" data-sly-text="${properties.videoTypeTitle || 'Video'}">Video</span>
+                </p>
+            </div>
+            <!-- help-filter-close -->
+            <div class="filter_detail">
+                <div class="loading_bg"><img alt="loading" src="/etc/designs/huawei-cbg-site/images/common/img_con_v27_loading.gif" /></div>
+                <ul class="filter_detail_list" data-no-results-message="${properties.noResultsMessage}">
+                </ul>
+                <ul class="filter_pagination">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<input type="hidden" id="faqTypeCode"/>
+

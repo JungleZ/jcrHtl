@@ -1,0 +1,83 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Header Module - Phones Component</p>
+<sly data-sly-use.productMenuPhoneComponent="com.huawei.consumer.site.core.components.publics.ProductMenuPhoneComponent">
+<div class="menu_module_phone">
+	<div class="data-menu-phones" style="display: none;">${productMenuPhoneComponent.phoneListJSONData @ context = "unsafe"}</div>
+	<div class="see_all_phone common_menu wrap_phones slide_wrap" style="display: none">
+		<div class="bg"></div>
+		<div class="see_wrap">
+			<div class="see_close">
+				<i class="icon_public"></i>
+				<span>
+					<pre class="icon_public"></pre>${productMenuPhoneComponent.backText}
+				</span>
+			</div>
+			<sly data-sly-test="${productMenuPhoneComponent.ProductMenuPhoneList}">
+				<ul class="see_phone_uList" data-sly-list.menuItem=${productMenuPhoneComponent.ProductMenuPhoneList}>
+		  			<li class="" data-sly-use.linkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=menuItem.productLink}"
+								data-sly-use.tagHelper="${'com.huawei.consumer.site.core.components.common.HelperComponent' @tagPath=menuItem.linkToMenu}">
+						<sly data-sly-test.seprator="${(menuItem.seriesName && menuItem.productName) ? ' / ' : ''}" />
+                        <sly data-sly-test.actOfProduct="${'Click on {0}{1}{2}' @ format=[menuItem.seriesName, seprator, menuItem.productName]}"/>
+		  				<a cat="Menu: Phones" act="${actOfProduct}" lab="Header - <page title>" href="${linkHelper.link}" class="img_center_word a-common"
+						   style="background-size:cover; background-image: url('${menuItem.backgroundImg @ context='unsafe'}');">
+		  					<div class="see_rgb">
+		  					   <h2 style="color: ${menuItem.textColor @ context='styleToken'};">${menuItem.productName}</h2>
+		  					  <span style="background-color: ${menuItem.textColor @ context='styleToken'};"></span>
+		  					  <em style="color: ${menuItem.textColor @ context='styleToken'};">${menuItem.productDesc @ context='html'}</em>
+		  					</div>
+		  					<img huawei="HUAWEI" class="pc_phone" alt="${menuItem.productName}" src="${menuItem.productImg}" mate="MATE">
+		  				</a>
+		  				<a class="bottom_word series_filter a-common" href="javascript:;" cat="Menu: Phones" act="Click on ${menuItem.seriesName} / ${menuItem.productName}" lab="Header - <page title>" select-filter="${tagHelper.tagName}">
+		  					<i>${menuItem.linkToText}</i>
+		  			    </a>
+		  			</li>
+		  		</ul>
+	  		</sly>
+	  	</div>
+	  	<a class="see_all show_all_phones pro_wrap a-common" href="javascript:;" lab="Header/<title>" act="All Phones" cat="Menu: Phones" pbi1="31" wrap="menu_module_allphone">
+		  		<i>${productMenuPhoneComponent.seeAllPhones}</i>
+	  	</a>
+	</div>
+</div>
+
+<div class="menu_module_allphone">
+	<div class="all_phones common_menu slide_wrap" style="display: none">
+		<div class="see_wrap">
+			<div class="see_close">
+			<span>
+				<pre class="icon_public"></pre>${productMenuPhoneComponent.backText}
+			</span>
+			<pre>${productMenuPhoneComponent.backTextDesc}</pre>
+			<i class="icon_public"></i></div>
+			
+			<div class="conv3_global_selector">
+					<sly data-sly-use.productMenuPhonesComp="com.huawei.consumer.site.core.components.publics.ProductMenuPhoneComponent"
+						data-sly-list.filterItem="${productMenuPhonesComp.filterCriteria}">
+						<div class="select" t="structured_field_42">
+							<span>${filterItem.groupName}</span>
+								<ol _mark="${filterItem.groupName}">
+									<sly data-sly-list.param=${filterItem.listParam}> 
+						  					<li v="${param.name}">${param.value}</li>
+					  				</sly>
+				  				</ol>
+		  				</div>
+		  			</sly>
+			</div>
+			<ul class="see_phone_uList"></ul>
+			<style>
+				.common_menu .see_wrap .see_phone_uList:empty:after { content:"${productMenuPhoneComponent.noResultMsg @ context='styleString'}" ;display:block;font-size: 18px; letter-spacing: 6px; text-align: center; margin-top:40px; }
+			</style>
+		</div>
+		<div class="list_compare" style="display: none" data-enable-compare="${productMenuPhoneComponent.enableCompare}">
+			<div class="list_compare_title">${productMenuPhoneComponent.selectedLabel}</div>
+			<div class="list_compare_body"></div>
+			<div class="list_compare_btn" style="display: none" data-compare-link="${productMenuPhoneComponent.comparePagePath}.html"><a href="javascript:;">${productMenuPhoneComponent.compareLabel}</a></div>
+		</div>
+		<div class="load_more load_more_products" style="display: none" pbi1="31">
+			<div class="text">
+				<span>+</span>${productMenuPhoneComponent.loadmoreLabel}
+			</div>
+		</div>
+	</div>
+</div>
+
+</sly>

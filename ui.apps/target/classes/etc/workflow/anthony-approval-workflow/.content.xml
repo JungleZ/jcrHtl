@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/default"
+        cq:lastModified="{Date}2018-05-07T22:41:27.391+08:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/cq/workflow/templates/model"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Anthony Approval Workflow"
+        sling:resourceType="cq/workflow/components/pages/model">
+        <flow
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <process
+                jcr:created="{Date}2018-05-03T10:30:54.054+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-05-07T22:39:55.114+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Set Last Workflow Id"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.anthony.workflowstep.SetLastWfIdProcess"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process>
+            <process_402698608
+                jcr:created="{Date}2018-05-04T22:45:19.793+08:00"
+                jcr:createdBy="admin"
+                jcr:description="Submit Asset Checker"
+                jcr:lastModified="{Date}2018-05-07T22:39:57.927+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Submit Asset Checker"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.anthony.workflowchecker.AssetsChecker"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process_402698608>
+            <or
+                jcr:created="{Date}2018-05-04T22:59:04.425+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-05-07T22:20:33.042+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/workflow/components/model/or"
+                branches="2"
+                orSplit="true"
+                script1="function  check(){&#xa;var key = &quot;isPass&quot;,expected=1;&#xa;&#xa;var value = parseInt(workflowData.getMetaDataMap().get(key, Packages.java.lang.String));&#xa;&#xa;return value==expected;&#xa;}   "
+                script2="function  check(){&#xa;var key = &quot;isPass&quot;,expected=0;&#xa;&#xa;var value = parseInt(workflowData.getMetaDataMap().get(key, Packages.java.lang.String));&#xa;&#xa;return value==expected;&#xa;}   ">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <dynamic_participant
+                        jcr:created="{Date}2018-05-04T23:25:43.769+08:00"
+                        jcr:createdBy="admin"
+                        jcr:description="The first group of approver handles"
+                        jcr:lastModified="{Date}2018-05-07T22:40:04.567+08:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="First Request Approval"
+                        sling:resourceType="cq/workflow/components/model/dynamic_participant">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            DIALOG_PATH="/etc/workflow/dialogs/anthony/ApproveOrReject/dialog"
+                            DYNAMIC_PARTICIPANT="com.anthony.workflowparticipants.FirstApproverChooser"/>
+                    </dynamic_participant>
+                    <process_907350516
+                        jcr:created="{Date}2018-05-04T23:25:52.758+08:00"
+                        jcr:createdBy="admin"
+                        jcr:description="Get the first set of approval result"
+                        jcr:lastModified="{Date}2018-05-07T22:40:07.934+08:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Get First Approval Result"
+                        sling:resourceType="cq/workflow/components/model/process">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.anthony.workflowstep.GetResultProcess"
+                            PROCESS_ARGS="\{&quot;targetStepTitle&quot;:&quot;First Request Approval&quot;,&quot;targetParams&quot;:[{&quot;name&quot;:&quot;isApproved&quot;,&quot;mapping&quot;:&quot;isFirstApproved&quot;}]}"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </process_907350516>
+                    <or
+                        jcr:created="{Date}2018-05-04T23:26:19.741+08:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2018-05-07T22:20:27.501+08:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/workflow/components/model/or"
+                        branches="2"
+                        orSplit="true"
+                        script1="function  check(){&#xa;var key = &quot;isFirstApproved&quot;,expected=0;&#xa;&#xa;var value = parseInt(workflowData.getMetaDataMap().get(key, Packages.java.lang.String));&#xa;&#xa;return value==expected;&#xa;}   "
+                        script2="function  check(){&#xa;var key = &quot;isFirstApproved&quot;,expected=1;&#xa;&#xa;var value = parseInt(workflowData.getMetaDataMap().get(key, Packages.java.lang.String));&#xa;&#xa;return value==expected;&#xa;}   ">
+                        <_x0031_
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/flow/components/parsys">
+                            <process
+                                jcr:created="{Date}2018-05-04T23:08:00.733+08:00"
+                                jcr:createdBy="admin"
+                                jcr:description="Sending first group approval to dismiss mail"
+                                jcr:lastModified="{Date}2018-05-07T22:40:15.321+08:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Send First Rejected Email"
+                                sling:resourceType="cq/workflow/components/model/process">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    PROCESS="com.anthony.workflowstep.SendEmailProcess"
+                                    PROCESS_AUTO_ADVANCE="true"/>
+                            </process>
+                        </_x0031_>
+                        <_x0032_
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/flow/components/parsys">
+                            <dynamic_participant
+                                jcr:created="{Date}2018-05-04T23:09:58.064+08:00"
+                                jcr:createdBy="admin"
+                                jcr:description="The second group of approver handles"
+                                jcr:lastModified="{Date}2018-05-07T22:09:03.870+08:00"
+                                jcr:lastModifiedBy="approver021"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Second Request Approval"
+                                sling:resourceType="cq/workflow/components/model/dynamic_participant">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    DIALOG_PATH="/etc/workflow/dialogs/anthony/ApproveOrReject/dialog"
+                                    DYNAMIC_PARTICIPANT="com.anthony.workflowparticipants.SecondApproverChooser"/>
+                            </dynamic_participant>
+                            <process
+                                jcr:created="{Date}2018-05-04T23:10:03.907+08:00"
+                                jcr:createdBy="admin"
+                                jcr:description="Get the second set of approval result"
+                                jcr:lastModified="{Date}2018-05-07T22:40:18.626+08:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Get Second Approval Result"
+                                sling:resourceType="cq/workflow/components/model/process">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    PROCESS="com.anthony.workflowstep.GetResultProcess"
+                                    PROCESS_ARGS="\{&quot;targetStepTitle&quot;:&quot;Second Request Approval&quot;,&quot;targetParams&quot;:[{&quot;name&quot;:&quot;isApproved&quot;,&quot;mapping&quot;:&quot;isSecondApproved&quot;}]}"
+                                    PROCESS_AUTO_ADVANCE="true"/>
+                            </process>
+                            <or
+                                jcr:created="{Date}2018-05-04T23:11:37.263+08:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2018-05-07T22:20:46.190+08:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/workflow/components/model/or"
+                                branches="2"
+                                orSplit="true"
+                                script1="function  check(){&#xa;var key = &quot;isSecondApproved&quot;,expected=0;&#xa;&#xa;var value = parseInt(workflowData.getMetaDataMap().get(key, Packages.java.lang.String));&#xa;&#xa;return value==expected;&#xa;}   "
+                                script2="function  check(){&#xa;var key = &quot;isSecondApproved&quot;,expected=1;&#xa;&#xa;var value = parseInt(workflowData.getMetaDataMap().get(key, Packages.java.lang.String));&#xa;&#xa;return value==expected;&#xa;}   ">
+                                <_x0031_
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="cq/flow/components/parsys">
+                                    <process
+                                        jcr:created="{Date}2018-05-04T23:11:47.414+08:00"
+                                        jcr:createdBy="admin"
+                                        jcr:description="Sending second group approval to dismiss mail"
+                                        jcr:lastModified="{Date}2018-05-07T22:40:22.482+08:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Send Second Rejected Email"
+                                        sling:resourceType="cq/workflow/components/model/process">
+                                        <metaData
+                                            jcr:primaryType="nt:unstructured"
+                                            PROCESS="com.anthony.workflowstep.SendEmailProcess"
+                                            PROCESS_AUTO_ADVANCE="true"/>
+                                    </process>
+                                </_x0031_>
+                                <_x0032_
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="cq/flow/components/parsys">
+                                    <dynamic_participant
+                                        jcr:created="{Date}2018-05-04T23:12:21.591+08:00"
+                                        jcr:createdBy="admin"
+                                        jcr:description="The third group of approver handles"
+                                        jcr:lastModified="{Date}2018-05-07T22:09:56.805+08:00"
+                                        jcr:lastModifiedBy="approver021"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Third Request Approval"
+                                        sling:resourceType="cq/workflow/components/model/dynamic_participant">
+                                        <metaData
+                                            jcr:primaryType="nt:unstructured"
+                                            DIALOG_PATH="/etc/workflow/dialogs/anthony/ApproveOrReject/dialog"
+                                            DYNAMIC_PARTICIPANT="com.anthony.workflowparticipants.ThirdApproverChooser"/>
+                                    </dynamic_participant>
+                                    <process
+                                        jcr:created="{Date}2018-05-04T23:12:26.485+08:00"
+                                        jcr:createdBy="admin"
+                                        jcr:description="Get the third set of approval result"
+                                        jcr:lastModified="{Date}2018-05-07T22:40:26.309+08:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Get Third Approval Result"
+                                        sling:resourceType="cq/workflow/components/model/process">
+                                        <metaData
+                                            jcr:primaryType="nt:unstructured"
+                                            PROCESS="com.anthony.workflowstep.GetResultProcess"
+                                            PROCESS_ARGS="\{&quot;targetStepTitle&quot;:&quot;Third Request Approval&quot;,&quot;targetParams&quot;:[{&quot;name&quot;:&quot;isApproved&quot;,&quot;mapping&quot;:&quot;isThirdApproved&quot;}]}"
+                                            PROCESS_AUTO_ADVANCE="true"/>
+                                    </process>
+                                    <or
+                                        jcr:created="{Date}2018-05-04T23:23:50.822+08:00"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2018-05-07T22:22:30.858+08:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/workflow/components/model/or"
+                                        branches="2"
+                                        orSplit="true"
+                                        script1="function  check(){&#xa;var key = &quot;isThirdApproved&quot;,expected=1;&#xa;&#xa;var value = parseInt(workflowData.getMetaDataMap().get(key, Packages.java.lang.String));&#xa;&#xa;return value==expected;&#xa;}   "
+                                        script2="function  check(){&#xa;var key = &quot;isThirdApproved&quot;,expected=0;&#xa;&#xa;var value = parseInt(workflowData.getMetaDataMap().get(key, Packages.java.lang.String));&#xa;&#xa;return value==expected;&#xa;}   ">
+                                        <_x0031_
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="cq/flow/components/parsys">
+                                            <dynamic_participant
+                                                jcr:created="{Date}2018-05-04T23:29:42.273+08:00"
+                                                jcr:createdBy="admin"
+                                                jcr:description="The fourth group of approver handles"
+                                                jcr:lastModified="{Date}2018-05-07T22:10:49.242+08:00"
+                                                jcr:lastModifiedBy="approver021"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Fourth Request Approval"
+                                                sling:resourceType="cq/workflow/components/model/dynamic_participant">
+                                                <metaData
+                                                    jcr:primaryType="nt:unstructured"
+                                                    DIALOG_PATH="/etc/workflow/dialogs/anthony/ApproveOrReject/dialog"
+                                                    DYNAMIC_PARTICIPANT="com.anthony.workflowparticipants.FourthApproverChooser"/>
+                                            </dynamic_participant>
+                                            <process
+                                                jcr:created="{Date}2018-05-04T23:30:56.144+08:00"
+                                                jcr:createdBy="admin"
+                                                jcr:description="Get the fourth set of approval result"
+                                                jcr:lastModified="{Date}2018-05-07T22:40:35.356+08:00"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Get Fourth Approval Result"
+                                                sling:resourceType="cq/workflow/components/model/process">
+                                                <metaData
+                                                    jcr:primaryType="nt:unstructured"
+                                                    PROCESS="com.anthony.workflowstep.GetResultProcess"
+                                                    PROCESS_ARGS="\{&quot;targetStepTitle&quot;:&quot;Fourth Request Approval&quot;,&quot;targetParams&quot;:[{&quot;name&quot;:&quot;isApproved&quot;,&quot;mapping&quot;:&quot;isFourthApproved&quot;}]}"
+                                                    PROCESS_AUTO_ADVANCE="true"/>
+                                            </process>
+                                            <or
+                                                jcr:created="{Date}2018-05-04T23:31:50.849+08:00"
+                                                jcr:createdBy="admin"
+                                                jcr:lastModified="{Date}2018-05-07T22:23:28.814+08:00"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/workflow/components/model/or"
+                                                branches="2"
+                                                orSplit="true"
+                                                script1="function  check(){&#xa;var key = &quot;isFourthApproved&quot;,expected=0;&#xa;&#xa;var value = parseInt(workflowData.getMetaDataMap().get(key, Packages.java.lang.String));&#xa;&#xa;return value==expected;&#xa;}   "
+                                                script2="function  check(){&#xa;var key = &quot;isFourthApproved&quot;,expected=1;&#xa;&#xa;var value = parseInt(workflowData.getMetaDataMap().get(key, Packages.java.lang.String));&#xa;&#xa;return value==expected;&#xa;}   ">
+                                                <_x0031_
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/flow/components/parsys">
+                                                    <process
+                                                        jcr:created="{Date}2018-05-04T23:32:00.920+08:00"
+                                                        jcr:createdBy="admin"
+                                                        jcr:description="Sending fourth group approval to dismiss mail"
+                                                        jcr:lastModified="{Date}2018-05-07T22:40:51.804+08:00"
+                                                        jcr:lastModifiedBy="admin"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Send Fourth Rejected Email"
+                                                        sling:resourceType="cq/workflow/components/model/process">
+                                                        <metaData
+                                                            jcr:primaryType="nt:unstructured"
+                                                            PROCESS="com.anthony.workflowstep.SendEmailProcess"
+                                                            PROCESS_AUTO_ADVANCE="true"/>
+                                                    </process>
+                                                </_x0031_>
+                                                <_x0032_
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/flow/components/parsys">
+                                                    <process
+                                                        jcr:created="{Date}2018-05-04T23:33:29.522+08:00"
+                                                        jcr:createdBy="admin"
+                                                        jcr:description="Sending all approval email"
+                                                        jcr:lastModified="{Date}2018-05-07T22:40:43.723+08:00"
+                                                        jcr:lastModifiedBy="admin"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Send All Pass Email"
+                                                        sling:resourceType="cq/workflow/components/model/process">
+                                                        <metaData
+                                                            jcr:primaryType="nt:unstructured"
+                                                            PROCESS="com.anthony.workflowstep.SendEmailProcess"
+                                                            PROCESS_AUTO_ADVANCE="true"/>
+                                                    </process>
+                                                </_x0032_>
+                                            </or>
+                                            <goto
+                                                jcr:created="{Date}2018-05-04T23:37:39.739+08:00"
+                                                jcr:createdBy="admin"
+                                                jcr:description="Goto Step"
+                                                jcr:lastModified="{Date}2018-05-07T22:40:56.034+08:00"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Goto Step"
+                                                sling:resourceType="cq/workflow/components/model/goto"
+                                                PROCESS="com.adobe.granite.workflow.core.process.GotoProcess"
+                                                PROCESS_AUTO_ADVANCE="false">
+                                                <metaData
+                                                    jcr:primaryType="nt:unstructured"
+                                                    PROCESS="com.adobe.granite.workflow.core.process.GotoProcess"
+                                                    PROCESS_AUTO_ADVANCE="false"
+                                                    script="function  check(){&#xa;   return true;&#xa;}  "
+                                                    TARGET_NODE_PATH="/etc/workflow/models/anthony-approval-workflow/jcr:content/flow/process_401826513"/>
+                                            </goto>
+                                        </_x0031_>
+                                        <_x0032_
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="cq/flow/components/parsys">
+                                            <process
+                                                jcr:created="{Date}2018-05-04T23:28:28.919+08:00"
+                                                jcr:createdBy="admin"
+                                                jcr:description="Sending third group approval to dismiss mail"
+                                                jcr:lastModified="{Date}2018-05-07T22:40:31.611+08:00"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Send Third Rejected Email"
+                                                sling:resourceType="cq/workflow/components/model/process">
+                                                <metaData
+                                                    jcr:primaryType="nt:unstructured"
+                                                    PROCESS="com.anthony.workflowstep.SendEmailProcess"
+                                                    PROCESS_AUTO_ADVANCE="true"/>
+                                            </process>
+                                        </_x0032_>
+                                    </or>
+                                    <goto
+                                        jcr:created="{Date}2018-05-04T23:38:01.615+08:00"
+                                        jcr:createdBy="admin"
+                                        jcr:description="Goto Step"
+                                        jcr:lastModified="{Date}2018-05-07T22:41:05.164+08:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Goto Step"
+                                        sling:resourceType="cq/workflow/components/model/goto"
+                                        PROCESS="com.adobe.granite.workflow.core.process.GotoProcess"
+                                        PROCESS_AUTO_ADVANCE="false">
+                                        <metaData
+                                            jcr:primaryType="nt:unstructured"
+                                            PROCESS="com.adobe.granite.workflow.core.process.GotoProcess"
+                                            PROCESS_AUTO_ADVANCE="false"
+                                            script="function  check(){&#xa;   return true;&#xa;}  "
+                                            TARGET_NODE_PATH="/etc/workflow/models/anthony-approval-workflow/jcr:content/flow/process_401826513"/>
+                                    </goto>
+                                </_x0032_>
+                            </or>
+                            <goto
+                                jcr:created="{Date}2018-05-04T23:38:05.037+08:00"
+                                jcr:createdBy="admin"
+                                jcr:description="Goto Step"
+                                jcr:lastModified="{Date}2018-05-07T22:41:10.950+08:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Goto Step"
+                                sling:resourceType="cq/workflow/components/model/goto"
+                                PROCESS="com.adobe.granite.workflow.core.process.GotoProcess"
+                                PROCESS_AUTO_ADVANCE="false">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    PROCESS="com.adobe.granite.workflow.core.process.GotoProcess"
+                                    PROCESS_AUTO_ADVANCE="false"
+                                    script="function  check(){&#xa;   return true;&#xa;}  "
+                                    TARGET_NODE_PATH="/etc/workflow/models/anthony-approval-workflow/jcr:content/flow/process_401826513"/>
+                            </goto>
+                        </_x0032_>
+                    </or>
+                    <goto
+                        jcr:created="{Date}2018-05-04T23:38:07.872+08:00"
+                        jcr:createdBy="admin"
+                        jcr:description="Goto Step"
+                        jcr:lastModified="{Date}2018-05-04T23:40:54.072+08:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Goto Step"
+                        sling:resourceType="cq/workflow/components/model/goto"
+                        PROCESS="com.adobe.granite.workflow.core.process.GotoProcess"
+                        PROCESS_AUTO_ADVANCE="false">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.adobe.granite.workflow.core.process.GotoProcess"
+                            PROCESS_AUTO_ADVANCE="false"
+                            script="function  check(){&#xa;   return true;&#xa;}   "
+                            TARGET_NODE_PATH="/etc/workflow/models/anthony-approval-workflow/jcr:content/flow/process_401826513"/>
+                    </goto>
+                </_x0031_>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <process
+                        jcr:created="{Date}2018-05-04T23:26:08.843+08:00"
+                        jcr:createdBy="admin"
+                        jcr:description="Send an email that does not pass through"
+                        jcr:lastModified="{Date}2018-05-07T22:40:01.455+08:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Send Not Pass Email"
+                        sling:resourceType="cq/workflow/components/model/process">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.anthony.workflowstep.SendEmailProcess"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </process>
+                    <goto
+                        jcr:created="{Date}2018-05-04T23:42:36.059+08:00"
+                        jcr:createdBy="admin"
+                        jcr:description="Goto Step"
+                        jcr:lastModified="{Date}2018-05-07T22:40:11.344+08:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Goto Step"
+                        sling:resourceType="cq/workflow/components/model/goto"
+                        PROCESS="com.adobe.granite.workflow.core.process.GotoProcess"
+                        PROCESS_AUTO_ADVANCE="false">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.adobe.granite.workflow.core.process.GotoProcess"
+                            PROCESS_AUTO_ADVANCE="false"
+                            script="function  check(){&#xa;   return true;&#xa;}  "
+                            TARGET_NODE_PATH="/etc/workflow/models/anthony-approval-workflow/jcr:content/flow/process_401826513"/>
+                    </goto>
+                </_x0032_>
+            </or>
+            <process_401826513
+                jcr:created="{Date}2018-05-04T23:35:11.568+08:00"
+                jcr:createdBy="admin"
+                jcr:description="Asset Approval Check"
+                jcr:lastModified="{Date}2018-05-07T22:41:24.451+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Asset Approval Check"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.anthony.workflowchecker.AssetApprovalChecker"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process_401826513>
+            <process_1819167996
+                jcr:created="{Date}2018-05-04T23:36:11.901+08:00"
+                jcr:createdBy="admin"
+                jcr:description="Asset Move Anthony Folder"
+                jcr:lastModified="{Date}2018-05-07T22:41:27.391+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Asset Move Anthony Folder"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.anthony.workflowchecker.MoveAssetProcess"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process_1819167996>
+        </flow>
+        <model/>
+    </jcr:content>
+</jcr:root>

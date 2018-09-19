@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    contactTitle="HOTLINE SUPPORT"
+    countryApiUrl="http://consumer.huawei.com/support/services/base/hotline/country/global"
+    descText="Please email us your questions regarding any Huawei Device product."
+    detailTitle="VIEW OUR GLOBAL HOTLINES"
+    hotlineLabel="Hotline"
+    infoApiUrl="http://consumer.huawei.com/support/services/base/hotline/info"
+    mark="Country or Region hotline"
+    remarkLabel="Remarks"
+    supportLanguageLabel="Support Language"
+    supportTimeLabel="Support Time"
+    titleForSeo="VIEW OUR GLOBAL HOTLINES"/>

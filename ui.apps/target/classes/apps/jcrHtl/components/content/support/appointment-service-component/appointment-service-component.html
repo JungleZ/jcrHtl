@@ -1,0 +1,216 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Appointment Service Component</p>
+<sly data-sly-use.appointmentComp="com.huawei.consumer.site.core.components.support.AppointmentServiceComponent" data-sly-test="${appointmentComp}">
+<div class="conv3_wrap conv3_sup_reservation_wrap appointment-service-comp"
+	product-dropdown-err="${properties.productDropdownErrorText}"
+	product-model-dropdown-err="${properties.productModelDropdownErrorText}"
+	operator-options-err="${properties.operatorOptionsErrorText}"
+	service-type-err="${properties.serviceTypeErrorText}"
+	province-dropdown-err="${properties.provinceDropdownErrorText}"
+	city-dropdown-err="${properties.cityDropdownErrorText}"
+	appointment-date-err="${properties.appointmentDateErrorText}"
+	appointment-time-err="${properties.appointmentTimeErrorText}"
+	fault-info-err="${properties.faultInfoErrorText}"
+	surname-err="${properties.surnameErrorText}"
+	given-name-err="${properties.givenNameErrorText}"
+	mobile-phone-err="${properties.mobilePhoneErrorText}"
+	email-address-err="${properties.emailAddressErrorText}"
+	imei-no-err="${properties.imeiNoErrorText}"
+	verification-code-err="${properties.verificationCodeErrorText}"
+	private-policy-err="${properties.privatePolicyErrorText}"
+	service-center-err="${properties.serviceCenterErrorText}"
+	data-input-verification-code-message="${properties.inputVerificationCodeMessage}"
+	data-submit-repeat-message="${properties.submitRepeatMessage}"
+	data-select-a-service-center-message="${properties.selectAServiceCenterMessage}"
+	data-full-reservation-message="${properties.fullReservationMessage}"
+	data-reser-product-type-api="${appointmentComp.productTypeApi}"
+	data-reser-product-by-id-api="${appointmentComp.productByIdApi}"
+	data-reser-province-api="${appointmentComp.reservationProvinceApi}"
+	data-reser-city-api="${appointmentComp.reservationCityApi}"
+	data-reser-address-list-api="${appointmentComp.reservationAddressListApi}"
+	data-reser-time-api="${appointmentComp.reservationTimeApi}"
+	data-reser-problem-info-api="${appointmentComp.reservationProblemInfoApi}"
+	data-reser-apply-api="${appointmentComp.reservationApplyApi}"
+	data-session-uuid-url="${appointmentComp.sessionUuidURL}"
+    data-verification-image-code-url="${appointmentComp.verificationImageCodeURL}"
+	> 
+    <div class="conv3_content">
+		<div class="cbg-article cbg-wrapper container-1 y-cbg-action">
+		    <h1>${properties.title}</h1>
+		    <form id="cbg-reservation-form" class="cbg-std-form cbg-white-bg">
+		        <ul class="cbg-steps">
+		            <li class="y-cbg-step-btn" style="display:block">
+		                <div class="cbg-element-group">
+		                    <h2>
+		                    	<span class="cbg-step-btn">${properties.step1Text}</span>
+		                    	<span class="x_step_content">${properties.step1Title}</span>
+		                    </h2>
+		                    <div class="cbg-wrapper">
+		                        <select class="cbg-selectbox" id="cbg-pro-type">
+		                            <option value="0">${properties.productDropdown}</option>
+		                        </select>
+		                        <select class="cbg-selectbox" id="cbg-pro-name">
+		                            <option value="0">${properties.productModelDropdown}</option>
+		                        </select>
+		                    </div>
+		                    <h2>
+		                    	<span class="cbg-step-btn">${properties.step2Text}</span>
+		                    	<span class="x_step_content">${properties.step2Title}</span>
+		                    </h2>
+		                    <div class="cbg-wrapper">
+		                        <select class="cbg-selectbox" id="cbg-pro-opetator" name="operator" data-sly-list.operator="${appointmentComp.operatorOptionsList}">
+		                            <option value="${operator.url}">${operator.title}</option>
+		                        </select>
+		                    </div>
+		                    <sly data-sly-test="${!properties.hideServiceType}">
+		                    <h2>
+		                    	<span class="cbg-step-btn">${properties.step3Text}</span>
+		                    	<span class="x_step_content">${properties.step3Title}</span>
+		                    </h2>
+		                    <div class="cbg-wrapper">
+		                        <ul class="cbg-inline cbg-btn-list" data-sly-list.serviceType="${appointmentComp.serviceTypeList}">
+		                            <li>
+		                                <label class="cbg-btn">
+		                                    <input type="radio" value="${serviceType.serviceValue}" name="${serviceType.serviceName}"><span>${serviceType.serviceTitle}</span>
+		                                </label>
+		                            </li>
+		                        </ul>
+		                    </div>
+		                    </sly>
+		                    <h2>
+		                    	<span class="cbg-step-btn">${properties.step4Text}</span>
+		                    	<span class="x_step_content">${properties.step4Title}</span>
+		                    </h2>
+		                    <div class="cbg-wrapper y-hw-city-list">
+		                        <div class="cbg-element-group cbg-oneline">
+		                            <select class="cbg-selectbox" id="code-province" name="user-province">
+		                                <option value="0">${properties.provinceDropdown}</option>
+		                            </select>
+		                            <select class="cbg-selectbox" id="code-city" name="user-city">
+		                                <option value="0">${properties.cityDropdown}</option>
+		                            </select>
+		                            <em><a class="cbg-btn cbg-btn-search">${properties.searchBtnText}</a></em>
+		                        </div>
+		                        <div id="cbg-service-center-container">
+		                            <table class="cbg-std-table cbg-alternate" id="y-store-cbg-info">
+		                                <tbody>
+		                                </tbody>
+		                            </table>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="cbg-actions cbg-clearfix">
+		                    <div class="cbg-right">
+		                        <em><a class="support-submit-shape next_tep1 y-date-btn">${properties.nextButtonText}</a></em>
+		                    </div>
+		                </div>
+		            </li>
+		            <!-- step 2 -->
+		            <li class="y-cbg-step-btn">
+		                <div class="cbg-element-group">
+		                    <div class="reservation-step5">
+		                        <h2>
+		                        	<span class="cbg-step-btn">${properties.step5Text}</span>
+		                        	<span class="x_step_content">${properties.step5Title}</span>
+		                        </h2>
+		                        <span class="time-tip"></span>
+		                    </div>
+		                    <div class="cbg-wrapper">
+		                        <ul class="cbg-inline cbg-btn-list" id="stores-time"></ul>
+		                    </div>
+		                    <h2>
+		                    	<span class="cbg-step-btn">${properties.step6Text}</span>
+		                    	<span class="x_step_content">${properties.step6Title}</span>
+		                    </h2>
+		                    <div class="cbg-wrapper">
+		                        <ul class="cbg-inline cbg-btn-list" id="cbg-wrapper-ul"></ul>
+		                    </div>
+		                </div>
+		                <div class="cbg-actions cbg-clearfix">
+		                    <a class="support-submit-shape cbg-left back-fill" lastContent="0">${properties.backButtonText}</a>
+		                    <div class="cbg-right">
+		                        <em><a href="javascript:;" class="support-submit-shape y-problem-btn">${properties.nextButtonText}</a></em>
+		                    </div>
+		                </div>
+		            </li>
+		            <!-- step 3 -->
+		            <li id="cbg-step-3" class="y-cbg-step-btn">
+		                <div class="cbg-element-group">
+		                    <h2>
+		                    	<span class="cbg-step-btn">${properties.step7Text}</span>
+		                    	<span class="x_step_content">${properties.step7Title}</span>
+		                    </h2>
+		                    <div class="cbg-wrapper">
+		                        <ul class="cbg-inline cbg-btn-list" id="y-pro-problem"></ul>
+		                        <div id="cbg-service-type-description">
+		                            <textarea name="service-type-description"></textarea>
+		                        </div>
+		                    </div>
+		
+		                    <h2><span class="cbg-step-btn">${properties.step8Text}</span>${properties.step8Title}</h2>
+		                    <div class="cbg-wrapper">
+		                        <dl class="cbg-2cols">
+		                            <dt><span class="cbg-req-star">*</span> ${properties.surnameText}</dt>
+		                            <dd>
+		                                <input type="text" name="user-surname">
+		                            </dd>
+		                            <dt><span class="cbg-req-star">*</span> ${properties.givenNameText}</dt>
+		                            <dd>
+		                                <input type="text" name="user-givenname">
+		                            </dd>
+		                            <dt><span class="cbg-req-star">*</span> ${properties.mobilePhoneNumText}</dt>
+		                            <dd>
+		                                <input type="text" name="user-phone">
+		                            </dd>
+		                            <dt>${properties.telephoneNumText}</dt>
+		                            <dd>
+		                                <input type="text" name="user-tel">
+		                            </dd>
+		                            <dt>${properties.faxNumText}</dt>
+		                            <dd>
+		                                <input type="text" name="user-fax">
+		                            </dd>
+		                            <dt><span class="cbg-req-star">*</span> ${properties.emailAddressText}</dt>
+		                            <dd>
+		                                <input type="text" name="user-email">
+		                            </dd>
+		                            <dt><span class="cbg-req-star">*</span> ${properties.imeiNoText}</dt>
+		                            <dd>
+		                                <input type="text" name="imei">
+		                            </dd>
+		                            <dt><span class="cbg-req-star">*</span> ${properties.verificationCodeText}</dt>
+		                            <dd class="v-code">
+		                                <img class="auto-img">
+		                                <input type="text" name="captcha" maxlength="4" class="cbg-captcha y-vericode">
+		                                <input type="hidden" class="auto-sessionid">
+		                            </dd>
+		                        </dl>
+		                        <div class="code-title">
+		                            ${properties.reminderText @ context='html'}
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="cbg-actions cbg-clearfix">
+		                    <a class="support-submit-shape cbg-left back-fill" lastContent="1">${properties.backButtonText}</a>
+		                    <div class="cbg-right">
+		                        <label>
+		                            <input type="checkbox" name="agree" />
+		                        </label>
+		                        ${properties.privatePolicyText @ context = 'html'}
+		                        <em><a id="submit-reservation" class="support-submit-shape">${properties.submitButtonText}</a></em>
+		                    </div>
+		                </div>
+		                <div id="confirm-box">
+		                    <div class="y-confirm-box">
+		                        <p>${properties.confirmBoxText}</p>
+		                        <em><input type="button" class="cbg-btn submit-reservation" d-val='Yes' value='${properties.confirmBoxSubmitButtonText}'></em>
+		                        <input type="button" class="cbg-btn bg-g" d-val="No" value="${properties.confirmBoxCancelButtonText}">
+		                    </div>
+		                </div>
+		            </li>
+		        </ul>
+		    </form>
+		</div>
+	</div>
+</div>
+<a href="${appointmentComp.successPageUrl}" style="display:none" id="reservation-success"></a>
+</sly>

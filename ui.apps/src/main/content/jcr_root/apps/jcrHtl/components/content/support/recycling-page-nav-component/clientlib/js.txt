@@ -1,0 +1,2 @@
+#base=js
+recycling-page-nav-component.js

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Warranty service and period"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tab1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Tab 1"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Title"
+                                name="./title"/>
+                            <input-ph
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Input Placeholder"
+                                name="./inputPlaceholder"/>
+                            <submit-button-txt
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Submit Button Text"
+                                name="./submitBtnText"/>
+                            <submit-err-txt
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Submit Button Error Text"
+                                name="./submitErrTxt"/>
+                            <reminder
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Reminder"
+                                name="./reminder"/>
+                            <api-url
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="API URL"
+                                name="./apiUrl"/>
+                            <policy-link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Policy link"
+                                name="./policyLink"
+                                rootPath="/content/huawei-cbg-site"/>
+                            <contactus-link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Contact Us link"
+                                name="./contactUsLink"
+                                rootPath="/content/huawei-cbg-site"/>
+                            <service-link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Service Link"
+                                name="./serviceLink"
+                                rootPath="/content/huawei-cbg-site"/>
+                        </items>
+                    </columns>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Tab 2"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <more-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Product detail more text"
+                                name="./moreTxt"/>
+                            <model-txt
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Model Text"
+                                name="./modelTxt"/>
+                            <imei-sn-txt
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="IMEI/SN Text"
+                                name="./imeisnTxt"/>
+                            <expected-expiry-date-txt
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Expected Expiry date Text"
+                                name="./expectedExpDateTxt"/>
+                            <support-location-txt
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Support location Text"
+                                name="./spLocationTxt"/>
+                            <active-notice1-txt
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Active Notice 1"
+                                name="./activeNotice1"/>
+                            <active-notice2-txt
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Active Notice 2"
+                                name="./activeNotice2"/>
+                            <right-and-interest-txt
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="RIGHT AND INTERESTS TEXT"
+                                name="./rightTxt"/>
+                            <back-button-btn
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Back Button Text"
+                                name="./backBtnTxt"/>
+                            <wq-no-result-tit
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Query No result text"
+                                name="./noRsTit"/>
+                            <p-active-txt
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Product active text"
+                                name="./productActiveTxt"/>
+                            <time-txt
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Time text"
+                                name="./timeTxt"/>
+                            <no-qualified-info
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="No Qualified Info"
+                                name="./noQualifiedInfo"/>
+                            <warranty-items
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                fieldDescription="Click '+' to add a new Field"
+                                fieldLabel="Warranty items">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    acs-commons-nested="NODE_STORE"
+                                    name="./warrantyItems">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                        method="absolute"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <service-cate-code
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldLabel="Service category code"
+                                                    name="./serviceCateCode"/>
+                                                <icons
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                    fieldLabel="Icon"
+                                                    name="./icon">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <wsp-icon01
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="wsp-icon01"
+                                                            value="wsp-icon01"/>
+                                                        <wsp-icon02
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="wsp-icon02"
+                                                            value="wsp-icon02"/>
+                                                        <wsp-icon03
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="wsp-icon03"
+                                                            value="wsp-icon03"/>
+                                                        <wsp-icon04
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="wsp-icon04"
+                                                            value="wsp-icon04"/>
+                                                        <wsp-icon05
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="wsp-icon05"
+                                                            value="wsp-icon05"/>
+                                                        <wsp-icon06
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="wsp-icon06"
+                                                            value="wsp-icon06"/>
+                                                        <wsp-icon07
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="wsp-icon07"
+                                                            value="wsp-icon07"/>
+                                                    </items>
+                                                </icons>
+                                                <type
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldLabel="Type"
+                                                    name="./type"/>
+                                                <typeNote
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldLabel="Type Notice"
+                                                    name="./typeNote"/>
+                                                <show-usge-count
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                    name="./usageCount"
+                                                    text="Show usage count"
+                                                    value="true"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </warranty-items>
+                            <no-rs-reminder
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="No result reminder"
+                                name="./noRsReminder"/>
+                            <rs-detail-reminder
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Result detail reminder"
+                                name="./rsDetailReminder"/>
+                            <rs-maintenace-reminder
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Result maintenance reminder"
+                                name="./rsMaintenaceReminder"/>
+                        </items>
+                    </columns>
+                </items>
+            </tab2>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    bgImgAlt="Watch Your Story"
+    bgImgUrl="/content/dam/huawei-cbg-site/en-master/home/img_con_v27_s6_banner.jpg"
+    titleText="WATCH YOUR STORY"
+    videoThumnail="/content/dam/huawei-cbg-site/en-master/home/198356144.jpg"
+    videoUrl="/content/dam/huawei-cbg-site/en-master/home/198356141.mp4">
+    <item jcr:primaryType="nt:unstructured">
+        <item1
+            jcr:primaryType="nt:unstructured"
+            buttonText="Video 1"
+            videoThumnail="/content/dam/huawei-cbg-site/en-master/home/198356144.jpg"
+            videoUrl="/content/dam/huawei-cbg-site/en-master/home/198356141.mp4"/>
+        <item2
+            jcr:primaryType="nt:unstructured"
+            buttonText="Video 2"
+            videoThumnail="/content/dam/huawei-cbg-site/en-master/home/198356144.jpg"
+            videoUrl="/content/dam/huawei-cbg-site/en-master/home/198356141.mp4"/>
+    </item>
+</jcr:root>

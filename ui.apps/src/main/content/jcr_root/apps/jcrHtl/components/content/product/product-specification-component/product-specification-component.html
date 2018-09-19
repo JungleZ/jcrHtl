@@ -1,0 +1,116 @@
+<div data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}" data-sly-unwrap>
+	<sly data-sly-call="${clientLib.all @ categories='huawei-cbg-site.productSpec'}"/>
+</div>
+
+
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Product Specification Component</p>
+
+<section id="spec-middle" data-sly-use.productSpec="com.huawei.consumer.site.core.components.product.ProductSpecificationComponent">
+    <div class="spec-title-pro">${productSpec.marketingName}</div>
+
+    <sly data-sly-list.props="${productSpec.productProperties}">
+    <!--/* show all key in edit mode */-->
+    <sly data-sly-test="${wcmmode.edit}"> 
+    <div class="spec-title" data-property-key="${props.propertyKey}">${props.propertyTitle}</div>
+
+        <sly data-sly-test="${props.propertyKey!='size'&&props.propertyKey!='color'}">
+
+            <div class="spec-contect">${props.formattedValueForSpec @ context='html'}</div>
+
+        </sly>
+
+        <sly data-sly-test="${props.propertyKey=='size'}">
+           <div class="spec-contect">
+             <dl class="spec-size" data-sly-test="${productSpec.productResource.show_size_text!='false'}">
+                <dd data-sly-test="${productSpec.productResource.size_width}">
+                    <p class="p-1">${'Width' @ i18n}:</p>
+                    <p class="p-2">${productSpec.productResource.size_width}</p>
+                </dd>
+
+                <dd data-sly-test="${productSpec.productResource.size_height}">
+                    <p class="p-1">${'Height' @ i18n}:</p>
+                    <p class="p-2">${productSpec.productResource.size_height}</p>
+                </dd>
+
+
+                  <dd data-sly-test="${productSpec.productResource.size_depth}">
+                    <p class="p-1">${'Depth' @ i18n}:</p>
+                    <p class="p-2">${productSpec.productResource.size_depth}</p>
+                </dd>
+
+                  <dd data-sly-test="${productSpec.productResource.size_weight}">
+                    <p class="p-1">${'Weight' @ i18n}:</p>
+                    <p class="p-2">${productSpec.productResource.size_weight}</p>
+                </dd>                 
+            </dl>
+              <img data-sly-test="${productSpec.productResource.size}" class="spec-img-size" src="${productSpec.productResource.size @context='uri'}">
+
+            </div>
+
+        </sly>
+
+        <sly data-sly-test="${props.propertyKey=='color'}">
+           <div class="spec-contect">
+                <ul class="spec-ul-color" data-sly-list.color="${productSpec.colors}">
+                     <li class="spec-color"><span class="spec-rad" style="background-color: #${color.colorCode @context='styleString'};border: solid 1px #cccccc;"></span>${color.colorTitle}</li>
+                </ul>
+
+
+            </div>
+        </sly>
+        </sly>
+    <!--/* show when value is not blank for other mode  */-->
+    <sly data-sly-test="${!wcmmode.edit&&props.propertyValue}"> 
+    <div class="spec-title" data-property-key="${props.propertyKey}">${props.propertyTitle}</div>
+
+        <sly data-sly-test="${props.propertyKey!='size'&&props.propertyKey!='color'}">
+
+            <div class="spec-contect">${props.formattedValueForSpec @ context='html'}</div>
+
+        </sly>
+
+        <sly data-sly-test="${props.propertyKey=='size'}">
+           <div class="spec-contect">
+             <dl class="spec-size"  data-sly-test="${productSpec.productResource.show_size_text!='false'}">
+                <dd data-sly-test="${productSpec.productResource.size_width}">
+                    <p class="p-1">${'Width' @ i18n}:</p>
+                    <p class="p-2">${productSpec.productResource.size_width}</p>
+                </dd>
+
+                <dd data-sly-test="${productSpec.productResource.size_height}">
+                    <p class="p-1">${'Height' @ i18n}:</p>
+                    <p class="p-2">${productSpec.productResource.size_height}</p>
+                </dd>
+
+
+                  <dd data-sly-test="${productSpec.productResource.size_depth}">
+                    <p class="p-1">${'Depth' @ i18n}:</p>
+                    <p class="p-2">${productSpec.productResource.size_depth}</p>
+                </dd>
+
+                  <dd data-sly-test="${productSpec.productResource.size_weight}">
+                    <p class="p-1">${'Weight' @ i18n}:</p>
+                    <p class="p-2">${productSpec.productResource.size_weight}</p>
+                </dd>                 
+            </dl>
+               <img data-sly-test="${productSpec.productResource.size}" class="spec-img-size" src="${productSpec.productResource.size @context='uri'}">
+
+            </div>
+
+        </sly>
+
+        <sly data-sly-test="${props.propertyKey=='color'}">
+           <div class="spec-contect">
+                <ul class="spec-ul-color" data-sly-list.color="${productSpec.colors}">
+                     <li class="spec-color"><span class="spec-rad" style="background-color: #${color.colorCode @context='styleString'};border: solid 1px #cccccc;"></span>${color.colorTitle}</li>
+                </ul>
+
+
+            </div>
+        </sly>
+        </sly>        
+        
+    </sly>
+ 
+	</section>
+

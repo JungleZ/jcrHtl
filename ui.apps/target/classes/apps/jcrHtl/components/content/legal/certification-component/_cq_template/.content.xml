@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    apiUrl="http://consumer.huawei.com/support/services/service/doc/file/list"
+    description="In the Declaration of Conformity the manufacturer declares that the product is in conformity with the essential requirements of the Eureopean parliament and of the Council. Please enter a product model in the text box to download the product’s Declaration of Conformity."
+    descriptionText="Description"
+    downloadsText="Downloads"
+    formatText="Format"
+    noResultText="NO RESULTS CAN BE FOUND."
+    PHText="Please enter the product model name!"
+    publicDateText="PublicDate"
+    sizeText="Size"
+    submitText="submit"
+    title="DECLARATION OF CONFORMITY"
+    typeText="Type"/>

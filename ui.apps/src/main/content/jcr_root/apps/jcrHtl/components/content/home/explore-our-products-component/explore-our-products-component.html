@@ -1,0 +1,17 @@
+    <p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Explore Our Products Component</p>
+<sly data-sly-use.productGroups="com.huawei.consumer.site.core.components.home.ExploreOurProductsComponent" data-sly-test="${productGroups}">
+<div class="section7">
+    <div class="tit appearance">${properties.title}</div>
+    <div class="imgs">
+        <ul data-sly-list.product="${productGroups.productGroupsInfo}">
+           <li class="delay300 appearance a-common" wrap="${product.wrapValue}" cat="${product.wrapValue == 'menu_module_allphone' ? 'Menu: Phones' : 'Menu: More Products'}" act="${properties.imageClickAct}" lab="HP Body - <page title>">
+               <h2 class="for_seo">${product.titleText}</h2>
+               <img class="lazy_load" time=""  alt="${product.bgImageAlt}" data-src="${product.bgImageUrl}" src="/etc/designs/huawei-cbg-site/images/common/bg500_660.png">
+               <span>
+				<strong>${product.titleText}</strong><i></i>
+				<p>${product.productText}</p>
+			</span>
+           </li>
+        </ul>
+    </div>
+</div>

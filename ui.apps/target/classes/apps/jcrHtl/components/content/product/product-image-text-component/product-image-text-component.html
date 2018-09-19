@@ -1,0 +1,13 @@
+<h2 style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Product Image Text (UD) Component</h2>
+
+<div class="section_xml_v1_feature x-sec " style="background-color: ${properties.bgColor @ context='styleString'};" data-sly-test="${properties.imagePath || properties.title || properties.description}">
+
+    <sly data-sly-test="${properties.textMode == 'on'}">
+        <h2 class="for_seo">${properties.title @ context='html'}</h2>
+        <div class="v1_xml_title x-title"  style="color: ${properties.titleColor @ context='styleString'};" >${properties.title @ context='html'}</div>
+        <div class="v1_xml_desc x-desc" style="color: ${properties.descColor @ context='styleString'};">${properties.description @ context='html'}</div>
+    </sly>
+    <div class="v1_xml_img x-img">
+        <img class="lazy" data-sly-attribute.src="${properties.imagePath}" data-sly-attribute.alt="${properties.imageAlt}">
+    </div>
+</div>

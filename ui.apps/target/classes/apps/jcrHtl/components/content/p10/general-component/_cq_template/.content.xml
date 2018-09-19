@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2017-04-18T15:43:24.303+08:00"
+    jcr:createdBy="admin"
+    jcr:lastModified="{Date}2017-04-21T10:33:42.739+08:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="huawei-cbg-site/components/content/p10/general-component"
+    animationEffect="left_right"
+    animationImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/yjbk/yjbk_cpt_sxjg_1000X500.png"
+    description="HUAWEI P10 sets an industry benchmark for style and craftsmanship with the first hyper diamond-cut."
+    desktopBackgroundColor="#eaeae8"
+    desktopBackgroundImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/yjbk/yjmdbg_1920X900.jpg"
+    mobileBackgroundColor="#eaeae8"
+    mobileBackgroundImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/s-banner.jpg"
+    titleImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/black-logo.png"
+    titleText="COLOUR · STYLE · INNOVATION">
+    <blocks jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            bottomImageBlocksText="TEST TEST"
+            imagePath="/content/dam/huawei-cbg-site/common/component/mkt/p10/ico_isp-black.png"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            bottomImageBlocksText="TEST TEST"
+            imagePath="/content/dam/huawei-cbg-site/common/component/mkt/p10/ico_isp-black.png"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            bottomImageBlocksText="TEST TEST"
+            imagePath="/content/dam/huawei-cbg-site/common/component/mkt/p10/ico_isp-black.png"/>
+        <_x0034_
+            jcr:primaryType="nt:unstructured"
+            bottomImageBlocksText="TEST TEST"
+            imagePath="/content/dam/huawei-cbg-site/common/component/mkt/p10/ico_isp-black.png"/>
+    </blocks>
+</jcr:root>

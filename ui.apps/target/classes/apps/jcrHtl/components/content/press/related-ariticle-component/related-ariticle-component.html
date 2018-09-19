@@ -1,0 +1,31 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Related Articles Component</p>
+<div class="content" data-sly-use.related="com.huawei.consumer.site.core.components.press.RelatedArticlesComponent" data-sly-test="${related.relatedArticles}">
+	<div class="related_tit">${related.title @i18n}</div>
+	<ul data-sly-test="${related.type=='article'}" class="related_list news_related"  data-sly-list.article="${related.relatedArticles}">
+	    <li>               
+	        <em >
+	            <strong><a  href="${article.path @ extension='html'}">${article.pageTitle||article.title}</a></strong>
+                <sly data-sly-test.publishTime="${related.relatedArticleResourses[articleList.index].articlePublishDate || article.lastModified}"></sly>
+	                <span    data-sly-use.date="${'com.huawei.consumer.site.core.models.DateFormatter' @ date=publishTime,format='dd MMMM, yyyy'}">${date.value}</span>
+	            <p>${article.description}</p>
+	        </em>
+	    </li>
+
+
+	</ul>
+	<ul data-sly-test="${related.type=='video'}" class="related_list"  data-sly-list.article="${related.relatedArticles}">
+		 <li>
+                    				<a href="${article.path @ extension='html'}" class="link_pic">
+                        				<img src="${related.relatedArticleResourses[articleList.index].mainImage}" alt="${article.title}">                        				
+                    					 <i class="icon_public white"></i>
+                    				</a>
+                    				<div class='videolist_content'>
+                        				<strong><a href="${article.path @ extension='html'}">${article.pageTitle||article.title}</a></strong>
+                        				<sly data-sly-test.publishTime="${related.relatedArticleResourses[articleList.index].articlePublishDate || article.lastModified}"></sly>
+											<span    data-sly-use.date="${'com.huawei.consumer.site.core.models.DateFormatter' @ date=publishTime,format='dd MMMM, yyyy'}">${date.value}</span>
+										<p >${article.description}</p>
+
+                    				</div>
+        </li>
+	</ul>
+</div>

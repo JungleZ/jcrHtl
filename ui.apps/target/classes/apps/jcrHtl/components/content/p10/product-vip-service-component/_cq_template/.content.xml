@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    buttonLink="http://consumer.huawei.com/minisite/de/vipservice/"
+    buttonText="MEHR INFOS"
+    footerDesc="HiCare, dein Weg zum VIP Service"
+    headerImageUrl="/content/dam/huawei-cbg-site/common/component/mkt/p10/img/vipHeadIco.png"
+    title="GOLD MEMBER&lt;br />VIP SERVICE">
+    <serviceItems jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            iconClass="W_ico_3year"
+            serviceDesc="Erhalte ein zusätzliches Jahr Herstellergarantie für dein Produkt nach Ablauf der zwei Jahres-Standardgarantie."
+            serviceTitle="3 Jahre&lt;br class=&quot;W-hiddenMobi&quot;/> Garantie"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            iconClass="W_ico_screenGuara"
+            serviceDesc="Erhalte für dein Gerät einen kostenlosen Bildschirmaustausch bei einem Unfallschaden  innerhalb der ersten drei Monate nach dem Kauf."
+            serviceTitle="3 Monate&lt;br  class=&quot;W-hiddenMobi&quot;/> Bildschirmgarantie"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            iconClass="W_ico_3monthreplace"
+            serviceDesc="Erhalte einen kostenlosen Geräteaustausch anstatt einer Reparatur, wenn dein Originalgerät einen Hardwarefehler innerhalb der ersten drei Monate nach dem Kauf bekommen sollte."
+            serviceTitle="3 Monate&lt;br  class=&quot;W-hiddenMobi&quot;/> Produktaustausch"/>
+    </serviceItems>
+</jcr:root>

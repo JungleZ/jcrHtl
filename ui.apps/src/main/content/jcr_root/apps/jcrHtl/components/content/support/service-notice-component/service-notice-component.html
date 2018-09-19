@@ -1,0 +1,24 @@
+<p style="text-align: center; color: black;" data-sly-test="${wcmmode.edit}">Service Notice Component</p>
+<div class="support_notice" style="background-color:#ffffff">
+	<h2>${properties.title}</h2>
+	<div class="clearfix support_notice_section">
+		<div class="support_notice_img">
+			<a href="" class="dt_url">
+				<img src="" alt="">
+			</a>
+		</div>
+		<sly data-sly-use.comp="com.huawei.consumer.site.core.components.support.ServiceNoticeComponent"></sly>
+		<div class="support_notice_info" data-detailLink="${comp.viewDetailLink}">
+			<h3 class="notice_info_title"><a href="" class="dt_url"></a></h3>
+			<p class="notice_info_date"></p>
+			<p class="notice_info_desc"></p>
+			<div class="view_more">
+				<a href="${comp.viewAllLink ? comp.viewAllLink : ''}">${properties.viewAllBtnText}</a>
+			</div>
+		</div>
+	</div>
+	<sly data-sly-use.comp="com.huawei.consumer.site.core.components.support.ServiceNoticeComponent" 
+			data-sly-test="${comp.apiUrl}">
+		<input type="hidden" id="apiUrl" value="${comp.apiUrl}">
+	</sly>
+</div>

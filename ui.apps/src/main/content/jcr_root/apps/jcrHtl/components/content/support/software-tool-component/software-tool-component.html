@@ -1,0 +1,15 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Software & Tool</p>
+<!-- safeware -->
+<div class="software conv3_sec" id="software_tool" data-sly-use.comp="com.huawei.consumer.site.core.components.support.SoftwareToolComponent">
+	<h2 class="detail_title">${comp.title}</h2>
+	<ul class="clearfix" data-sly-list="${comp.items}">
+	    <li class="clearfix" data-sly-use.linkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=item.url}">
+	        <a  cat="Software and Tools" act="${item.act}" lab="${comp.lab}" href="${linkHelper.link}" class="a-common">
+	            <p><img alt="${item.title}" src="${item.image}"></p>
+	            <h4>${item.title}</h4>
+	            <p class="soft_text">${item.description}</p>
+	        </a>
+	    </li> 
+	</ul>
+</div>
+<!-- /safeware -->

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    allTypeTitle="ALL"
+    apiUrl="http://consumer.huawei.com/support/services/service/isearch/open/findFourLevelList"
+    noResultsMessage="NO RESULTS CAN BE FOUND."
+    phText="Search"
+    textTypeTitle="Graphic"
+    title="TOPICS I NEED HELP WITH"
+    videoTypeTitle="Video"
+    writeKeywordsMessage="Please write keywords"/>

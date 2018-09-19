@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    bgImageAlt="THE FULL-MATEL EXPERIENCE G8"
+    bgImageUrl="/content/dam/huawei-cbg-site/en-master/home/img_con_v27_s5_banner.jpg"
+    descText="The 90% metal body of the Huawei G8 is constructed with aviation-level aluminium manufactured using ceramic sand blasting technology. The new potential of design and technology in your hands."
+    imagePos="left"
+    title="THE FULL-MATEL EXPERIENCE G8">
+    <buttons jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            buttonPath="http://consumer.huawei.com/en/mobile-phones/g8/index.htm"
+            buttonText="Explore"
+            openInNewPage="true"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            buttonPath="http://consumer.huawei.com/en/mobile-phones/g8/index.htm"
+            buttonText="Explore 2"
+            openInNewPage="true"/>
+    </buttons>
+</jcr:root>

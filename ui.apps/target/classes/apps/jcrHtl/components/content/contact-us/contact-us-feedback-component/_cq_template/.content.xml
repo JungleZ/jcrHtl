@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    authCodeErrTxt="Please write correct validate code"
+    authCodeTxt="Code *"
+    descText="Tell us how we're doing. (We read everything, but can't always respond.)"
+    emailErrTxt="Please write correct email"
+    emailTxt="Email *"
+    feedbackTitle="GIVE US YOUR FEEDBACK"
+    nameErrTxt="Please enter your name"
+    nameTxt="Name *"
+    questionErrTxt="Please fill your question"
+    questionTxt="Question *"
+    submitBtnErrTxt="ERROR"
+    submitBtnTxt="SUBMIT"
+    submitSuccessTxt="THANK YOU"
+    successTxt="Send Email Successfully."/>

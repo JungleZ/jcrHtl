@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    apiUrl="http://consumer.huawei.com/support/services/service/isearch/open/list"
+    limit="{Long}100"
+    lmText="Load More"
+    noResultsMessage="NO RESULTS CAN BE FOUND."
+    pageSize="{Long}5"
+    phText="Search within"
+    writeKeywordsMessage="Please write keywords"/>

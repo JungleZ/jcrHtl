@@ -1,0 +1,51 @@
+<div class="conv3_wrap conv3_sup_notice_wrap">
+    <div class="conv3_content" id="notice-list-component" data-sly-use.apisConst="${'com.huawei.consumer.site.core.utils.APIsConstants'}" data-sly-use.apiHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.apiUrl, key=apisConst.SERVICE_NOTICE_LIST_API_KEY }" 
+    	data-api-url="${apiHelper.apiUrl}" data-NOResultText="${properties.noResultText}" data-from="${properties.from}" data-to="${properties.to}"
+    	data-length-90-message="${properties.length90Message}"
+    	data-length-2-message="${properties.length2Message}"
+    	data-months-display='${properties.monthsDisplay}'
+    >
+        <div class="conv3_title_group">
+            <h1 data-sly-text="${properties.title}">Title</h1>
+        </div>
+        <section class="conv3_notice">
+            <div class="notice_form clearfix">
+                <div class="pull_left">
+                    <div class="conv3_global_selector">
+                        <div class="select">
+                            <span data-sly-text="${properties.to}">2017</span>
+                            <ol _mark="Region" data-sly-use.data="com.huawei.consumer.site.core.components.support.SupportNoticeListComponent" data-sly-list="${data.years}">
+                                <li data-sly-attribute.class="${itemList.first ? 'current': ''}" data-sly-text="${item}">2017</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="pull_right">
+                    <div class="notice_search">
+                        <input type="text" class="my_keys" maxlength="50" data-sly-attribute.placeholder="${properties.phText}">
+                        <a class="btn key_search" href="javascript:;"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="conv3_notice_content">
+            <div class="notice_list" style="min-height: 300px;"></div>
+        </section>
+    </div>
+</div>
+
+<div class="notice_clone" style="display:none">
+    <div class="notice_item">
+        <div class="notice_line">
+            <div class="notice_dot"><img class="dot-img"></div>
+        </div>
+        <div class="notice_date">
+            <div class="notice_month"></div>
+            <div class="notice_day"></div>
+        </div>
+        <h2></h2>
+        <p></p>
+        <div class="view_more"><a data-sly-text="${properties.readMoreText}">MORE</a></div>
+    </div>
+</div>
+<input type="hidden" id="nt_url" value="${properties.noticeDetailUrl @extension='html'}">

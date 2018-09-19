@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Point Action Container Component"
+    jcr:primaryType="cq:Component"
+    jcr:title="Level 2 - Point Action Container Component"
+    componentGroup="Huawei CBG Site-P10"/>

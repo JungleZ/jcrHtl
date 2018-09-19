@@ -1,0 +1,82 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Contact Us Technical Support Component</p>
+<sly data-sly-use.contactUsTechComp="com.huawei.consumer.site.core.components.contactus.ContactUsTechnicalSupportComponent" data-sly-test="${contactUsTechComp}">
+<div class="conv3_contact_email conv3_contact_module"
+	data-error-message="${properties.submitButtonErrorText}"
+	data-success-btn-text="${properties.submitButtonSuccessText}"
+	data-subject-api="${contactUsTechComp.subjectApi}"
+	data-category-api="${contactUsTechComp.categoryApi}"
+	data-country-api="${contactUsTechComp.countryApi}"
+	data-sessionuuid-api="${contactUsTechComp.sessionuuidApi}"
+	data-img-code-api="${contactUsTechComp.getImageCodeApi}"
+	data-submit-api="${contactUsTechComp.submitApi}">
+	<h2 class="for_seo">${properties.title}</h2>
+	<div class="conv3_contact_desc">
+		<strong>${properties.componentTitle}</strong>
+		<p>${properties.text @ context='html'}</p>
+	</div>
+	<div class="conv3_form_module">
+      <div class="tit cs_open" act="${properties.title}" f="0"><span>+</span>${properties.title}</div>
+      <div class="content">
+         <div class="conv3_global_selector">
+            <div class="select first_select email_subject">
+               <span>${'{0} *' @ format=properties.subjectText}</span>
+               <ol id="email_subject" _mark="Subject"></ol>
+               <p class="Validation1_1 Validation pos_absolute" style="display: none;">${properties.subjectErrorText}</p>
+            </div>
+            <div class="select email_category">
+               <span>${'{0} *' @ format=properties.categoryText}</span>
+               <ol id="email_category" _mark="Category"></ol>
+               <p class="Validation1_2 Validation pos_absolute" style="display: none;">${properties.categoryErrorText}</p>
+            </div>
+         </div>
+         <!--desc-->
+         <div class="first"><input type="text" disabled=""></div>
+         <div class="question pos_relative">
+            <textarea class="question1_1" id="email_question" type="text" maxlength="1000" placeholder="${'{0} *' @ format=properties.questionText}" rows="3"></textarea>
+            <p class="Validation1_3 Validation pos_absolute" style="display: none;">${properties.questionErrorText}</p>
+         </div>
+         <div class="column">
+            <div class="left pos_relative">
+               <input id="email_name" type="text" placeholder="${'{0} *' @ format=properties.nameText}">
+               <p class="Validation1_4 Validation pos_absolute" style="display: none;">${properties.nameErrorText}</p>
+            </div>
+            <div class="right pos_relative">
+               <input id="email_address" data-name="email" type="text" placeholder="${'{0} *' @ format=properties.emailText}">
+               <p class="Validation1_6 Validation pos_absolute" style="display: none;">${properties.emailErrorText}</p>
+            </div>
+         </div>
+         <div class="column">
+            <div class="left pos_relative" data-sly-test.displayCountry="${properties.hideShowRegion}">
+               <div class="conv3_global_selector">
+                  <div class="select email_country">
+                     <span>${'{0} *' @ format=properties.countryOrRegionText}</span>
+                     <ol id="email_country" _mark="Country or Region"></ol>
+                     <p class="Validation1_7 Validation pos_absolute" style="display: none;">${properties.countryOrRegionErrorText}</p>
+                  </div>
+               </div>
+            </div>
+            <div class="${displayCountry ? 'right pos_relative' : 'pos_relative'}">
+               <input id="email_product_model" type="text" placeholder="${'{0} *' @ format=properties.productModelText}">
+               <p class="Validation1_8 Validation pos_absolute" style="display: none;">${properties.productModelErrorText}</p>
+            </div>
+         </div>
+         <div class="column">
+            <div class="left pos_relative">
+               <input id="email_purchase_date" data-name="date" maxlength="10" type="text" placeholder="${'{0} *' @ format=properties.purchaseDateText}">
+               <div class="tips Validation1_9 pos_absolute">${properties.purchaseDateErrorText}</div>
+            </div>
+            <div class="right code pos_relative">
+               <img id="email_code" src="" data-sessionid="">
+               <input id="email_code_input" type="text" placeholder="${'{0} *' @ format=properties.authCodeText}">
+               <p class="Validation1_10 Validation pos_absolute" style="display: none;">${properties.authCodeErrorText}</p>
+            </div>
+         </div>
+         <div class="conv3_contact_btn">
+            <a cat="${properties.cat}" act="${properties.act}" lab="${properties.lab}" id="email_submit" href="javascript:;">${properties.submitButtonText}</a>
+            <div id="email_submit_result_tip"></div>
+            <div id="email_send_result_status" style="display:none;">${properties.submitSuccessText}</div>
+         </div>
+      </div>
+   </div>
+</div>
+</sly>

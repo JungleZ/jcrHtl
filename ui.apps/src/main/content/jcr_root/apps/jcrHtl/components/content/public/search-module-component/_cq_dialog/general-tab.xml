@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="General setting"
+    sling:resourceType="granite/ui/components/foundation/section">
+    <layout
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+    <items jcr:primaryType="nt:unstructured">
+        <column
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <suggestedSearchLabel
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="granite/ui/components/foundation/form/textfield"
+                      fieldDescription="Suggested search label"
+                      fieldLabel="Suggested search label"
+                      name="./suggestedSearchLabel"/>
+                <suggestedSearchKeys
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/form/multifield"
+                    class="full-width"
+                    fieldDescription="Click 'Add field' to add a suggested search key"
+                    fieldLabel="Suggested Search Keys">
+                    <field
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                        acs-commons-nested="NODE_STORE"
+                        name="./suggestedSearchKeys">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            method="absolute"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <suggestedSearchKey
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldDescription="Key"
+                                        fieldLabel="Key"
+                                        name="./keywork"/>
+                                </items>
+                            </column>
+                        </items>
+                    </field>
+                </suggestedSearchKeys>
+                <resultLabel
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                    fieldLabel="Result label"
+                    name="./resultLabel"/>
+                <loadMoreLabel
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                    fieldLabel="Load More Label"
+                    name="./loadMoreLabel"/>
+                <noResultMsg
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                    fieldLabel="No Result Message"
+                    name="./noResultMsg"/>
+                <pageSize
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                    defaultValue="4"
+                    fieldLabel="Page Size"
+                    name="./pageSize"/>
+                <termLT2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                    fieldDescription="Message when search term is less than 2 characters"
+                    fieldLabel="Search term less than 2 Message"
+                    name="./termLT2"/>
+                <termGT90
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                    fieldDescription="Message when search term is greater than 90 characters"
+                    fieldLabel="Search term more than 90 Message"
+                    name="./termGT90"/>
+                <searchApiUrl
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                    fieldLabel="Search API URL"
+                    fieldDescription="API URL to search"
+                    name="./searchApiUrl" />
+            </items>
+        </column>
+    </items>
+</jcr:root>

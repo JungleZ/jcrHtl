@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    buttonText="START"
+    buttonUrl="http://consumer.huawei.com/testv27-demo/support/recycling/retrievemethod/index.htm"
+    description1="Process electronic wastes through professional recyclers"
+    description2="Comply with local environment laws and regulations to process some electronic wastes that cannot.be recycled."
+    description3="Never employ child or prison labor to process electronic wastes."
+    description4="Delete private data on your devices in a professional way to protect your privacy."
+    description5="Reduce the electronic waste landfill rate to the minimum during the recycle."
+    disclaimer="To maximize resource usage, Huawei effectively processes recycled cell phones in an eco-friendly way by using the following methods:"
+    imageUrl="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/webasset/img_con_v27_sup_recy_cycle.png"/>

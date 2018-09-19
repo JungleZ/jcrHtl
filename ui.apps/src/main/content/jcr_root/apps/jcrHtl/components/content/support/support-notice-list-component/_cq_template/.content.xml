@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    apiUrl="http://consumer.huawei.com/support/services/service/bulletin/active"
+    from="{Long}2014"
+    length2Message="Enter two words at least"
+    length90Message="Key length of input cannot be bigger than 90"
+    monthsDisplay="Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec"
+    noResultText="Sorry, No results were found."
+    noticeDetailUrl="/content/huawei-cbg-site/homesit/support/notice_details"
+    phText="Entery the keywords."
+    readMoreText="MORE"
+    title="NOTICE"
+    to="{Long}2017"/>

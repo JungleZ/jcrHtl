@@ -1,0 +1,17 @@
+com\community\htl\core\CustomStep.class
+com\community\htl\core\PressListItemPOJO.class
+com\community\htl\core\package-info.class
+com\community\htl\core\filters\LoggingFilter.class
+com\community\htl\core\CustomerServiceImpl.class
+com\community\htl\core\home\ProductCompareComponent.class
+com\community\htl\core\models\SetResourceTagStep.class
+com\community\htl\core\Customer.class
+com\community\htl\core\schedulers\SimpleScheduledTask.class
+com\community\htl\core\NewsListComponent.class
+com\community\htl\core\models\CustomStepV.class
+com\community\htl\core\listeners\SimpleResourceListener.class
+com\community\htl\core\models\HelloWorldModel.class
+com\community\htl\core\models\CustomStep.class
+com\community\htl\core\servlets\SimpleServlet.class
+com\community\htl\core\JCRHeroComponent.class
+com\community\htl\core\CustomerService.class

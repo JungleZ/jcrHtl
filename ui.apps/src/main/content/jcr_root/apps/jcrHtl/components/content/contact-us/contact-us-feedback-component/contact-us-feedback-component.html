@@ -1,0 +1,57 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Contact Us - website feedback Component</p>
+<sly data-sly-use.comp="com.huawei.consumer.site.core.components.contactus.ContactUsFeedbackComponent" data-sly-test="${comp}"/>
+<div class="conv3_contact_feedback conv3_contact_module" 
+	data-api-url="${comp.apiUrl}"
+	data-success-message="${properties.submitSuccessTxt}"
+	data-error-message="${properties.submitBtnErrTxt}">
+	<div class="desc">
+		<strong>${properties.feedbackTitle}</strong>
+		<p>${properties.descText}</p>
+	</div>
+	<div class="conv3_form_module feedback_model">
+		<div class="tit cs_open" act="${properties.feedbackTitle}">
+			<span>+</span> ${properties.feedbackTitle}
+		</div>
+		<div class="content">
+			<div class="first">
+				<input type="text" disabled="">
+			</div>
+			<div class="question">
+				<textarea id="feedback_question" rows="3" maxlength="1000"
+					class="first_input" type="text" placeholder="${properties.questionTxt}"></textarea>
+				<p class="Validation1_4 Validation pos_absolute"
+					style="display: none;">${properties.questionErrTxt}</p>
+			</div>
+			<div class="column">
+				<div class="left">
+					<input id="feedback_name" type="text" placeholder="${properties.nameTxt}">
+					<p class="Validation1_4 Validation pos_absolute"
+						style="display: none;">${properties.nameErrTxt}</p>
+				</div>
+				<div class="right">
+					<input id="feedback_email" data-name="email" type="text"
+						placeholder="${properties.emailTxt}">
+					<p class="Validation1_4 Validation pos_absolute"
+						style="display: none;">${properties.emailErrTxt}</p>
+				</div>
+			</div>
+			<div class="column">
+				<div class="left code">
+					<img id="feedback_img_code" src="" data-sessionid="">
+					<input id="feedback_code_input" type="text" placeholder="${properties.authCodeTxt}">
+					<p class="Validation1_4 Validation pos_absolute"
+						style="display: none;">${properties.authCodeErrTxt}</p>
+				</div>
+			</div>
+			<div class="conv3_contact_btn">
+				<sly data-sly-test.notEmptyLink = "${properties.submitUrl}"/>
+				<a data-sly-test="${!notEmptyLink}" cat="${properties.cat}" act="${properties.act}" lab="${properties.lab}" id="feedback_submit" href="javascript:;">${properties.submitBtnTxt}</a>
+				<a data-sly-test="${notEmptyLink}" cat="${properties.cat}" act="${properties.act}" lab="${properties.lab}" id="feedback_submit" href="${notEmptyLink}">${properties.submitBtnTxt}</a>
+			</div>
+			<div id="feedback_send_result_status" style="display: none;">${properties.successTxt}</div>
+			<div>
+				<span id="feedback_result"></span>
+			</div>
+		</div>
+	</div>
+</div>

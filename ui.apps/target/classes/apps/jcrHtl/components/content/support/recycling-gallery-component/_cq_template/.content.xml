@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    bgImage="http://consumer-res.huaweistatic.com/testv27-demo/ucmc/groups/public/documents/webasset/img_con_v27_sup_recy_banner.jpg"
+    buttonText="Know more contributions that Huawei makes to construct a green world."
+    buttonUrl="http://www.huawei.com/en/about-huawei/sustainability/environment-protect/index.htm"
+    contentText="Used cell phones that are carelessly discarded or improperly processed may cause serious environmental problems and jeopardize your health and safety. To give a new life to used cell phones, promote resource recycling and protect the environment,Huawei will recycle your used cell phones for free to help construct a green world."
+    newTab="true"
+    title="Huawei will always be with you to construct a green world! We will make it possible!"/>

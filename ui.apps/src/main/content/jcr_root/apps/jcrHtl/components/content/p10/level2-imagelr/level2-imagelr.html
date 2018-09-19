@@ -1,0 +1,30 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Level 2 - Image LR</p>
+
+<sly data-sly-test.isDesktop="${properties.desktopImage}"/>
+<sly data-sly-test.type10="${(properties.imagePosition == 'left' && !isDesktop) ? 'type10' : ''}"/>
+<sly data-sly-test.type11="${(properties.imagePosition == 'right' && !isDesktop) ? 'type11' : ''}"/>
+<sly data-sly-test.type12="${(properties.imagePosition == 'right' && isDesktop) ? 'type12' : ''}"/>
+<sly data-sly-test.type13="${(properties.imagePosition == 'left' && isDesktop) ? 'type13' : ''}"/>
+
+<div class="two-level ${type10 || type11 || type12 || type13}"
+     style="background-image: url(${properties.desktopImage @ context='html'});">
+    <div>
+        <div class="left">
+            <img src="${properties.image}">
+        </div>
+        <div class="right">
+            <div class="title">
+                <h2>${properties.title}</h2>
+                <p>${properties.description}</p>
+            </div>
+            <div class="content-icon" data-sly-use.comp="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='blocks'}">
+                <ul class="content-icon-ul" data-sly-list.blocks="${comp.multifieldResources}">
+                    <li>
+                        <img class="icon-img" src="${blocks.valueMap.imagePath}">
+                        <span class="icon-descript">${blocks.valueMap.description}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

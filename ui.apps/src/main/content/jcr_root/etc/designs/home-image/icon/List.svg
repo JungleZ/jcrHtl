@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="34px" viewBox="0 0 44 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
+    <title>List</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="750-copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-687.000000, -31.000000)">
+        <g id="banner">
+            <g id="导航">
+                <g id="List" transform="translate(687.000000, 26.000000)">
+                    <rect id="Rectangle-13" opacity="0.0812952899" x="0" y="0" width="44" height="44"></rect>
+                    <g id="Group" transform="translate(0.000000, 5.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M13.2,18.9 L13.2,14.5 L44,14.5 L44,18.9 L13.2,18.9 Z M13.2,33.2 L13.2,28.8 L44,28.8 L44,33.2 L13.2,33.2 Z M13.2,4.6 L13.2,0.2 L44,0.2 L44,4.6 L13.2,4.6 Z" id="Combined-Shape"></path>
+                        <path d="M0,18.9 L0,14.5 L8.8,14.5 L8.8,18.9 L0,18.9 Z M0,33.2 L0,28.8 L8.8,28.8 L8.8,33.2 L0,33.2 Z M0,4.6 L0,0.2 L8.8,0.2 L8.8,4.6 L0,4.6 Z" id="Combined-Shape-Copy"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

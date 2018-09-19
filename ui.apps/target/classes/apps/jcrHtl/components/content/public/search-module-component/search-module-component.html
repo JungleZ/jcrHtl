@@ -1,0 +1,64 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Header Module - Search Module Component</p>
+<sly data-sly-use.searchModuleComp="com.huawei.consumer.site.core.components.publics.SearchModuleComponent">
+    <div class="search_module wrap_search slide_wrap" style="display: none;" 
+    pageSize="${searchModuleComp.pageSize}"
+    data-term-lt2="${searchModuleComp.termLT2}"
+    data-term-gt90="${searchModuleComp.termGT90}"
+    data-search-api-url="${searchModuleComp.searchApiUrl}"
+    >
+        <div class="conv3_search_wrap">
+            <div class="bg"></div>
+            <div class="result_area" style="min-height: 780px;">
+                <div class="result_phone">
+                    <div class="input_content">
+                        <div class="input"><input> <i class="icon_public glass"></i><i class="arrow"><em class="icon_public"></em></i></div>
+                        <div class="suggested">${searchModuleComp.suggestedSearchLabel}
+                            <strong data-sly-list.suggestedSearchKey="${searchModuleComp.suggestedSearchKeys}">
+                                <a>${suggestedSearchKey.keywork}</a>
+                            </strong>
+                        </div>
+                        <ul class="associated_list" style="display: none;"></ul>
+                        <div class="tit" style="display: none">${searchModuleComp.resultLabel} (<span></span>)</div>
+                        <ul class="list rmd_products" style="display: none">
+                        </ul>
+                        <ul class="list hot_products" style="display: none"></ul>
+                        <div class="icon_close see_close"><i></i></div>
+                    </div>
+                </div>
+                <div class="result_news_pc" style="display: none">
+                    <div class="conv3_global_selector">
+                        <div class="select">
+                            <span class="top_select">${searchModuleComp.productLabel}</span> 
+                            <ol _mark="${searchModuleComp.productLabel}" style="display: none;" data-sly-list.product="${searchModuleComp.products}">
+                                <li t="${product.value}" f=""><a href="javascript:;">${product.text}</a></li>
+                            </ol>
+                        </div>
+                        <div class="select">
+                            <span class="top_select">${searchModuleComp.supportLabel}</span> 
+                            <ol _mark="${searchModuleComp.supportLabel}" style="display: none;" data-sly-list.support="${searchModuleComp.supports}">
+                                <li t="${support.value}" f=""><a href="javascript:;">${support.text}</a></li>
+                            </ol>
+                        </div>
+                        <div class="select">
+                            <span class="top_select">${searchModuleComp.pressLabel}</span> 
+                            <ol _mark="${searchModuleComp.pressLabel}" style="display: none;" data-sly-list.press="${searchModuleComp.press}">
+                                <li t="${press.value}" f=""><a href="javascript:;">${press.text}</a></li> 
+                            </ol>
+                        </div>
+                    </div>
+                    <ul class="list search_list"></ul>
+                    <div class="load_more" style="display: none"><div class="text"><span>+</span>${searchModuleComp.loadMoreLabel}</div></div>
+                </div>
+                <style>
+                    @media screen and (max-width: 767px) {
+                        .conv3_search_wrap .result_news_pc .list:empty:after{  content:"${searchModuleComp.noResultMsg @ context='styleString'}" ;display:block;font-size: 18px; letter-spacing: 6px; text-align: center; margin-top:30px;margin-bottom:30px;   }
+                    }
+                    @media screen and (min-width: 768px) {
+                        .conv3_search_wrap .result_news_pc .list:empty:after{  content:"${searchModuleComp.noResultMsg @ context='styleString'}" ;display:block;font-size: 18px; letter-spacing: 6px; text-align: center; margin-bottom:60px;  }
+                        .conv3_search_wrap .result_news_pc .list:empty:after{  content:"${searchModuleComp.noResultMsg @ context='styleString'}" ;display:block;font-size: 18px; letter-spacing: 6px; text-align: center; margin-top:25px;  }
+                    }
+                </style>
+            </div>  
+        </div>
+    </div>
+</sly>

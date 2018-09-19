@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    btnText1="EXPLORE THE HUAWEI P9"
+    btnText2="BUY"
+    descText="With its stunning 5.2&quot; FHD IPS display, the Huawei P9 features the only smartphone screen to be compliant with the DCI-P3 colour gamut system used in the movies."
+    link1="/content/huawei-cbg-site/en"
+    link2="/content/huawei-cbg-site/en"
+    titleImageAlt="P9 LITE2"
+    titletImageURL="/content/dam/huawei-cbg-site/en-master/home/img_con_v27_s2_banner.png">
+    <colorModelItems jcr:primaryType="nt:unstructured">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            colorCode="#e5dcae"
+            productImageAlt="P9 LITE2"
+            productImageURL="/content/dam/huawei-cbg-site/en-master/home/198359753.png"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            colorCode="#ebb2b7"
+            productImageAlt="P9 LITE2"
+            productImageURL="/content/dam/huawei-cbg-site/en-master/home/198359757.png"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            colorCode="#ffffff"
+            productImageAlt="P9 LITE2"
+            productImageURL="/content/dam/huawei-cbg-site/en-master/home/198360431.png"/>
+    </colorModelItems>
+</jcr:root>

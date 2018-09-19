@@ -1,0 +1,62 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Product Environment Search Component</p>
+
+
+
+<div  data-sly-use.apisConst="${'com.huawei.consumer.site.core.utils.APIsConstants'}" data-sly-use.apiHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.apiUrl, key=apisConst.SERVICE_PRODUCT_DETAIL_API_KEY }" data-api-url="${apiHelper.apiUrl}" data-productenvironmentsearch-productmodel="${properties.productModelPlaceHolder}">
+
+    <div class="conv3_content" style="min-height:0px">
+        <div class="ep_content">
+
+            <div class="select_group clearfix">
+                <div class="select_group_col">
+                    <div class="conv3_global_selector">
+                        <div class="select ep_product">
+                            <span data-typeid="0" data-typename="Product">${properties.productPlaceHolder}</span>
+                            <ol _mark="Region" id="enviroment_product_type">
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="select_group_col">
+                    <div class="conv3_global_selector">
+                        <div class="select ep_product_model">
+                            <span data-modelid="0" data-modelname="Product Model">${properties.productModelPlaceHolder}</span>
+                            <ol _mark="Region" id="enviroment_product_model">
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="select_group_col">
+                    <div class="ep_submit_btn">
+                        <a href="javascript:;">${properties.submitButtonText}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+<div id="ep_overlay" class="sup_ep_player_content">
+        <div id="ep_popup">
+            <a class="close_btn" href="javascript:;"></a>
+            <div id="ep_video">
+                
+            </div>
+        </div>
+    </div>
+<div class="nihao"></div>
+
+	 
+
+
+
+
+
+
+
+
+
+			
+

@@ -1,0 +1,31 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}" data-sly-unwrap>Watch your story component</p>
+<div class="section6 home_section6_contents">
+	<h2 class="for_seo">${properties.titleText}</h2>
+	<img class="bg lazy_load" time="" alt="${properties.titleText}" data-src="${properties.bgImgUrl}" src="/etc/designs/huawei-cbg-site/images/common/bg2240_993.png">
+	<a data-video-image="${properties.videoThumnail}"
+		data-t-ignore-link="true"
+		href="${properties.videoType == 'common-video' ? properties.videoUrl : ''}"
+		data-video-id="videoPlayer" class="icon"
+		data-t-label="${properties.titleText}" data-video-ratio="16:9"
+		data-iframe-url="${properties.videoType != 'common-video' ? properties.videoUrl : ''}"
+		data-video-name="${properties.videoName}">
+		<i class="icon_public icon_play_bg"></i>
+	</a>
+	<strong class="delay200 appearance">${properties.titleText}</strong>
+	<sly data-sly-use.videoItem="com.huawei.consumer.site.core.components.home.WatchOurStoryComponent" data-sly-test="videoItem">
+		<div class="tags" data-sly-list.item="${videoItem.videoItems}" >
+			<span class="a-homecat" cat="" act="" lab="">
+				<a data-video-image="${item.videoThumnail}"
+					data-t-ignore-link="true"
+					href="${item.videoType == 'common-video' ? item.videoUrl : ''}"
+					data-video-id="videoPlayer" style="background-color:; color: 000"
+					class="appearance play_video delay300"
+					data-t-label="${properties.titleText}_${item.buttonText}" data-video-ratio="16:9"
+					data-iframe-url="${item.videoType != 'common-video' ? item.videoUrl : ''}"
+					data-video-name="${item.videoName}">${item.buttonText}
+					<i class="icon_public icon_play_lt"></i>
+				</a>
+			</span>
+		</div>
+	</sly>
+</div>

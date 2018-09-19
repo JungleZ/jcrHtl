@@ -1,0 +1,72 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Product List Component</p>
+<sly data-sly-use.productList="com.huawei.consumer.site.core.components.support.ProductListComponent" data-sly-test="${productList}">
+<div class="support_product_list clearfix"
+	data-api-url="${productList.apiUrl}"
+	data-search-term-empty="${properties.searchTermEmpty}"
+	data-length-2-message="${properties.length2Message}">
+    <div class="pl_screen_size"></div>
+    <input id="sproduct_pbi2" type="hidden" value="${properties.currentPBIValue}" />
+
+    <div class="form search_form">
+        <input type="text" id="pl-search-key" class="my_keys" maxlength="50" placeholder="${properties.searchInputPlaceHolder}" autocomplete="off">
+        <a class="btn" id="search" href="javascript:;"></a>
+        <div class="sup_pro_list" style="display:none">
+            <ul></ul>
+        </div>
+    </div>
+    <ul class="support_pro_nav">
+    	<sly data-sly-list.category="${productList.categoryList}">
+        <li class="product_cate ${categoryList.first ? '' : 'ta_r'} ${category.isSelected ? 'current active' : ''}">
+            <span><a href="${category.completedPath}">${category.title}</a></span>
+            <ul>
+                <li class="product_sub_cate ${category.isSelected ? 'active' : ''}"></li>
+            </ul>
+        </li>
+        </sly>
+        <li class="product_cate product_cate1 ta_c" pbi2="0" data-sly-test="${productList.subCategoryList}">
+            <span><a href="${productList.subCategoryList[0].completedPath}">${properties.moreCategoryText}</a></span>
+            <ul class="product_more">
+                <li class="product_sub_cate sub_all sub_all_9"><i class="icon_all"></i><span><i>ALL</i> (${productList.allProductCount})</span></li>
+                <sly data-sly-list.subCateItm="${productList.subCategoryList}">
+                <li class="product_sub_cate ${subCateItm.isSelected ? 'current active' : ''}">
+                	<a href="${subCateItm.completedPath}">
+                	<img src="${subCateItm.image}" class="img-thumb" data-sly-test="${subCateItm.image}" />
+                	<i class="${subCateItm.icons}" data-sly-test="${!subCateItm.image}" >
+                	</i><span>${subCateItm.title}</span></a>
+                </li>
+                </sly>
+            </ul>
+        </li>
+    </ul>
+    <script>
+	var $type1 = $('.support_pro_nav .product_cate')
+	var t1 = 0
+	for(var i =0; i < $type1.length - 1; i++){
+		if ($type1.eq(i).hasClass('current')) {
+			$('.support_pro_nav .product_cate1').removeClass('current').removeClass('active')
+			t1 = 1
+			break
+		}
+	}
+	if(t1 == 0){
+		$('.support_pro_nav .product_cate1').addClass('current').addClass('active')
+	}
+	</script> 
+    <div class="product_wrap sub_all" style="position: static;">
+        <div class="product_items" data-sly-list.productItm="${productList.productAdminList}">
+        	<sly data-sly-test.limitProduct="${productItmList.count > 10 ? 'display: none' : ''}" />
+            <div class="product_item" style="${limitProduct @ context='styleString'}">
+                <a class="a-common" cat="Product List" act="Click on ${productItm.productName}" lab="${productItm.productDetailPagePath}.html" href="${productItm.productDetailPagePath}.html">
+                    <img time="" alt="${productItm.productName}" src="${productItm.assetPath}">
+                    <br><span p=''>${productItm.marketingName}</span>
+                </a>
+            </div>
+        </div>
+        <div class="no_result" 
+        	 style="${productList.productAdminList && productList.productAdminList.size > 0 ? 'display:none' : '' @ context = 'styleString'}">
+        	${properties.resultEmptyText}
+        </div>
+        <div data-sly-test="${limitProduct}" class="load_more ucm_more"><a href="javascript:;"><span>+</span>${properties.loadMoreBtnText}</a></div>
+    </div>
+</div>
+</sly>

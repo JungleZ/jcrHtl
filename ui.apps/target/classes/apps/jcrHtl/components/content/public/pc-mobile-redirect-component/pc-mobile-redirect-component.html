@@ -1,0 +1,4 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">PC/Mobile Redirect Component</p>
+<sly data-sly-use.linkHelper="${'com.huawei.consumer.site.core.components.common.LinkHelperComponent' @link=properties.destinationurl}">
+    <div class="huawei-cbg-pc-mobile-redirect" data-sly-test="${!wcmmode.edit&&properties.destinationurl}" data-ismobile="${properties.ismobile}" data-destinationurl="${linkHelper.link}"></div>
+</sly>

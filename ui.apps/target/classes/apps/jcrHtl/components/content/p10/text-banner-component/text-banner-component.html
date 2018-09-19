@@ -1,0 +1,41 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Text Banner Component</p>
+<sly data-sly-use.textBannerComp="com.huawei.consumer.site.core.components.p10.TextBannerComponent">
+	<div class="two-level type7 text-banner-comp">
+		<div style="width: 100%">
+			<div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
+				<div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 699px;">
+					<ul class="two_level_type7_slide" data-sly-list.item="${textBannerComp.textBannerItems}" style="width: auto; position: relative;">
+						<sly data-sly-test.itemFirst="${itemList.first}">
+							<li style="float: none; list-style: none; position: absolute; width: 1174px; z-index: 50; display: block;">
+								<div class="title">
+									<h2>${item.title}</h2>
+									<p>${item.descText}</p>
+								</div>
+								<div class="content" 
+								    data-change-background="true"
+                                    data-landing-bg-desktop="${item.pcImageUrl @ context='unsafe'}"
+                                    data-landing-bg-mobile="${item.mbImageUrl @ context='unsafe'}"></div>
+							</li>
+						</sly>
+						<sly data-sly-test="${!itemFirst}">
+							<li style="display: none; float: none; list-style: none; position: absolute; width: 1174px; z-index: 0;">
+								<div class="title">
+									<h2>${item.title}</h2>
+									<p>${item.descText}</p>
+								</div>
+								<div class="content" 
+								    data-change-background="true"
+                                    data-landing-bg-desktop="${item.pcImageUrl @ context='unsafe'}"
+                                    data-landing-bg-mobile="${item.mbImageUrl @ context='unsafe'}"></div>
+							</li>
+						</sly>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="btn-group" data-sly-list.item="${textBannerComp.textBannerItems}">
+			<a href="javascript:;" class="W-Bokeh${itemList.index} ${itemList.first == true ? 'W-BokehBtnActive' : ''}">${item.buttonText}</a>
+		</div>
+	</div>	
+</sly>

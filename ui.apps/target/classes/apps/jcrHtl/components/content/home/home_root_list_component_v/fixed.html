@@ -1,0 +1,41 @@
+<style>
+        *{box-sizing: border-box;list-style: none;margin: 0;padding: 0;}
+        .view{display: flex;flex-wrap: wrap; width: 820px;margin: 100px auto;}
+        .view-item{position: relative;border: 1px solid #ccc;height: 300px;margin: 0 10px 10px 0;}
+        .view-item:nth-of-type(4n), .view-item:nth-of-type(4n+1){width: 500px;}
+        .view-item:nth-of-type(4n+2), .view-item:nth-of-type(4n+3){width: 300px;}
+        .view-item img{max-width: 100%;max-height: 100%;position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);}
+    </style>
+
+<sly  data-sly-use.t="ProductCompareComponent" />
+
+
+        <ul class="view">
+        <sly data-sly-test="${properties.type=='page_list'}"  data-sly-list.subPage="${t.productResourceList}">
+                <li class="view-item">
+                    <img src="${subPage.valueMap.pageImagePath}">
+                        <div class="" >
+                            <p class="name">${subPage.valueMap.jcr:title} pageList</p>
+                            <p class="tag">${subPage.valueMap.jcr:productName}</p>
+                        </div>
+                </li>
+		</sly>
+         </ul>
+
+
+
+		
+<sly  data-sly-use.tt="test.js" />
+        <ul class="view">
+
+			<sly data-sly-test="${properties.type=='fixed'}" data-sly-list.obj="${tt.prons}">
+				<li class="view-item">
+                        <img src="${obj.image1}" >
+                        <div  class="">
+                            <p class="name">${obj.brife} fixed</p>
+                            <p class="tag">${obj.tag}</p>
+                        </div>
+				</li>
+			</sly>
+
+        </ul>

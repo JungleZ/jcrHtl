@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2017-04-19T19:11:49.589+08:00"
+    jcr:createdBy="admin"
+    jcr:lastModified="{Date}2017-04-19T19:11:49.589+08:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="huawei-cbg-site/components/content/p10/point-action-container-component"
+    act="Show Color Style Innovation"
+    pointNums="3">
+    <_x0031_
+        jcr:created="{Date}2017-04-17T15:44:39.876+08:00"
+        jcr:createdBy="admin"
+        jcr:lastModified="{Date}2017-04-17T18:13:34.554+08:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="huawei-cbg-site/components/content/p10/point-action-sub-component"
+        description="HUAWEI WATCH 2 Classic is compatible with standard 22mm straps. Swap them easily to fit your style."
+        desktopProductImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01.png"
+        latitude="140"
+        latitudeMobile="70%"
+        longitude="630"
+        longitudeMobile="78%"
+        mobileProductImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-mob.png"
+        title="SWAP THE BAND TO SUIT YOUR STYLE"
+        titleImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband.jpg">
+        <desktopColorBoxs jcr:primaryType="nt:unstructured">
+            <_x0031_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_01.jpg"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-01.png"/>
+            <_x0032_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_02.jpg"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-02.png"/>
+            <_x0033_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_03.png"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-03.png"/>
+            <_x0034_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_04.jpg"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-04.png"/>
+            <_x0035_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_05.jpg"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-05.png"/>
+            <_x0036_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_06.jpg"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-06.png"/>
+            <_x0037_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_07.jpg"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-07.png"/>
+            <_x0038_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_08.jpg"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-08.png"/>
+            <_x0039_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_09.jpg"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-09.png"/>
+        </desktopColorBoxs>
+        <mobileColorBoxs jcr:primaryType="nt:unstructured">
+            <_x0031_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_01.jpg"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-01.png"/>
+            <_x0032_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_02.jpg"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-02.png"/>
+            <_x0033_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_03.png"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-03.png"/>
+            <_x0034_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_04.jpg"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-04.png"/>
+            <_x0035_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_05.jpg"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-05.png"/>
+            <_x0036_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_06.jpg"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-06.png"/>
+            <_x0037_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_07.jpg"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-07.png"/>
+            <_x0038_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_08.jpg"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-08.png"/>
+            <_x0039_
+                jcr:primaryType="nt:unstructured"
+                colorImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/color-images/leo-icon-watchband-color_09.jpg"
+                productImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-09.png"/>
+        </mobileColorBoxs>
+    </_x0031_>
+    <_x0032_
+        jcr:created="{Date}2017-04-17T15:44:39.876+08:00"
+        jcr:createdBy="admin"
+        jcr:lastModified="{Date}2017-04-17T18:13:34.554+08:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="huawei-cbg-site/components/content/p10/point-action-sub-component"
+        description="Combining Stainless steel and leather straps, HUAWEI WATCH 2 Classic is highly versatile and stylish for any occasion."
+        desktopProductImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01.png"
+        latitude="240"
+        latitudeMobile="46%"
+        longitude="570"
+        longitudeMobile="13%"
+        mobileProductImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-mob.png"
+        title="PREMIUM WATCH DESIGN"
+        titleImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband.jpg"/>
+    <_x0033_
+        jcr:created="{Date}2017-04-17T15:44:39.876+08:00"
+        jcr:createdBy="admin"
+        jcr:lastModified="{Date}2017-04-17T18:13:34.554+08:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="huawei-cbg-site/components/content/p10/point-action-sub-component"
+        description="The ceramic bezel is crafted using 23 separate processes. This material, usually used on many luxurious watches, is 6 times harder than stainless steel, highly resistant to abrasion, and lightweight."
+        desktopProductImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01.png"
+        latitude="400"
+        latitudeMobile="25%"
+        longitude="595"
+        longitudeMobile="66%"
+        mobileProductImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband01-mob.png"
+        title="BEAUTIFUL CERAMIC BEZEL"
+        titleImage="/content/dam/huawei-cbg-site/common/component/mkt/p10/watch/leo-design-more-watchband.jpg"/>
+</jcr:root>

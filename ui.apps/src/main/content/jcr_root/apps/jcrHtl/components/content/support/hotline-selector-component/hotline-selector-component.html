@@ -1,0 +1,22 @@
+<p style="text-align: center; color:black;margin:0px;padding:0px;" data-sly-test="${wcmmode.edit}">[hotline-selector-component]</p>
+<div class="conv3_wrap conv3_sup_hotlines_wrap">
+    <div class="conv3_content">
+                <div class="conv3_title_group conv3_mygroup">
+                    <h1 class="mycusttext">${properties.title}</h1>
+                    <h2 class="mytext">${properties.sub_title}</h2>
+                    <p class="conv3_hotline_note">${properties.note @ context="html"}</p>
+                </div>
+                <section class="conv3_hotline_content conv3_myhotline">
+                    <div class="conv3_global_selector">
+                        <div class="select select_hotlinearea_btn">
+                            <span class="">ALL</span>
+                            <ol _mark="Region" style="display: none;">
+                            </ol>
+                        </div>
+                    </div>
+                    <sly data-sly-resource="${'./content'
+                    @ resourceType='/libs/foundation/components/parsys'}" />
+    
+                </section>
+            </div>
+		</div>

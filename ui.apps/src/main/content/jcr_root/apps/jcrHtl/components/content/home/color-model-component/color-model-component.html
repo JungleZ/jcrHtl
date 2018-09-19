@@ -1,0 +1,27 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Color Model Component</p>
+<sly data-sly-use.colorModelComp="com.huawei.consumer.site.core.components.home.ColorModelComponent">
+	<div class="section2 home_section2_banner"
+		 style="background:url('${properties.backgroundImage @ context='unsafe'}') center no-repeat; background-size:cover;"
+    >
+		<div class="section2_wrap">
+			<h2 class="for_seo">${properties.titleImageAlt}</h2>
+			<img class="tit delay200 appearance" time="" alt="${properties.titleImageAlt}" src="${properties.titletImageURL}" data-pin-nopin="true">
+			<div class="product" data-sly-list.colorModel="${colorModelComp.colorModelItems}">
+				<sly data-sly-test.colorFirst="${colorModelList.first}">
+					<img class="phone" alt="${colorModel.productImageAlt}" src="${colorModel.productImageURL}">
+				</sly>
+				<sly data-sly-test="${!colorFirst}">
+					<img style="display:none" class="phone" alt="${colorModel.productImageAlt}" src="${colorModel.productImageURL}">
+				</sly>
+			</div>
+			<ol class="delay400 appearance" data-sly-test="${colorModelComp.colorModelItems && colorModelComp.colorModelItems.size > 1}" data-sly-list.colorModel="${colorModelComp.colorModelItems}">
+				<li data-sly-test="${colorModel.colorCode}" class="a-common ${colorModelList.first ? 'active' : ''} " cat="Color Selection" act="${colorModel.colorCode}" lab="${properties.productName} - <page title>" style="background-color:${colorModel.colorCode  @ context='styleToken'}"><i></i></li>
+			</ol>
+			<p class="text delay300 appearance">${properties.descText}</p>
+			<span class="a-homecat"  data-sly-test="${properties.btnText1 && colorModelComp.linkBtn1}" cat="${properties.cat1}" act="${properties.act1}" lab="${properties.lab1}">
+				<a href="${colorModelComp.linkBtn1}" target="${properties.openInNewPage1 ? '_blank' : ''}" style="color:#000;border-color:#000;" class="btn_section2 delay500 appearance">${properties.btnText1}</a></span>
+			<span class="a-homecat" data-sly-test="${properties.btnText2 && colorModelComp.linkBtn2}" cat="${properties.cat2}" act="${properties.act2}" lab="${properties.lab2}">
+				<a href="${colorModelComp.linkBtn2}" target="${properties.openInNewPage2 ? '_blank' : ''}" style="color:#000;border-color:#000;" class="btn_cta appearance appearance">${properties.btnText2}</a></span>
+		</div>
+	</div>
+</sly>

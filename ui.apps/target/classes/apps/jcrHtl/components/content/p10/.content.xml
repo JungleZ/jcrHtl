@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <flagship-banner-component/>
+    <flagship-banner-lr-component/>
+    <general-component/>
+    <bottom-image-component/>
+    <left-right-component/>
+    <product-vip-service-component/>
+    <video-component/>
+    <text-banner-component/>
+    <small-image-component/>
+    <point-action-sub-component/>
+    <point-action-container-component/>
+    <multi-image-with-blocks-component/>
+    <level2-text-image-banner-component/>
+    <level2-imagelr/>
+    <level2-container-component/>
+    <image-with-block-component/>
+    <hybrid-zoom-component/>
+    <color-image-banner-component/>
+    <bottom-animation-image-with-blocks-component/>
+    <test-component/>
+</jcr:root>

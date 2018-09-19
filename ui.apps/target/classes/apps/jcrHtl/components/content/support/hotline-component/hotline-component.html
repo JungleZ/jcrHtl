@@ -1,0 +1,31 @@
+<p style="text-align: center; color:black;margin:0px;padding:0px;" data-sly-test="${wcmmode.edit}">Hotline Component</p>
+
+<div id="asia0" data-sly-use.hotlines="${'com.huawei.consumer.site.core.components.common.HelperComponent' @multifield='contactInfos'}" data-area="${properties.title}"  class="container-fluid conv3_hotline_country_list">
+                    	<h3 class="conv3_hotline_area">${properties.title}</h3>
+                    		<div class="row" data-sly-list.hotline="${hotlines.multifieldResources}">
+                        			<div class="col-xs-12 col-sm-3 col-md-3">
+                            			<h4 class="conv3_hotline_country">${hotline.country}</h4>
+                        			</div>
+                        			<div class="col-xs-12 col-sm-9 col-md-9">
+                            		<div class="row">
+                                		<div class="col-xs-12 col-sm-6 col-md-3 conv3_hotline_removePD">
+                                    		<p class="conv3_hotline_tel"><i class="before phone-icon"></i><span>${hotline.phone_num}</span></p>
+                                		</div>
+                                		<div class="col-xs-12 col-sm-6 col-md-3">
+                                    		<p class="conv3_hotline_lang"><i class="before language-icon"></i><span>${hotline.language}</span></p>
+                                		</div>
+                                		<div class="col-xs-12 col-sm-12 col-md-6">
+                                    		<p class="conv3_hotline_worktime"><i class="before time-icon"></i>
+                                        		<span>${hotline.time}</span>
+                                    		</p>
+                                		</div>
+                            		</div>
+                        		</div>
+                        		<div class="col-xs-12 col-sm-12 col-md-12">
+									<div class="conv3_hotline_btmline"></div>
+                        		</div>
+
+                    	</div>
+
+
+		</div>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    loadMoreLabel="LOAD MORE"
+    pageSize="4"
+    press="[{&quot;pressItem&quot;:&quot;consumer_press:consumer_news&quot;},{&quot;pressItem&quot;:&quot;consumer_press:consumer_media_coverage&quot;}]"
+    pressLabel="Press "
+    productLabel="Product"
+    products="[{&quot;productItem&quot;:&quot;consumer_product:31&quot;},{&quot;productItem&quot;:&quot;consumer_product:36&quot;},{&quot;productItem&quot;:&quot;consumer_product:37&quot;},{&quot;productItem&quot;:&quot;consumer_product:32&quot;}]"
+    resultLabel="RESULTS"
+    searchApiUrl="http://consumer.huawei.com/support/services/service/isearch/open/list"
+    suggestedSearchKeys="[{&quot;keywork&quot;:&quot;MATE9&quot;},{&quot;keywork&quot;:&quot;MEDIAPAD&quot;},{&quot;keywork&quot;:&quot;WATCH&quot;}]"
+    suggestedSearchLabel="Suggested searches"
+    supportLabel="Support "
+    supports="[{&quot;supportItem&quot;:&quot;support:manual&quot;},{&quot;supportItem&quot;:&quot;support:software&quot;},{&quot;supportItem&quot;:&quot;support:faqs&quot;},{&quot;supportItem&quot;:&quot;support_product:no&quot;}]"
+    termGT90="Key length of input cannot be bigger than 90"
+    termLT2="Please enter more term"/>

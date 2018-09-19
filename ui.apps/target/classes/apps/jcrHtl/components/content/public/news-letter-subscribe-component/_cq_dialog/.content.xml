@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="News Letter Subscribe Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <contentTab
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Content"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <hideSubscribe
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./hideSubscribe"
+                                text="Hide subscrible in footer"
+                                value="true"/>
+                            <placeHolder
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Place Holder"
+                                fieldLabel="Place Holder"
+                                name="./placeHolder"/>
+                            <defaultSubscribeButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default Subscribe Button Text"
+                                fieldLabel="Default Subscribe Button Text"
+                                name="./defaultSubscribeButtonText"/>
+                            <defaultUnsubscribeButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Default Unsubscribe Button Text"
+                                fieldLabel="Default Unsubscribe Button Text"
+                                name="./defaultUnsubscribeButtonText"/>
+                            <successButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Success Button Text"
+                                fieldLabel="Success Button Text"
+                                name="./successButtonText"/>
+                            <successSubscribeMessage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Success Subscribe Message"
+                                fieldLabel="Success Subscribe Message"
+                                name="./successSubscribeMessage"/>
+                            <successUnsubscribeMessage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Success Subscribe Message"
+                                fieldLabel="Success Unsubscribe Message"
+                                name="./successUnsubscribeMessage"/>
+                            <failedSubscribeButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Failed Subscribe Message"
+                                fieldLabel="Failed Subscribe Message"
+                                name="./failedSubscribeButtonText"/>
+                            <failedUnsubscribeButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Failed Unsubscribe Message"
+                                fieldLabel="Failed Unsubscribe Message"
+                                name="./failedUnsubscribeButtonText"/>
+                            <errorSubscribeButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Error Subscribe Button Text"
+                                fieldLabel="Error Subscribe Button Text"
+                                name="./errorSubscribeButtonText"/>
+                            <errorUnsubscribeButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Error Unsubscribe Button Text"
+                                fieldLabel="Error Unsubscribe Button Text"
+                                name="./errorUnsubscribeButtonText"/>
+                            <errorMessage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Error Message"
+                                fieldLabel="Error Message"
+                                name="./errorMessage"/>
+                            <subscribeApiURL
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Subscribe API URL"
+                                fieldLabel="Subscribe API URL"
+                                name="./subscribeApiURL"/>
+                            <unsubscribeApiURL
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Unsubscribe API URL"
+                                fieldLabel="Unsubscribe API URL"
+                                name="./unsubscribeApiURL"/>
+                        </items>
+                    </column>
+                </items>
+            </contentTab>
+        </items>
+    </content>
+</jcr:root>

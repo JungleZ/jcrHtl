@@ -1,0 +1,20 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Product Manuals Downloads</p>
+
+<div id="cbg-downloads" data-sly-use.comp="com.huawei.consumer.site.core.components.support.ProductManualsDownloadsComponent" data-sly-use.apiHelper="${'com.huawei.consumer.site.core.config.ComponentApiHelper' @ apiUrl=properties.apiurl, key=apisConst.SERVICE_ISEARCH_OPEN_LIST_API_KEY }" data-productsmanualsdonwnloads-apiurl="${apiHelper.apiUrl}" >
+	<div class="manuals_download manuals conv3_sec" id="productdown" data-isedit="${wcmmode.edit}" data-sitecode="${comp.siteCode}" data-appnum="${comp.appNum}" data-ssusertext="${comp.ssUserText}">
+		<h2 class="detail_title">${comp.title}</h2>
+		<h3 id="Manuals_title">${comp.subTitleManual}</h3>
+		<ul class="manuals cbg-labeled-icon-list doc clearfix">
+		</ul>
+		<div class="manuals_more"  style="display: none;" >
+			<a class="btn_more" href="javascript:;">${properties.loadMoreText @i18n}</a>
+		</div>
+		<h3 id="Downloads_title">${comp.subTitleDownload}</h3>
+		<ul class="download cbg-labeled-icon-list down clearfix" style="display: none;">
+		</ul>
+
+		<div class="download_more"  style="display: none;">
+			<a class="btn_more" href="javascript:;">${properties.loadMoreText @i18n}</a>
+		</div>
+	</div>
+</div>

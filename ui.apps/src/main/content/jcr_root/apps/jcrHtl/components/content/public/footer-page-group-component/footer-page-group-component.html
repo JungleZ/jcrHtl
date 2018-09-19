@@ -1,0 +1,14 @@
+<p style="text-align: center; color:black;" data-sly-test="${wcmmode.edit}">Footer Page Group Component</p>
+<sly data-sly-use.footerPageGroupComp="com.huawei.consumer.site.core.components.publics.FooterPageGroupComponent">
+    <div class="item ${properties.displayOnMobile ? 'item_legal' : ''}" onclick="${footerPageGroupComp.headingScript @ context = 'html'}">
+        <strong>${properties.heading}</strong>
+        <ul data-sly-list.footerLink="${footerPageGroupComp.footerLinks}">
+            <li data-sly-test="${footerLink.wrapValue}">
+               <a class="menu_foot_products a-common" cat="${footerLink.wrapValue == 'menu_module_allphone' ? 'Menu: Phones' : 'Menu: More Products'}" act="${footerLink.act}" lab="Footer - <page title>" href="javascript:;" wrap="${footerLink.wrapValue}">${footerLink.label}</a>
+            </li>
+            <li data-sly-test="${!footerLink.wrapValue}">
+               <a cat="Footer" act="${footerLink.act}" target="${footerLink.openInNewPage ? '_blank' : ''}" href="${footerLink.link}" lab="<page title>" class="a-common">${footerLink.label}</a>
+            </li>
+        </ul>
+    </div>
+</sly>

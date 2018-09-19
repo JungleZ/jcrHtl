@@ -1,0 +1,116 @@
+<p style="text-align: center; color: black;" data-sly-test="${wcmmode.edit}">Warranty service and period component</p>
+<div class="conv3_sup_warrantyQuery_wrap conv3_warranty-s-p">
+ <div class="conv3_content">   
+  	
+    	<div class="conv3_title_group">
+            <h1>${properties.title}</h1>
+        </div>
+            	
+        <div class="wq_cont">
+        
+            <div class="wq_query">
+                <input class="device_sn" id="service_rate" type="text" placeholder='${properties.inputPlaceholder}'>
+                <a class="wq_btn wq_submit" href="javascript:;">${properties.submitBtnText}</a>
+                ${properties.reminder @ context = 'html'}
+            </div>
+                                  
+            <div class="wq_no_result" style="display:none;">
+                <p class="wq_no_result_tit">${properties.noRsTit}</p>
+                <a class="wq_btn wq_back" href="javascript:;">${properties.backBtnTxt}</a>
+				${properties.noRsReminder @ context = 'html'}
+            </div>
+            
+            <div class="wq_result_detail" style="display:none;">
+                <section>
+                	<div class="warranty-s-p-row clearfix">
+                    	<div class="warranty-s-p-col-5">
+                        	<div><img class="productImage" alt="Product" src=""></div>
+                        	<p class="warranty-s-p-active" style="display:none;">${properties.productActiveTxt}</p>
+                        	<p class="warranty-s-p-unactive" style="display:none;">${properties.activeNotice1}<br><span>${properties.activeNotice2}</span></p>
+                    	</div>
+                    	<div class="warranty-s-p-col-7 text-left">
+                        	<h3 class="proType"></h3>
+                        	<ul class="warranty-s-p-product-detial">
+                            	<li class="warranty-s-p-icon1"><b>${properties.modelTxt} </b> <text></text></li>
+                            	<li class="warranty-s-p-icon2"><b>${properties.imeisnTxt}</b> <text></text></li>
+                            	<li class="warranty-s-p-icon3"><b>${properties.expectedExpDateTxt} </b> <text></text></li>
+                            	<li class="warranty-s-p-icon4"><b>${properties.spLocationTxt} </b>
+                                	<span></span><span class="sen-detial-country"></span>
+                                	<a id="sen-detial-more" href="javascript:;"><span class="sen-detial-close">&lt;</span>${properties.moreTxt}<span class="sen-detial-open">&gt;</span></a>
+                            	</li>
+                        	</ul>
+                    	</div>
+                	</div>
+            	</section>
+            	<section>            		
+                	<h2>${properties.rightTxt}</h2>
+                	<!-- warranty items  -->
+                	<div class="warranty-s-p-row clearfix warranty-s-p-pdg">
+                	    <sly data-sly-use.comp="com.huawei.consumer.site.core.components.support.WarrantyServiceAndPeriodComponent"
+                	        	data-sly-test="${comp.warrantyItems}">
+                	        <sly data-sly-list.warranty="${comp.warrantyItems}">
+		                    	<div class="warranty-s-p-col-6 text-left ${warranty.serviceCateCode}">
+		                        	<div class="warranty-s-p-media-l ${warranty.icon}"><h4>${warranty.type}</h4></div>
+		                        	<div class="warranty-s-p-media-r">
+		                            	<h4>${warranty.type}</h4>
+		                            	<p class>${properties.currentSttTxt}</p>
+		                            	<p class="deadline">${properties.expDateTxt} <text></text></p>
+		                            	<sly data-sly-test="${warranty.usageCount}">
+		                            		<p class="degree">${properties.usageCountTxt} <text></text> ${properties.timeTxt}</p>
+		                            	</sly>
+		                            	<p class="gray">${warranty.typeNote}</p>
+		                        	</div>
+		                        	<hr>
+		                        	<a href="javascript:;" class="warranty-s-p-click">${properties.applicableTxt}<span class="warranty-s-p-arr"></span></a>
+		                        	<p class="warranty-s-p-country"></p>
+		                    	</div>
+	                    	</sly>
+                    	</sly>
+                	</div>
+                	<!-- end warranty items  -->
+            	</section>
+            	<section class="warranty-s-p-back">
+                	<div class="view_more">
+                    	<a href="javascript:;" class="wq_back">${properties.backBtnTxt}</a>
+                	</div>
+            	</section>
+            	<section class="warranty-s-p-wp">
+                	${properties.rsDetailReminder @ context = 'html'}
+            	</section>
+            </div>
+            
+            <div class="wq_result_maintenance" style="display:none;">
+            	<section>
+                	<div class="warranty-s-p-row clearfix">
+                    	<div class="warranty-s-p-col-5">
+                        	<div>
+                        		<img class="productImage" alt="Product" src=""></div>
+                    	</div>
+                    	<div class="warranty-s-p-col-7 text-left">
+                        	<h3 class="proType"></h3>
+                        	<ul class="warranty-s-p-product-detial">
+                            	<li class="warranty-s-p-icon1"><b>${properties.modelTxt}</b><text><text></li>
+                            	<li class="warranty-s-p-icon5">${properties.noQualifiedInfo}</li>
+                        	</ul>
+                    	</div>
+                	</div>
+            	</section>
+            	<section class="warranty-s-p-back warranty-s-p-full-back">
+                	<div class="view_more">
+                    	<a href="javascript:;" class="wq_back">${properties.backBtnTxt}</a>
+                	</div>
+            	</section>
+            	<section class="warranty-s-p-wp">
+                	${properties.rsMaintenaceReminder @ context='html'}
+            	</section>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="${comp.policyLink}" data-policyLink="true" style="display:none;"></a>
+<a href="${comp.contactusLink}" data-feedbackLink="true" style="display:none;"></a>
+<a href="${comp.serviceLink}" data-serviceLink="true" style="display:none;"></a>
+<sly data-sly-use.comp="com.huawei.consumer.site.core.components.support.WarrantyServiceAndPeriodComponent" />
+<div class="warranty-var" style="display:none;" data-apiUrlWarranty="${comp.apiUrl}" 
+	 data-submitErrTxt="${properties.submitErrTxt}" data-placeHolder="${properties.inputPlaceholder}"></div>
+

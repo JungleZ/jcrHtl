@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    buttonCaption="APPLY FOR"
+    buttonPath="http://scs.huawei.com/eSupplier/"
+    contactTitle="Supplier"
+    text="&lt;p>Supplier HOW TO BE A SUPPLIER&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;p>If you would like to become a Huawei supplier, please fill in the application contained in the link below. We will contact you if you fit our conditions and requirements.&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;/p>&#xd;&#xa;&#xd;&#xa;"
+    textIsRich="true"/>
